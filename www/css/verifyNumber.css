@@ -1,0 +1,114 @@
+/* .mainheader {
+    width: 100%;
+    height: 485px;
+    background-image: url("../img/back.png");
+    background-size: cover;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; */
+/* } */
+
+/* .heading {
+    font-size: 39px;
+    color: #5D6E7F;
+} */
+/* .btn {
+    width: 100%;
+    font-size: 2.5rem;
+    border-radius: 35px;
+    background-color: #21418C;
+
+} */
+
+/* .form-control {
+    border: 1px solid #080808 !important;
+    border-radius: 40px;
+    height: 145px;
+    background-color: #F5F5F5;
+} */
+
+/* input,
+input::-webkit-input-placeholder {
+    font-size: 45px;
+    line-height: 3;
+    
+
+}
+
+input[type="number"] {
+    font-size: 50px;
+    font-weight: 600; */
+   
+/* .row-flex {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.col-flex-item {
+    display: flex;
+    flex-flow: column;
+} */
+/* 
+.vertical-divider {
+    border-right: 2px solid black;
+    height: 235px;
+} */
+
+/* .field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -95px;
+    margin-right: 10px;
+    position: relative;
+    z-index: 2;
+    color: #BFBFBF;
+    font-size: 3.0rem;
+} */
+
+/* .container {
+    padding-top: 50px;
+    margin: auto;
+} */
+
+/* .title {
+    color: #3A549A;
+    font-size: 85px;
+    bottom: 40px;
+     */
+
+
+/* .txtlable {
+    color: #3A5D94;
+    font-size: 2.9rem;
+    font-weight: 600;
+
+} */
+
+.vanchortxt {
+    color: black;
+    font-size: 12px;
+    font-weight: 640;
+    margin-top: 12%;
+    text-align: center;
+    margin-left: 16px;
+    
+
+}
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.resend {
+    float: right;
+    color: red;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 67px;
+    margin-top: 12%;
+    width: 6px;
+
+}
+.row{
+    margin-left: 0px !important;
+}

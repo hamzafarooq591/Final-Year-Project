@@ -1,0 +1,145 @@
+.mainheader {
+    width: 100%;
+    height: 225px;
+    background-image: url("../img/back.png");
+    background-size: cover;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.logo {
+    width: 185%;
+    top: 5px;
+    right: 30px;
+}
+#txtFullName {
+    color: #080808;
+}
+
+.btn {
+    width: 100%;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #21418C;
+
+}
+.heading {
+    font-size: 11px;
+    color: #5D6E7F;
+    line-height: 18px;
+    font-weight: 700;
+    
+}
+@media only screen and (max-width: 280px) {
+    .heading {
+        width: 150%;
+    }
+    .logo{
+        width: 224%;
+        top: 12px;
+        right: 35px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .heading {
+        width: 150%;
+    }
+    .logo{
+        width: 195%;
+        top: 12px;
+        right: 35px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .form-group {
+        margin-bottom: 0rem;
+    }
+  }
+
+
+.form-control {
+    border: 1px solid #080808 !important;
+    border-radius: 12px;
+    height: 50px;
+    background-color: #F5F5F5;
+    
+}
+.form-group{
+    font-size: 1.5rem;
+    color: #21418C;
+}
+input,
+input::-webkit-input-placeholder {
+    font-size: 1.0rem;
+    
+}
+
+input[type="number"] {
+    font-size: 1.0rem;
+    font-weight: 500;
+}
+
+input[type="password"] {
+    font-size: 1.0rem;
+    font-weight: 500;
+    }
+
+.row-flex {
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.col-flex-item {
+    display: flex;
+    flex-flow: column;
+}
+
+.vertical-divider {
+    border-left: 1px solid black;
+    height: 55px;
+    border-radius: 1px;
+}
+
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -36px;
+    margin-right: 10px;
+    position: relative;
+    z-index: 2;
+    color: #BFBFBF;
+    font-size: 1.3rem;
+}
+.container{
+padding-top:50px;
+margin: auto;
+}
+.title {
+    color: #3A549A;
+    font-size: 30px;
+    
+}
+.txtlable {
+    color: #3A5D94;
+    font-size: 1.0rem;
+    font-weight: 500;
+}
+.forgettxt{
+    float: right;  
+    font-size: 12px;
+    font-weight: 600;
+
+}
+.anchortxt {
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+    display: flow-root;
+    margin-top: 10%;
+    text-align: center;
+}
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;}
+
