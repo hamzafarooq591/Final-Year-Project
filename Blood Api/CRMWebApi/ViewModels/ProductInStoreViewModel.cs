@@ -1,0 +1,28 @@
+﻿ namespace NashWebApi.ViewModels
+{
+    using System;
+    using System.Runtime.CompilerServices;
+
+    public class ProductInStoreViewModel : IAuditFieldViewModel
+    {
+        public int ProductInStoreId { get; set; }
+
+        public int BranchId { get; set; }
+        public string BranchName { get; set; }
+
+        public int ProductId { get; set; }
+        public string ProductName { get; set; }
+
+        public int PersonId { get; set; }
+        public string PersonName { get; set; }
+
+        public int ItemQuantity { get; set; }
+
+        public string CreatedBy { get; set; }
+        public string DateCreated { get; set; }
+        public string DateModified { get; set; }
+        public string LastModified { get; set; }
+
+    }
+}
+

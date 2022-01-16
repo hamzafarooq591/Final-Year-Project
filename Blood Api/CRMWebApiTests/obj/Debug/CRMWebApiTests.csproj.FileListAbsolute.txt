@@ -1,0 +1,474 @@
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll.config
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApiTests.pdb
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\ADO.NET.Helper.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\EntityFramework.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApi.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Data.SqlClient.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\WebActivatorEx.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Swashbuckle.Core.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Http.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Optimization.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Mvc.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\PagedList.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\AutoMapper.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Razor.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApi.pdb
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApi.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApi.dll.config
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\EntityFramework.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Http.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Optimization.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Mvc.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\PagedList.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\AutoMapper.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Razor.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CoreCompileInputs.cache
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CopyComplete
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\obj\Debug\NashWebApiTests.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\obj\Debug\NashWebApiTests.pdb
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csprojAssemblyReference.cache
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll.config
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApiTests.pdb
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\ADO.NET.Helper.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\EntityFramework.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApi.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Data.SqlClient.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\WebActivatorEx.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Swashbuckle.Core.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Http.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Optimization.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Mvc.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\PagedList.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\AutoMapper.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Razor.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApi.pdb
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApi.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApi.dll.config
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\EntityFramework.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Http.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Optimization.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Mvc.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\PagedList.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\AutoMapper.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Razor.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csprojAssemblyReference.cache
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CoreCompileInputs.cache
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CopyComplete
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\obj\Debug\NashWebApiTests.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApiTests\obj\Debug\NashWebApiTests.pdb
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll.config
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApiTests.pdb
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\ADO.NET.Helper.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\WebActivatorEx.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\Swashbuckle.Core.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Optimization.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Mvc.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\PagedList.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\AutoMapper.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Razor.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.pdb
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.dll.config
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Optimization.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Mvc.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\PagedList.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\AutoMapper.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Razor.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\obj\Debug\NashWebApiTests.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApiTests\obj\Debug\NashWebApiTests.pdb
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll.config
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApiTests.pdb
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\ADO.NET.Helper.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\EntityFramework.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApi.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Data.SqlClient.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\WebActivatorEx.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\Swashbuckle.Core.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Http.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Optimization.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Mvc.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\PagedList.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\AutoMapper.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Razor.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApi.pdb
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApi.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\NashWebApi.dll.config
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\EntityFramework.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Http.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Optimization.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Mvc.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\PagedList.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\AutoMapper.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.Razor.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Projects\CRMWebApi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csprojAssemblyReference.cache
+C:\Projects\CRMWebApi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CoreCompileInputs.cache
+C:\Projects\CRMWebApi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CopyComplete
+C:\Projects\CRMWebApi\CRMWebApiTests\obj\Debug\NashWebApiTests.dll
+C:\Projects\CRMWebApi\CRMWebApiTests\obj\Debug\NashWebApiTests.pdb
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll.config
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApiTests.pdb
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\ADO.NET.Helper.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Data.SqlClient.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\WebActivatorEx.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\Swashbuckle.Core.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Optimization.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Mvc.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\PagedList.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\AutoMapper.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Razor.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.pdb
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.dll.config
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Optimization.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Mvc.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\PagedList.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\AutoMapper.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Razor.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.xml
+E:\projects\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\projects\crmwebapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csprojAssemblyReference.cache
+E:\projects\crmwebapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CoreCompileInputs.cache
+E:\projects\crmwebapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CopyComplete
+E:\projects\crmwebapi\CRMWebApiTests\obj\Debug\NashWebApiTests.dll
+E:\projects\crmwebapi\CRMWebApiTests\obj\Debug\NashWebApiTests.pdb
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll.config
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApiTests.pdb
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\ADO.NET.Helper.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Data.SqlClient.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\WebActivatorEx.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\Swashbuckle.Core.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Optimization.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Mvc.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\PagedList.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\AutoMapper.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Razor.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.pdb
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.dll.config
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Optimization.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Mvc.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\PagedList.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\AutoMapper.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Razor.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csprojAssemblyReference.cache
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CoreCompileInputs.cache
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CopyComplete
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\obj\Debug\NashWebApiTests.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApiTests\obj\Debug\NashWebApiTests.pdb
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll.config
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApiTests.pdb
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\ADO.NET.Helper.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Data.SqlClient.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\WebActivatorEx.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\Swashbuckle.Core.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Optimization.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Mvc.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\PagedList.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\AutoMapper.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Razor.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.pdb
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\NashWebApi.dll.config
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Optimization.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Mvc.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\PagedList.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\AutoMapper.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.Razor.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csprojAssemblyReference.cache
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CoreCompileInputs.cache
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CopyComplete
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\obj\Debug\NashWebApiTests.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApiTests\obj\Debug\NashWebApiTests.pdb
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll.config
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\NashWebApiTests.pdb
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\ADO.NET.Helper.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\EntityFramework.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\NashWebApi.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\WebActivatorEx.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\Swashbuckle.Core.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Http.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Optimization.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Mvc.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\PagedList.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\AutoMapper.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Razor.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\NashWebApi.pdb
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\NashWebApi.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\NashWebApi.dll.config
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\EntityFramework.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Http.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Optimization.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Mvc.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\PagedList.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\AutoMapper.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Razor.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csprojAssemblyReference.cache
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CoreCompileInputs.cache
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CopyComplete
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\obj\Debug\NashWebApiTests.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApiTests\obj\Debug\NashWebApiTests.pdb
+C:\Project\bloodlabapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CoreCompileInputs.cache
+C:\Project\bloodlabapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csprojAssemblyReference.cache
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll.config
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\NashWebApiTests.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\NashWebApiTests.pdb
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\ADO.NET.Helper.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\EntityFramework.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\NashWebApi.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Data.SqlClient.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\WebActivatorEx.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Swashbuckle.Core.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Http.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Optimization.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Mvc.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\PagedList.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\AutoMapper.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Razor.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\NashWebApi.pdb
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\NashWebApi.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\NashWebApi.dll.config
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\EntityFramework.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Http.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Optimization.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Mvc.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\PagedList.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\AutoMapper.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Newtonsoft.Json.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.Razor.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Project\bloodlabapi\CRMWebApiTests\obj\Debug\CRMWebApiTests.csproj.CopyComplete
+C:\Project\bloodlabapi\CRMWebApiTests\obj\Debug\NashWebApiTests.dll
+C:\Project\bloodlabapi\CRMWebApiTests\obj\Debug\NashWebApiTests.pdb
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Twilio.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Twilio.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Project\bloodlabapi\CRMWebApiTests\bin\Debug\Microsoft.IdentityModel.Tokens.xml

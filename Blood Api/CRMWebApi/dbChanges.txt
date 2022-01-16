@@ -1,0 +1,3 @@
+﻿Enable-migrations //You don't need this as you have already done it
+Add-migration InitialCreate
+Update-database

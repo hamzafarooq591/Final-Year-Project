@@ -1,0 +1,607 @@
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\NashWebApi.Migrations.IntialCreate.resources
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\NashWebApi.Migrations.BrandOutletImageColumnAdd.resources
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\NashWebApi.Migrations.updateNashUserTable.resources
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\CRMWebApi.csproj.GenerateResource.cache
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CoreCompileInputs.cache
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\NashWebApi.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\NashWebApi.pdb
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\NashWebApi.dll.config
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\NashWebApi.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\NashWebApi.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\NashWebApi.pdb
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\ADO.NET.Helper.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\Antlr3.Runtime.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\Autofac.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\Autofac.Integration.Mvc.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\AutoMapper.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\EntityFramework.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\EntityFramework.SqlServer.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\Newtonsoft.Json.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\PagedList.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\PagedList.Mvc.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\Swashbuckle.Core.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Data.SqlClient.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Net.Http.Formatting.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Helpers.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Http.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Http.WebHost.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Mvc.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Optimization.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Razor.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.Razor.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\WebActivatorEx.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\WebGrease.dll
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\Antlr3.Runtime.pdb
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\Autofac.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\Autofac.Integration.Mvc.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\AutoMapper.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\EntityFramework.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\EntityFramework.SqlServer.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\Newtonsoft.Json.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\PagedList.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\PagedList.Mvc.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Helpers.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Mvc.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Optimization.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Razor.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.Razor.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Net.Http.Formatting.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Http.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Http.WebHost.xml
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CopyComplete
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\CRMWebApi.csprojAssemblyReference.cache
+C:\Projects\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\NashWebApi.Migrations.InitialCreate.resources
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\NashWebApi.dll.config
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\NashWebApi.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\NashWebApi.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\NashWebApi.pdb
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\ADO.NET.Helper.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\Antlr3.Runtime.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\Autofac.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\Autofac.Integration.Mvc.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\AutoMapper.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\EntityFramework.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\EntityFramework.SqlServer.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\Newtonsoft.Json.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\PagedList.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\PagedList.Mvc.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\Swashbuckle.Core.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Data.SqlClient.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Net.Http.Formatting.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Helpers.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Http.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Http.WebHost.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Mvc.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Optimization.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Razor.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.Razor.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\WebActivatorEx.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\WebGrease.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\Antlr3.Runtime.pdb
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\Autofac.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\Autofac.Integration.Mvc.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\AutoMapper.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\EntityFramework.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\EntityFramework.SqlServer.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\Newtonsoft.Json.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\PagedList.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\PagedList.Mvc.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Helpers.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Mvc.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Optimization.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Razor.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.Razor.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Net.Http.Formatting.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Http.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\bin\System.Web.Http.WebHost.xml
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\CRMWebApi.csprojAssemblyReference.cache
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CoreCompileInputs.cache
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CopyComplete
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\NashWebApi.dll
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\NashWebApi.pdb
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\NashWebApi.Migrations.InitialCreate.resources
+C:\Project\CRMWebApi\CRMWebApi\CRMWebApi\obj\Debug\CRMWebApi.csproj.GenerateResource.cache
+C:\Projects\CRMWebApi\CRMWebApi\bin\NashWebApi.dll.config
+C:\Projects\CRMWebApi\CRMWebApi\bin\NashWebApi.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\NashWebApi.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\NashWebApi.pdb
+C:\Projects\CRMWebApi\CRMWebApi\bin\ADO.NET.Helper.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\Antlr3.Runtime.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\Autofac.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\Autofac.Integration.Mvc.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\AutoMapper.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\EntityFramework.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\EntityFramework.SqlServer.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\Newtonsoft.Json.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\PagedList.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\PagedList.Mvc.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\Swashbuckle.Core.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Data.SqlClient.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Net.Http.Formatting.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.Helpers.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.Http.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.Http.WebHost.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.Mvc.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.Optimization.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.Razor.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.Razor.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\WebActivatorEx.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\WebGrease.dll
+C:\Projects\CRMWebApi\CRMWebApi\bin\Antlr3.Runtime.pdb
+C:\Projects\CRMWebApi\CRMWebApi\bin\Autofac.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\Autofac.Integration.Mvc.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\AutoMapper.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\EntityFramework.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\EntityFramework.SqlServer.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\Newtonsoft.Json.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\PagedList.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\PagedList.Mvc.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.Helpers.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.Mvc.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.Optimization.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.Razor.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.WebPages.Razor.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Net.Http.Formatting.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.Http.xml
+C:\Projects\CRMWebApi\CRMWebApi\bin\System.Web.Http.WebHost.xml
+C:\Projects\CRMWebApi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CoreCompileInputs.cache
+C:\Projects\CRMWebApi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CopyComplete
+C:\Projects\CRMWebApi\CRMWebApi\obj\Debug\NashWebApi.dll
+C:\Projects\CRMWebApi\CRMWebApi\obj\Debug\NashWebApi.pdb
+C:\Projects\CRMWebApi\CRMWebApi\obj\Debug\CRMWebApi.csprojAssemblyReference.cache
+C:\Projects\CRMWebApi\CRMWebApi\obj\Debug\NashWebApi.Migrations.InitialCreate.resources
+C:\Projects\CRMWebApi\CRMWebApi\obj\Debug\CRMWebApi.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\NashWebApi.dll.config
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\NashWebApi.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\NashWebApi.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\NashWebApi.pdb
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\ADO.NET.Helper.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\Autofac.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\Autofac.Integration.Mvc.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\AutoMapper.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\EntityFramework.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\PagedList.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\PagedList.Mvc.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\Swashbuckle.Core.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Data.SqlClient.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.Helpers.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.Http.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.Mvc.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.Optimization.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.Razor.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.WebPages.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\WebActivatorEx.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\WebGrease.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\Autofac.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\Autofac.Integration.Mvc.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\AutoMapper.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\EntityFramework.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\PagedList.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\PagedList.Mvc.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.Helpers.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.Mvc.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.Optimization.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.Razor.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.WebPages.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.Http.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.dll
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.pdb
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.CreateFromLocal.resources
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\GitHub\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.OrderProductWarranty.resources
+E:\projects\crmwebapi\CRMWebApi\bin\NashWebApi.dll.config
+E:\projects\crmwebapi\CRMWebApi\bin\NashWebApi.xml
+E:\projects\crmwebapi\CRMWebApi\bin\NashWebApi.dll
+E:\projects\crmwebapi\CRMWebApi\bin\NashWebApi.pdb
+E:\projects\crmwebapi\CRMWebApi\bin\ADO.NET.Helper.dll
+E:\projects\crmwebapi\CRMWebApi\bin\Antlr3.Runtime.dll
+E:\projects\crmwebapi\CRMWebApi\bin\Autofac.dll
+E:\projects\crmwebapi\CRMWebApi\bin\Autofac.Integration.Mvc.dll
+E:\projects\crmwebapi\CRMWebApi\bin\AutoMapper.dll
+E:\projects\crmwebapi\CRMWebApi\bin\EntityFramework.dll
+E:\projects\crmwebapi\CRMWebApi\bin\EntityFramework.SqlServer.dll
+E:\projects\crmwebapi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\projects\crmwebapi\CRMWebApi\bin\Microsoft.Web.Infrastructure.dll
+E:\projects\crmwebapi\CRMWebApi\bin\Newtonsoft.Json.dll
+E:\projects\crmwebapi\CRMWebApi\bin\PagedList.dll
+E:\projects\crmwebapi\CRMWebApi\bin\PagedList.Mvc.dll
+E:\projects\crmwebapi\CRMWebApi\bin\Swashbuckle.Core.dll
+E:\projects\crmwebapi\CRMWebApi\bin\System.Data.SqlClient.dll
+E:\projects\crmwebapi\CRMWebApi\bin\System.Net.Http.Formatting.dll
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.Helpers.dll
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.Http.dll
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.Http.WebHost.dll
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.Mvc.dll
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.Optimization.dll
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.Razor.dll
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Deployment.dll
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.WebPages.dll
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Razor.dll
+E:\projects\crmwebapi\CRMWebApi\bin\WebActivatorEx.dll
+E:\projects\crmwebapi\CRMWebApi\bin\WebGrease.dll
+E:\projects\crmwebapi\CRMWebApi\bin\Antlr3.Runtime.pdb
+E:\projects\crmwebapi\CRMWebApi\bin\Autofac.xml
+E:\projects\crmwebapi\CRMWebApi\bin\Autofac.Integration.Mvc.xml
+E:\projects\crmwebapi\CRMWebApi\bin\AutoMapper.xml
+E:\projects\crmwebapi\CRMWebApi\bin\EntityFramework.xml
+E:\projects\crmwebapi\CRMWebApi\bin\EntityFramework.SqlServer.xml
+E:\projects\crmwebapi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\projects\crmwebapi\CRMWebApi\bin\Newtonsoft.Json.xml
+E:\projects\crmwebapi\CRMWebApi\bin\PagedList.xml
+E:\projects\crmwebapi\CRMWebApi\bin\PagedList.Mvc.xml
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.Helpers.xml
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.Mvc.xml
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.Optimization.xml
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.Razor.xml
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.WebPages.xml
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Deployment.xml
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Razor.xml
+E:\projects\crmwebapi\CRMWebApi\bin\System.Net.Http.Formatting.xml
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.Http.xml
+E:\projects\crmwebapi\CRMWebApi\bin\System.Web.Http.WebHost.xml
+E:\projects\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csprojAssemblyReference.cache
+E:\projects\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.CreateFromLocal.resources
+E:\projects\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.OrderProductWarranty.resources
+E:\projects\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.GenerateResource.cache
+E:\projects\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CoreCompileInputs.cache
+E:\projects\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CopyComplete
+E:\projects\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.dll
+E:\projects\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.pdb
+E:\projects\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.itemTableAdded.resources
+E:\projects\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.PurchaseOrderTableAdded.resources
+E:\projects\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.SellOrderTableAdded.resources
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\NashWebApi.dll.config
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\NashWebApi.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\NashWebApi.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\NashWebApi.pdb
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\ADO.NET.Helper.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\Antlr3.Runtime.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\Autofac.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\Autofac.Integration.Mvc.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\AutoMapper.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\EntityFramework.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\EntityFramework.SqlServer.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\Microsoft.Web.Infrastructure.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\Newtonsoft.Json.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\PagedList.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\PagedList.Mvc.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\Swashbuckle.Core.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Data.SqlClient.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Net.Http.Formatting.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.Helpers.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.Http.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.Http.WebHost.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.Mvc.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.Optimization.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.Razor.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Deployment.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.WebPages.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Razor.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\WebActivatorEx.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\WebGrease.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\Antlr3.Runtime.pdb
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\Autofac.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\Autofac.Integration.Mvc.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\AutoMapper.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\EntityFramework.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\EntityFramework.SqlServer.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\Newtonsoft.Json.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\PagedList.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\PagedList.Mvc.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.Helpers.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.Mvc.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.Optimization.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.Razor.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.WebPages.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Deployment.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Razor.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Net.Http.Formatting.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.Http.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\bin\System.Web.Http.WebHost.xml
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CoreCompileInputs.cache
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CopyComplete
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.dll
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.pdb
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.InitialCreate.resources
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.GenerateResource.cache
+E:\projects\oildistributionsystem\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csprojAssemblyReference.cache
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\NashWebApi.dll.config
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\NashWebApi.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\NashWebApi.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\NashWebApi.pdb
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\ADO.NET.Helper.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\Antlr3.Runtime.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\Autofac.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\Autofac.Integration.Mvc.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\AutoMapper.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\EntityFramework.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\EntityFramework.SqlServer.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\Newtonsoft.Json.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\PagedList.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\PagedList.Mvc.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\Swashbuckle.Core.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Data.SqlClient.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Net.Http.Formatting.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Helpers.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Http.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Http.WebHost.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Mvc.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Optimization.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Razor.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.WebPages.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Razor.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\WebActivatorEx.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\WebGrease.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\Antlr3.Runtime.pdb
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\Autofac.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\Autofac.Integration.Mvc.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\AutoMapper.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\EntityFramework.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\EntityFramework.SqlServer.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\Newtonsoft.Json.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\PagedList.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\PagedList.Mvc.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Net.Http.Formatting.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Helpers.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Http.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Http.WebHost.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Mvc.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Optimization.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Razor.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.WebPages.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Razor.xml
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csprojAssemblyReference.cache
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.InitialCreate.resources
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.SaleDeliveryItemTableAdded.resources
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.PurchaseDeliveryItemTableAdded.resources
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.PurchaseDeliveryItemTableUpdated.resources
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.PurchaseAndSaleDeliveryItemTableUpdated.resources
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.PurchaseAndSaleOrderTableUpdated.resources
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.SaleOrderTableUpdated.resources
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.GenerateResource.cache
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CoreCompileInputs.cache
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CopyComplete
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.dll
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.pdb
+C:\Project\oil distribution system\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.transactionTableUpdated.resources
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\NashWebApi.dll.config
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\NashWebApi.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\NashWebApi.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\NashWebApi.pdb
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\ADO.NET.Helper.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\Antlr3.Runtime.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\Autofac.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\Autofac.Integration.Mvc.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\AutoMapper.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\EntityFramework.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\EntityFramework.SqlServer.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\Newtonsoft.Json.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\PagedList.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\PagedList.Mvc.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\Swashbuckle.Core.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Data.SqlClient.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Net.Http.Formatting.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Helpers.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Http.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Http.WebHost.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Mvc.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Optimization.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Razor.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.WebPages.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Razor.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\WebActivatorEx.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\WebGrease.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\Antlr3.Runtime.pdb
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\Autofac.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\Autofac.Integration.Mvc.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\AutoMapper.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\EntityFramework.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\EntityFramework.SqlServer.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\Newtonsoft.Json.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\PagedList.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\PagedList.Mvc.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Net.Http.Formatting.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Helpers.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Http.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Http.WebHost.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Mvc.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Optimization.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.Razor.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.WebPages.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\bin\System.Web.WebPages.Razor.xml
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csprojAssemblyReference.cache
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.InitialCreate.resources
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.SaleDeliveryItemTableAdded.resources
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.PurchaseDeliveryItemTableAdded.resources
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.PurchaseDeliveryItemTableUpdated.resources
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.PurchaseAndSaleDeliveryItemTableUpdated.resources
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.PurchaseAndSaleOrderTableUpdated.resources
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.SaleOrderTableUpdated.resources
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.transactionTableUpdated.resources
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.GenerateResource.cache
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CopyComplete
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.dll
+C:\Project\oildistwebapi\crmwebapi\CRMWebApi\obj\Debug\NashWebApi.pdb
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\NashWebApi.dll.config
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\NashWebApi.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\NashWebApi.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\NashWebApi.pdb
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\ADO.NET.Helper.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\Antlr3.Runtime.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\Autofac.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\Autofac.Integration.Mvc.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\AutoMapper.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\EntityFramework.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\EntityFramework.SqlServer.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\Newtonsoft.Json.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\PagedList.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\PagedList.Mvc.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\Swashbuckle.Core.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Data.SqlClient.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.Helpers.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.Http.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.Mvc.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.Optimization.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.Razor.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.WebPages.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\WebActivatorEx.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\WebGrease.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\Antlr3.Runtime.pdb
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\Autofac.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\Autofac.Integration.Mvc.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\AutoMapper.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\EntityFramework.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\EntityFramework.SqlServer.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\Newtonsoft.Json.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\PagedList.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\PagedList.Mvc.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.Helpers.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.Http.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.Mvc.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.Optimization.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.Razor.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.WebPages.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.InitailCreate.resources
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.Appointmentupdated.resources
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.GenerateResource.cache
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CoreCompileInputs.cache
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CopyComplete
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\obj\Debug\NashWebApi.dll
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\obj\Debug\NashWebApi.pdb
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\obj\Debug\CRMWebApi.csprojAssemblyReference.cache
+C:\Project\bloodlabapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.InitailCreate.resources
+C:\Project\bloodlabapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.Appointmentupdated.resources
+C:\Project\bloodlabapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.GenerateResource.cache
+C:\Project\bloodlabapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CoreCompileInputs.cache
+C:\Project\bloodlabapi\CRMWebApi\obj\Debug\CRMWebApi.csprojAssemblyReference.cache
+C:\Project\bloodlabapi\CRMWebApi\bin\NashWebApi.dll.config
+C:\Project\bloodlabapi\CRMWebApi\bin\NashWebApi.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\NashWebApi.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\NashWebApi.pdb
+C:\Project\bloodlabapi\CRMWebApi\bin\ADO.NET.Helper.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\Antlr3.Runtime.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\Autofac.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\Autofac.Integration.Mvc.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\AutoMapper.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\EntityFramework.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\EntityFramework.SqlServer.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\Newtonsoft.Json.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\PagedList.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\PagedList.Mvc.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\Swashbuckle.Core.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Data.SqlClient.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Net.Http.Formatting.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.Helpers.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.Http.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.Http.WebHost.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.Mvc.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.Optimization.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.Razor.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.WebPages.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.WebPages.Razor.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\WebActivatorEx.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\WebGrease.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\Antlr3.Runtime.pdb
+C:\Project\bloodlabapi\CRMWebApi\bin\Autofac.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\Autofac.Integration.Mvc.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\AutoMapper.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\EntityFramework.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\EntityFramework.SqlServer.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\Newtonsoft.Json.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\PagedList.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\PagedList.Mvc.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Net.Http.Formatting.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.Helpers.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.Http.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.Http.WebHost.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.Mvc.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.Optimization.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.Razor.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.WebPages.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\System.Web.WebPages.Razor.xml
+C:\Project\bloodlabapi\CRMWebApi\obj\Debug\CRMWebApi.csproj.CopyComplete
+C:\Project\bloodlabapi\CRMWebApi\obj\Debug\NashWebApi.dll
+C:\Project\bloodlabapi\CRMWebApi\obj\Debug\NashWebApi.pdb
+C:\Project\bloodlabapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.AppointmentTableUpdated.resources
+C:\Project\bloodlabapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.AppointTestResultUpdated.resources
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.AppointmentTableUpdated.resources
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.AppointTestResultUpdated.resources
+C:\Users\Nash.VMI322699.000\Documents\GitHub\bloodlabapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.AppointmentSlotEntityCreated.resources
+C:\Project\bloodlabapi\CRMWebApi\obj\Debug\NashWebApi.Migrations.AppointmentSlotEntityCreated.resources
+C:\Project\bloodlabapi\CRMWebApi\bin\Microsoft.IdentityModel.Logging.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\Twilio.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\Twilio.xml
+C:\Project\bloodlabapi\CRMWebApi\bin\Twilio.AspNet.Common.dll
+C:\Project\bloodlabapi\CRMWebApi\bin\Twilio.AspNet.Mvc.dll

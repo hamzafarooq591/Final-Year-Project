@@ -1,0 +1,1153 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D676BDA3-C07E-4894-BE5F-7FAEBAFBA5FF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NashWebApi</RootNamespace>
+    <AssemblyName>NashWebApi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\NashWebApi.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ADO.NET.Helper, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ADO.NET.Helper.1.0.3.0\lib\ADO.NET.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac, Version=4.6.2.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.6.2\lib\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.Mvc5.4.0.2\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper, Version=6.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.1.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=1.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.1.1.2\lib\net451\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.5.1.2\lib\net451\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swashbuckle.Core.5.6.0\lib\net40\Swashbuckle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlClient, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.4.0\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.5.1.2\lib\net451\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Twilio, Version=5.46.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Twilio.5.46.0\lib\net451\Twilio.dll</HintPath>
+    </Reference>
+    <Reference Include="Twilio.AspNet.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Twilio.AspNet.Common.5.37.2\lib\net45\Twilio.AspNet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Twilio.AspNet.Mvc, Version=5.37.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Twilio.AspNet.Mvc.5.37.2\lib\net451\Twilio.AspNet.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\PagedList.css" />
+    <Content Include="dbChanges.txt" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\SwaggerConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="BindingModels\AccountsHeadBindingModel.cs" />
+    <Compile Include="BindingModels\B2BTransferBindingModel.cs" />
+    <Compile Include="BindingModels\BloodLab\AppointmentSlotBindingModel.cs" />
+    <Compile Include="BindingModels\BloodLab\AppointmentBindingModel.cs" />
+    <Compile Include="BindingModels\BloodLab\AppointmentOfferBindingModel.cs" />
+    <Compile Include="BindingModels\BloodLab\AppointmentTestResultBindingModel.cs" />
+    <Compile Include="BindingModels\BloodLab\AppointmentTestBindingModel.cs" />
+    <Compile Include="BindingModels\BloodLab\PatientBindingModel.cs" />
+    <Compile Include="BindingModels\BloodLab\OfferBindingModel.cs" />
+    <Compile Include="BindingModels\BloodLab\TestBindingModel.cs" />
+    <Compile Include="BindingModels\CompanySettingBindingModel.cs" />
+    <Compile Include="BindingModels\PurchaseDeliveryBindingModel.cs" />
+    <Compile Include="BindingModels\PurchaseDeliveryItemBindingModel.cs" />
+    <Compile Include="BindingModels\SaleDeliveryItemBindingModel.cs" />
+    <Compile Include="BindingModels\SaleDeliveryBindingModel.cs" />
+    <Compile Include="BindingModels\SellOrderBindingModel.cs" />
+    <Compile Include="BindingModels\PurchaseOrderBindingModel.cs" />
+    <Compile Include="BindingModels\ItemBindingModel.cs" />
+    <Compile Include="BindingModels\OrderProductWarrantyBindingModel.cs" />
+    <Compile Include="BindingModels\WPQuantityBindingModel.cs" />
+    <Compile Include="BindingModels\WarehouseBindingModel.cs" />
+    <Compile Include="BindingModels\InventoryStockBindingModel.cs" />
+    <Compile Include="BindingModels\VendorPODetailBindingModel.cs" />
+    <Compile Include="BindingModels\WarrantyBindingModel.cs" />
+    <Compile Include="BindingModels\ProductWarrantyBindingModel.cs" />
+    <Compile Include="BindingModels\NashUserTypeBindingModel.cs" />
+    <Compile Include="BindingModels\OtherPaymentBindingModel.cs" />
+    <Compile Include="BindingModels\PaymentDetailBindingModel.cs" />
+    <Compile Include="BindingModels\BillToTypeBindingModel.cs" />
+    <Compile Include="BindingModels\InvoiceDetailBindingModel.cs" />
+    <Compile Include="BindingModels\InvoiceMasterBindingModel.cs" />
+    <Compile Include="BindingModels\VendorPurchaseOrderBindingModel.cs" />
+    <Compile Include="BindingModels\ImportPaymentBindingModel.cs" />
+    <Compile Include="BindingModels\FreightForwarderBindingModel.cs" />
+    <Compile Include="BindingModels\ClearingAgentBindingModel.cs" />
+    <Compile Include="BindingModels\PayToTypeBindingModel.cs" />
+    <Compile Include="BindingModels\VendorBindingModel.cs" />
+    <Compile Include="BindingModels\MoneyChangerBindingModel.cs" />
+    <Compile Include="BindingModels\DcGroupBindingModel.cs" />
+    <Compile Include="BindingModels\DcSummaryBindingModel.cs" />
+    <Compile Include="BindingModels\InventoryRequestBindingModel.cs" />
+    <Compile Include="BindingModels\ProductInStoreBindingModel.cs" />
+    <Compile Include="BindingModels\NewsLetterSubscriberBindingModel.cs" />
+    <Compile Include="BindingModels\MissingItemBindingModel.cs" />
+    <Compile Include="BindingModels\SmsConfigurationBindingModel.cs" />
+    <Compile Include="BindingModels\SmsTypeBindingModel.cs" />
+    <Compile Include="BindingModels\SiteSettingBindingModel.cs" />
+    <Compile Include="BindingModels\PageContentBindingModel.cs" />
+    <Compile Include="BindingModels\CurrencyBindingModel.cs" />
+    <Compile Include="BindingModels\CourierCompanyBindingModel.cs" />
+    <Compile Include="BindingModels\NewsLetterTemplateBindingModel.cs" />
+    <Compile Include="BindingModels\NewsLetterBindingModel.cs" />
+    <Compile Include="BindingModels\InvoiceSummaryBindingModel.cs" />
+    <Compile Include="BindingModels\StaticPageBindingModel.cs" />
+    <Compile Include="BindingModels\NewsConfigurationBindingModel.cs" />
+    <Compile Include="BindingModels\NewsListBindingModel.cs" />
+    <Compile Include="BindingModels\EmailAccountBindingModel.cs" />
+    <Compile Include="BindingModels\EmailSMSTemplateBindingModel.cs" />
+    <Compile Include="BindingModels\ApprovalBindingModel.cs" />
+    <Compile Include="BindingModels\BankBindingModel.cs" />
+    <Compile Include="BindingModels\AdvanceSalaryBindingModel.cs" />
+    <Compile Include="BindingModels\BankAccountBindingModel.cs" />
+    <Compile Include="BindingModels\EmailTemplateTypeBindingModel.cs" />
+    <Compile Include="BindingModels\HomePageSlideBindingModel.cs" />
+    <Compile Include="BindingModels\WarrantyModeBindingModel.cs" />
+    <Compile Include="BindingModels\WarrantyRequestStatusBindingModel.cs" />
+    <Compile Include="BindingModels\WarrantyOrRepairRequestBindingModel.cs" />
+    <Compile Include="BindingModels\ReturnProductBindingModel.cs" />
+    <Compile Include="BindingModels\PerformaInvoiceBindingModel.cs" />
+    <Compile Include="BindingModels\OrderBindingModel.cs" />
+    <Compile Include="BindingModels\CustomerBindingModel.cs" />
+    <Compile Include="BindingModels\PayslipBindingModel.cs" />
+    <Compile Include="BindingModels\PaymentTypeBindingModel.cs" />
+    <Compile Include="BindingModels\EmployeeLoanBindingModel.cs" />
+    <Compile Include="BindingModels\EmployeeBonusBindingModel.cs" />
+    <Compile Include="BindingModels\DesignationBindingModel.cs" />
+    <Compile Include="BindingModels\EmployeeBindingModel.cs" />
+    <Compile Include="BindingModels\TransactionBindingModel.cs" />
+    <Compile Include="BindingModels\AccountBindingModel.cs" />
+    <Compile Include="BindingModels\BranchBindingModel.cs" />
+    <Compile Include="BindingModels\ProductImageBindingModel.cs" />
+    <Compile Include="BindingModels\ProductBindingModel.cs" />
+    <Compile Include="BindingModels\ManufacturerBindingModel.cs" />
+    <Compile Include="BindingModels\CompanyBindingModel.cs" />
+    <Compile Include="BindingModels\NashRolesBindingModel.cs" />
+    <Compile Include="BindingModels\ReedemBindingModel.cs" />
+    <Compile Include="BindingModels\OfferBindingModel.cs" />
+    <Compile Include="BindingModels\ImageUploadBindingModel.cs" />
+    <Compile Include="BindingModels\CategoryBindingModel.cs" />
+    <Compile Include="BindingModels\CityBindingModel.cs" />
+    <Compile Include="BindingModels\FacilityBindingModel.cs" />
+    <Compile Include="BindingModels\GeoLocationBindingModel.cs" />
+    <Compile Include="BindingModels\NashAclBindingModel.cs" />
+    <Compile Include="BindingModels\NashPageBindingModel.cs" />
+    <Compile Include="BindingModels\BrandBindingModel.cs" />
+    <Compile Include="BindingModels\NashUserBindingModel.cs" />
+    <Compile Include="BindingModels\NashUserRegistrationBindingModel.cs" />
+    <Compile Include="BindingModels\NashUserRoleBindingModel.cs" />
+    <Compile Include="BindingModels\RatingBindingModel.cs" />
+    <Compile Include="BundleConfig.cs" />
+    <Compile Include="Constant\NashConstants.cs" />
+    <Compile Include="Controllers\AccountsHeadController.cs" />
+    <Compile Include="Controllers\B2BTransferController.cs" />
+    <Compile Include="Controllers\BloodLab\AppointmentController .cs" />
+    <Compile Include="Controllers\BloodLab\AppointmentOfferController.cs" />
+    <Compile Include="Controllers\BloodLab\AppointmentTestResultController.cs" />
+    <Compile Include="Controllers\BloodLab\AppointmentTestController .cs" />
+    <Compile Include="Controllers\BloodLab\AppointmentSlotController.cs" />
+    <Compile Include="Controllers\BloodLab\PatientController.cs" />
+    <Compile Include="Controllers\BloodLab\OfferController .cs" />
+    <Compile Include="Controllers\BloodLab\SmsController.cs" />
+    <Compile Include="Controllers\BloodLab\TestController.cs" />
+    <Compile Include="Controllers\CompanySettingController.cs" />
+    <Compile Include="Controllers\PurchaseDeliveryController.cs" />
+    <Compile Include="Controllers\SaleDeliveryController.cs" />
+    <Compile Include="Controllers\SellOrderController.cs" />
+    <Compile Include="Controllers\PurchaseOrderController.cs" />
+    <Compile Include="Controllers\ItemController.cs" />
+    <Compile Include="Controllers\OrderProductWarrantyController.cs" />
+    <Compile Include="Controllers\WPQuantityController.cs" />
+    <Compile Include="Controllers\WarehouseController.cs" />
+    <Compile Include="Controllers\InventoryStockController.cs" />
+    <Compile Include="Controllers\VendorPODetailController.cs" />
+    <Compile Include="Controllers\WarrantyController.cs" />
+    <Compile Include="Controllers\ProductWarrantyController.cs" />
+    <Compile Include="Controllers\OtherPaymentController.cs" />
+    <Compile Include="Controllers\PaymentDetailController.cs" />
+    <Compile Include="Controllers\BillToTypeController.cs" />
+    <Compile Include="Controllers\InvoiceDetailController.cs" />
+    <Compile Include="Controllers\InvoiceMasterController.cs" />
+    <Compile Include="Controllers\VendorPurchaseOrderController.cs" />
+    <Compile Include="Controllers\ImportPaymentController.cs" />
+    <Compile Include="Controllers\FreightForwarderController.cs" />
+    <Compile Include="Controllers\ClearingAgentController.cs" />
+    <Compile Include="Controllers\PayToTypeController.cs" />
+    <Compile Include="Controllers\VendorController.cs" />
+    <Compile Include="Controllers\MoneyChangerController.cs" />
+    <Compile Include="Controllers\DcSummaryController.cs" />
+    <Compile Include="Controllers\InventoryRequestController.cs" />
+    <Compile Include="Controllers\ProductInStoreController.cs" />
+    <Compile Include="Controllers\NewsLetterSubscriberController.cs" />
+    <Compile Include="Controllers\MissingItemController.cs" />
+    <Compile Include="Controllers\SmsConfigurationController.cs" />
+    <Compile Include="Controllers\SmsTypeController.cs" />
+    <Compile Include="Controllers\SiteSettingController.cs" />
+    <Compile Include="Controllers\PageContentController.cs" />
+    <Compile Include="Controllers\NewsLetterTemplateController.cs" />
+    <Compile Include="Controllers\NewsLetterController.cs" />
+    <Compile Include="Controllers\DcGroupController.cs" />
+    <Compile Include="Controllers\InvoiceSummaryController.cs" />
+    <Compile Include="Controllers\ProfitLossReportController.cs" />
+    <Compile Include="Controllers\StaticPageController.cs" />
+    <Compile Include="Controllers\NewsConfigurationController.cs" />
+    <Compile Include="Controllers\CurrencyController.cs" />
+    <Compile Include="Controllers\EmailAccountController.cs" />
+    <Compile Include="Controllers\CourierCompanyController.cs" />
+    <Compile Include="Controllers\EmailSMSTemplateController.cs" />
+    <Compile Include="Controllers\EmailTemplateTypeController.cs" />
+    <Compile Include="Controllers\BankController.cs" />
+    <Compile Include="Controllers\AdvanceSalaryController.cs" />
+    <Compile Include="Controllers\BankAccountController.cs" />
+    <Compile Include="Controllers\HomePageSlideController.cs" />
+    <Compile Include="Controllers\NewsListController.cs" />
+    <Compile Include="Controllers\WarrantyModeController.cs" />
+    <Compile Include="Controllers\WarrantyRequestStatusController.cs" />
+    <Compile Include="Controllers\WarrantyOrRepairRequestController.cs" />
+    <Compile Include="Controllers\ReturnProductController.cs" />
+    <Compile Include="Controllers\PerformaInvoiceController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\BranchController.cs" />
+    <Compile Include="Controllers\EmployeeLoanController.cs" />
+    <Compile Include="Controllers\EmployeeBonusController.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
+    <Compile Include="Controllers\TransactionController.cs" />
+    <Compile Include="Controllers\PayslipController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\ManufacturerController.cs" />
+    <Compile Include="Controllers\ImageUploadController.cs" />
+    <Compile Include="Controllers\LookUpController.cs" />
+    <Compile Include="Controllers\NashAclController.cs" />
+    <Compile Include="Controllers\NashPageController.cs" />
+    <Compile Include="Controllers\CompanyController.cs" />
+    <Compile Include="Controllers\NashRoleController.cs" />
+    <Compile Include="Controllers\NashUserController.cs" />
+    <Compile Include="Controllers\NashUserRoleController.cs" />
+    <Compile Include="Controllers\ProductImageController.cs" />
+    <Compile Include="Entities\AccountsHead.cs" />
+    <Compile Include="Entities\BloodLab\Appointment.cs" />
+    <Compile Include="Entities\BloodLab\AppointmentOffer.cs" />
+    <Compile Include="Entities\BloodLab\AppointmentTest.cs" />
+    <Compile Include="Entities\BloodLab\AppointmentSlot.cs" />
+    <Compile Include="Entities\BloodLab\Offer.cs" />
+    <Compile Include="Entities\BloodLab\Patient.cs" />
+    <Compile Include="Entities\BloodLab\SmsSetting.cs" />
+    <Compile Include="Entities\BloodLab\AppointmentTestResult.cs" />
+    <Compile Include="Entities\BloodLab\Test.cs" />
+    <Compile Include="Entities\CompanySetting.cs" />
+    <Compile Include="Entities\PurchaseDelivery.cs" />
+    <Compile Include="Entities\PurchaseDeliveryItem.cs" />
+    <Compile Include="Entities\SaleDeliveryItem.cs" />
+    <Compile Include="Entities\SaleDelivery.cs" />
+    <Compile Include="Entities\SellOrder.cs" />
+    <Compile Include="Entities\PurchaseOrder.cs" />
+    <Compile Include="Entities\Item.cs" />
+    <Compile Include="Entities\OrderProductWarranty.cs" />
+    <Compile Include="Entities\WPQuantity.cs" />
+    <Compile Include="Entities\Warehouse.cs" />
+    <Compile Include="Entities\InventoryStock.cs" />
+    <Compile Include="Entities\VendorPODetail.cs" />
+    <Compile Include="Entities\Warranty.cs" />
+    <Compile Include="Entities\ProductWarranty.cs" />
+    <Compile Include="Entities\OtherPayment.cs" />
+    <Compile Include="Entities\B2BTransfer.cs" />
+    <Compile Include="Entities\PaymentDetail.cs" />
+    <Compile Include="Entities\ClearingAgent.cs" />
+    <Compile Include="Entities\FreightForwarder.cs" />
+    <Compile Include="Entities\ImportPayment.cs" />
+    <Compile Include="Entities\InvoiceMaster.cs" />
+    <Compile Include="Entities\BillToType.cs" />
+    <Compile Include="Entities\PayToType.cs" />
+    <Compile Include="Entities\VendorPurchaseOrder.cs" />
+    <Compile Include="Entities\Vendor.cs" />
+    <Compile Include="Entities\MoneyChanger.cs" />
+    <Compile Include="Entities\DcGroup.cs" />
+    <Compile Include="Entities\Currency.cs" />
+    <Compile Include="Entities\CourierCompany.cs" />
+    <Compile Include="Entities\DcSummary.cs" />
+    <Compile Include="Entities\InventoryRequest.cs" />
+    <Compile Include="Entities\ProductInStore.cs" />
+    <Compile Include="Entities\NewsLetter.cs" />
+    <Compile Include="Entities\NewsLetterTemplate.cs" />
+    <Compile Include="Entities\MissingItem.cs" />
+    <Compile Include="Entities\SmsConfiguration.cs" />
+    <Compile Include="Entities\SmsType.cs" />
+    <Compile Include="Entities\SiteSetting.cs" />
+    <Compile Include="Entities\PageContent.cs" />
+    <Compile Include="Entities\NewsLetterSubscriber.cs" />
+    <Compile Include="Entities\InvoiceSummary.cs" />
+    <Compile Include="Entities\StaticPage.cs" />
+    <Compile Include="Entities\NewsConfiguration.cs" />
+    <Compile Include="Entities\NewsList.cs" />
+    <Compile Include="Entities\EmailAccount.cs" />
+    <Compile Include="Entities\EmailSMSTemplate.cs" />
+    <Compile Include="Entities\BankAccount.cs" />
+    <Compile Include="Entities\EmailTemplateType.cs" />
+    <Compile Include="Entities\HomePageSlide.cs" />
+    <Compile Include="Entities\WarrantyMode.cs" />
+    <Compile Include="Entities\WarrantyRequestStatus.cs" />
+    <Compile Include="Entities\WarrantyOrRepairRequest.cs" />
+    <Compile Include="Entities\ReturnProduct.cs" />
+    <Compile Include="Entities\PerformaInvoice.cs" />
+    <Compile Include="Entities\InvoiceDetail.cs" />
+    <Compile Include="Entities\Bank.cs" />
+    <Compile Include="Entities\Approval.cs" />
+    <Compile Include="Entities\AdvanceSalary.cs" />
+    <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\Payslip.cs" />
+    <Compile Include="Entities\PaymentType.cs" />
+    <Compile Include="Entities\EmployeeLoan.cs" />
+    <Compile Include="Entities\EmployeeBonus.cs" />
+    <Compile Include="Entities\Employee.cs" />
+    <Compile Include="Entities\Designation.cs" />
+    <Compile Include="Entities\Transaction.cs" />
+    <Compile Include="Entities\AuditField.cs" />
+    <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\Account.cs" />
+    <Compile Include="Entities\Branch.cs" />
+    <Compile Include="Entities\ProductImage.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\City.cs" />
+    <Compile Include="Entities\Manufacturer.cs" />
+    <Compile Include="Entities\NashCompany.cs" />
+    <Compile Include="Entities\GenderType.cs" />
+    <Compile Include="Entities\GeoLocation.cs" />
+    <Compile Include="Entities\IAuditField.cs" />
+    <Compile Include="Entities\IBaseEntity.cs" />
+    <Compile Include="Entities\ImageUpload.cs" />
+    <Compile Include="Entities\NashAcl.cs" />
+    <Compile Include="Entities\NashPage.cs" />
+    <Compile Include="Entities\NashRole.cs" />
+    <Compile Include="Entities\NashUser.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\NashUserRole.cs" />
+    <Compile Include="Entities\NashUserType.cs" />
+    <Compile Include="Entities\NashUserSession.cs" />
+    <Compile Include="Enums\DaysOfWeek.cs" />
+    <Compile Include="Enums\EnumHelper.cs" />
+    <Compile Include="Enums\PlatformEnvironment.cs" />
+    <Compile Include="Errors\ErrorMessages.cs" />
+    <Compile Include="Exceptions\DataActionResponse.cs" />
+    <Compile Include="Exceptions\DataActionResponseFactory.cs" />
+    <Compile Include="Exceptions\NashHandledException\NashException.cs" />
+    <Compile Include="Exceptions\NashHandledException\NashHandledExceptionBase.cs" />
+    <Compile Include="Exceptions\NashHandledException\NashHandledExceptionErrorCodes.cs" />
+    <Compile Include="Exceptions\NashHandledException\NashHandledExceptionNotFound.cs" />
+    <Compile Include="Extensions\ExtensionMethods.cs" />
+    <Compile Include="Extensions\MapperExtension.cs" />
+    <Compile Include="Extensions\NashPagedList.cs" />
+    <Compile Include="Extensions\NashPagedListExtentions.cs" />
+    <Compile Include="Extensions\ViewModelMapper.cs" />
+    <Compile Include="FilterConfig.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Mappers\AccountsHeadMapper.cs" />
+    <Compile Include="Mappers\B2BTransferMapper.cs" />
+    <Compile Include="Mappers\BloodLab\AppointmentSlotMapper.cs" />
+    <Compile Include="Mappers\BloodLab\AppointmentMapper.cs" />
+    <Compile Include="Mappers\BloodLab\AppointmentOfferMapper.cs" />
+    <Compile Include="Mappers\BloodLab\AppointmentTestResultMapper.cs" />
+    <Compile Include="Mappers\BloodLab\AppointmentTestMapper .cs" />
+    <Compile Include="Mappers\BloodLab\PatientMapper.cs" />
+    <Compile Include="Mappers\BloodLab\OfferMapper.cs" />
+    <Compile Include="Mappers\BloodLab\TestMapper.cs" />
+    <Compile Include="Mappers\CompanySettingMapper.cs" />
+    <Compile Include="Mappers\PurchaseDeliveryItemMapper.cs" />
+    <Compile Include="Mappers\SaleDeliveryItemMapper.cs" />
+    <Compile Include="Mappers\PurchaseDeliveryMapper.cs" />
+    <Compile Include="Mappers\SaleDeliveryMapper.cs" />
+    <Compile Include="Mappers\SellOrderMapper.cs" />
+    <Compile Include="Mappers\PurchaseOrderMapper.cs" />
+    <Compile Include="Mappers\ItemMapper.cs" />
+    <Compile Include="Mappers\OrderProductWarrantyMapper.cs" />
+    <Compile Include="Mappers\WPQuantityMapper.cs" />
+    <Compile Include="Mappers\WarehouseMapper.cs" />
+    <Compile Include="Mappers\InventoryStockMapper.cs" />
+    <Compile Include="Mappers\VendorPODetailMapper.cs" />
+    <Compile Include="Mappers\WarrantyMapper.cs" />
+    <Compile Include="Mappers\ProductWarrantyMapper.cs" />
+    <Compile Include="Mappers\OtherPaymentMapper.cs" />
+    <Compile Include="Mappers\PaymentDetailMapper.cs" />
+    <Compile Include="Mappers\BillToTypeMapper.cs" />
+    <Compile Include="Mappers\InvoiceDetailMapper.cs" />
+    <Compile Include="Mappers\InvoiceMasterMapper.cs" />
+    <Compile Include="Mappers\VendorPurchaseOrderMapper.cs" />
+    <Compile Include="Mappers\ImportPaymentMapper.cs" />
+    <Compile Include="Mappers\FreightForwarderMapper.cs" />
+    <Compile Include="Mappers\ClearingAgentMapper.cs" />
+    <Compile Include="Mappers\PayToTypeMapper.cs" />
+    <Compile Include="Mappers\VendorMapper.cs" />
+    <Compile Include="Mappers\MoneyChangerMapper.cs" />
+    <Compile Include="Mappers\DcGroupMapper.cs" />
+    <Compile Include="Mappers\DcSummaryMapper.cs" />
+    <Compile Include="Mappers\InventoryRequestMapper.cs" />
+    <Compile Include="Mappers\ProductInStoreMapper.cs" />
+    <Compile Include="Mappers\NewsLetterSubscriberMapper.cs" />
+    <Compile Include="Mappers\MissingItemMapper.cs" />
+    <Compile Include="Mappers\SmsConfigurationMapper.cs" />
+    <Compile Include="Mappers\SmsTypeMapper.cs" />
+    <Compile Include="Mappers\SiteSettingMapper.cs" />
+    <Compile Include="Mappers\PageContentMapper.cs" />
+    <Compile Include="Mappers\CurrencyMapper.cs" />
+    <Compile Include="Mappers\CourierCompanyMapper.cs" />
+    <Compile Include="Mappers\NewsLetterTemplateMapper.cs" />
+    <Compile Include="Mappers\NewsLetterMapper.cs" />
+    <Compile Include="Mappers\InvoiceSummaryMapper.cs" />
+    <Compile Include="Mappers\StaticPageMapper.cs" />
+    <Compile Include="Mappers\NewsConfigurationMapper.cs" />
+    <Compile Include="Mappers\NewsListMapper.cs" />
+    <Compile Include="Mappers\EmailAccountMapper.cs" />
+    <Compile Include="Mappers\EmailSMSTemplateMapper.cs" />
+    <Compile Include="Mappers\BankMapper.cs" />
+    <Compile Include="Mappers\ApprovalMapper.cs" />
+    <Compile Include="Mappers\AdvanceSalaryMapper.cs" />
+    <Compile Include="Mappers\BankAccountMapper.cs" />
+    <Compile Include="Mappers\EmailTemplateTypeMapper.cs" />
+    <Compile Include="Mappers\HomePageSlideMapper.cs" />
+    <Compile Include="Mappers\WarrantyModeMapper.cs" />
+    <Compile Include="Mappers\WarrantyRequestStatusMapper.cs" />
+    <Compile Include="Mappers\WarrantyOrRepairRequestMapper.cs" />
+    <Compile Include="Mappers\ReturnProductMapper.cs" />
+    <Compile Include="Mappers\PerformaInvoiceMapper.cs" />
+    <Compile Include="Mappers\OrderMapper.cs" />
+    <Compile Include="Mappers\CustomerMapper.cs" />
+    <Compile Include="Mappers\PaylistMapper.cs" />
+    <Compile Include="Mappers\PaymentTypeMapper.cs" />
+    <Compile Include="Mappers\EmployeeLoanMapper.cs" />
+    <Compile Include="Mappers\EmployeeBonusMapper.cs" />
+    <Compile Include="Mappers\EmployeeMapper.cs" />
+    <Compile Include="Mappers\AccountMapper.cs" />
+    <Compile Include="Mappers\DesignationMapper.cs" />
+    <Compile Include="Mappers\TransactionMapper.cs" />
+    <Compile Include="Mappers\BranchMapper.cs" />
+    <Compile Include="Mappers\ProductImageMapper.cs" />
+    <Compile Include="Mappers\ProductMapper.cs" />
+    <Compile Include="Mappers\CategoryMapper.cs" />
+    <Compile Include="Mappers\ManufacturerMapper.cs" />
+    <Compile Include="Mappers\CompanyMapper.cs" />
+    <Compile Include="Mappers\NashRolesMapper.cs" />
+    <Compile Include="Mappers\NashUserSessionMapper.cs" />
+    <Compile Include="Mappers\ImageUploadMapper.cs" />
+    <Compile Include="Mappers\CityMapper.cs" />
+    <Compile Include="Mappers\GeoLocationMapper.cs" />
+    <Compile Include="Mappers\NashAclMapper.cs" />
+    <Compile Include="Mappers\NashPageMapper.cs" />
+    <Compile Include="Mappers\NashUserMapper.cs" />
+    <Compile Include="Mappers\NashUserRoleMapper.cs" />
+    <Compile Include="Migrations\202101181317114_InitailCreate.cs" />
+    <Compile Include="Migrations\202101181317114_InitailCreate.Designer.cs">
+      <DependentUpon>202101181317114_InitailCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101191314013_Appointmentupdated.cs" />
+    <Compile Include="Migrations\202101191314013_Appointmentupdated.Designer.cs">
+      <DependentUpon>202101191314013_Appointmentupdated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101202126254_AppointmentTableUpdated.cs" />
+    <Compile Include="Migrations\202101202126254_AppointmentTableUpdated.Designer.cs">
+      <DependentUpon>202101202126254_AppointmentTableUpdated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101221232289_AppointTestResultUpdated.cs" />
+    <Compile Include="Migrations\202101221232289_AppointTestResultUpdated.Designer.cs">
+      <DependentUpon>202101221232289_AppointTestResultUpdated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102111448352_AppointmentSlotEntityCreated.cs" />
+    <Compile Include="Migrations\202102111448352_AppointmentSlotEntityCreated.Designer.cs">
+      <DependentUpon>202102111448352_AppointmentSlotEntityCreated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="NashContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AccountsHeadRepository.cs" />
+    <Compile Include="Repositories\BloodLab\AppointmentRepository.cs" />
+    <Compile Include="Repositories\BloodLab\AppointmentOfferRepository.cs" />
+    <Compile Include="Repositories\BloodLab\AppointmentTestResultRepository.cs" />
+    <Compile Include="Repositories\BloodLab\AppointmentTestRepository.cs" />
+    <Compile Include="Repositories\BloodLab\IAppointmentRepository.cs" />
+    <Compile Include="Repositories\BloodLab\IAppointmentOfferRepository.cs" />
+    <Compile Include="Repositories\BloodLab\IAppointmentTestResultRepository .cs" />
+    <Compile Include="Repositories\BloodLab\IAppointmentTestRepository .cs" />
+    <Compile Include="Repositories\BloodLab\IAppointmentSlotRepository.cs" />
+    <Compile Include="Repositories\BloodLab\IPatientRepository.cs" />
+    <Compile Include="Repositories\BloodLab\IOfferRepository.cs" />
+    <Compile Include="Repositories\BloodLab\ITestRepository.cs" />
+    <Compile Include="Repositories\BloodLab\AppointmentSlotRepository.cs" />
+    <Compile Include="Repositories\BloodLab\PatientRepository.cs" />
+    <Compile Include="Repositories\BloodLab\OfferRepository.cs" />
+    <Compile Include="Repositories\BloodLab\TestRepository.cs" />
+    <Compile Include="Repositories\ICompanySettingRepository.cs" />
+    <Compile Include="Repositories\IPurchaseDeliveryItemRepository.cs" />
+    <Compile Include="Repositories\ISaleDeliveryItemRepository.cs" />
+    <Compile Include="Repositories\IPurchaseDeliveryRepository.cs" />
+    <Compile Include="Repositories\ISaleDeliveryRepository.cs" />
+    <Compile Include="Repositories\ISellOrderRepository.cs" />
+    <Compile Include="Repositories\IPurchaseOrderRepository.cs" />
+    <Compile Include="Repositories\CompanySettingRepository.cs" />
+    <Compile Include="Repositories\PurchaseDeliveryItemRepository.cs" />
+    <Compile Include="Repositories\SaleDeliveryItemRepository.cs" />
+    <Compile Include="Repositories\PurchaseDeliveryRepository.cs" />
+    <Compile Include="Repositories\SaleDeliveryRepository.cs" />
+    <Compile Include="Repositories\SellOrderRepository.cs" />
+    <Compile Include="Repositories\PurchaseOrderRepository.cs" />
+    <Compile Include="Repositories\IItemRepository.cs" />
+    <Compile Include="Repositories\ItemRepository.cs" />
+    <Compile Include="Repositories\OrderProductWarrantyRepository.cs" />
+    <Compile Include="Repositories\IOrderProductWarrantyRepository.cs" />
+    <Compile Include="Repositories\WPQuantityRepository.cs" />
+    <Compile Include="Repositories\IWPQuantityRepository.cs" />
+    <Compile Include="Repositories\WarehouseRepository.cs" />
+    <Compile Include="Repositories\IWarehouseRepository.cs" />
+    <Compile Include="Repositories\IInventoryStockRepository.cs" />
+    <Compile Include="Repositories\IVendorPODetailRepository.cs" />
+    <Compile Include="Repositories\InventoryStockRepository.cs" />
+    <Compile Include="Repositories\VendorPODetailRepository.cs" />
+    <Compile Include="Repositories\IWarrantyRepository.cs" />
+    <Compile Include="Repositories\WarrantyRepository.cs" />
+    <Compile Include="Repositories\ProductWarrantyRepository.cs" />
+    <Compile Include="Repositories\IAccountsHeadRepository.cs" />
+    <Compile Include="Repositories\IProductWarrantyRepository.cs" />
+    <Compile Include="Repositories\NashUserTypeRepository.cs" />
+    <Compile Include="Repositories\IB2BTransferRepository.cs" />
+    <Compile Include="Repositories\INashUserTypeRepository.cs" />
+    <Compile Include="Repositories\IOtherPaymentRepository.cs" />
+    <Compile Include="Repositories\IPaymentDetailRepository.cs" />
+    <Compile Include="Repositories\B2BTransferRepository.cs" />
+    <Compile Include="Repositories\OtherPaymentRepository.cs" />
+    <Compile Include="Repositories\PaymentDetailRepository.cs" />
+    <Compile Include="Repositories\IBillToTypeRepository.cs" />
+    <Compile Include="Repositories\BillToTypeRepository.cs" />
+    <Compile Include="Repositories\IInvoiceDetailRepository.cs" />
+    <Compile Include="Repositories\IInvoiceMasterRepository.cs" />
+    <Compile Include="Repositories\InvoiceDetailRepository.cs" />
+    <Compile Include="Repositories\InvoiceMasterRepository.cs" />
+    <Compile Include="Repositories\VendorPurchaseOrderRepository.cs" />
+    <Compile Include="Repositories\IVendorPurchaseOrderRepository.cs" />
+    <Compile Include="Repositories\IImportPaymentRepository.cs" />
+    <Compile Include="Repositories\ImportPaymentRepository.cs" />
+    <Compile Include="Repositories\FreightForwarderRepository.cs" />
+    <Compile Include="Repositories\IFreightForwarderRepository.cs" />
+    <Compile Include="Repositories\IClearingAgentRepository.cs" />
+    <Compile Include="Repositories\IPayToTypeRepository.cs" />
+    <Compile Include="Repositories\IVendorRepository.cs" />
+    <Compile Include="Repositories\ClearingAgentRepository.cs" />
+    <Compile Include="Repositories\PayToTypeRepository.cs" />
+    <Compile Include="Repositories\VendorRepository.cs" />
+    <Compile Include="Repositories\MoneyChangerRepository.cs" />
+    <Compile Include="Repositories\AccountRepository.cs" />
+    <Compile Include="Repositories\AdvanceSalaryRepository.cs" />
+    <Compile Include="Repositories\ApprovalRepository.cs" />
+    <Compile Include="Repositories\BankAccountRepository.cs" />
+    <Compile Include="Repositories\BankRepository.cs" />
+    <Compile Include="Repositories\BranchRepository.cs" />
+    <Compile Include="Repositories\CategoryRepository.cs" />
+    <Compile Include="Repositories\CityRepository.cs" />
+    <Compile Include="Repositories\CompanyRepository.cs" />
+    <Compile Include="Repositories\CourierCompanyRepository.cs" />
+    <Compile Include="Repositories\CurrencyRepository.cs" />
+    <Compile Include="Repositories\CustomerRepository.cs" />
+    <Compile Include="Repositories\DcGroupRepository.cs" />
+    <Compile Include="Repositories\DcSummaryRepository.cs" />
+    <Compile Include="Repositories\DesignationRepository.cs" />
+    <Compile Include="Repositories\EmailAccountRepository.cs" />
+    <Compile Include="Repositories\EmailSMSTemplateRepository.cs" />
+    <Compile Include="Repositories\EmailTemplateTypeRepository.cs" />
+    <Compile Include="Repositories\EmployeeBonusRepository.cs" />
+    <Compile Include="Repositories\EmployeeLoanRepository.cs" />
+    <Compile Include="Repositories\EmployeeRepository.cs" />
+    <Compile Include="Repositories\GeoLocationRepository.cs" />
+    <Compile Include="Repositories\HomePageSlideRepository.cs" />
+    <Compile Include="Repositories\IMoneyChangerRepository.cs" />
+    <Compile Include="Repositories\IAccountRepository.cs" />
+    <Compile Include="Repositories\IAdvanceSalaryRepository.cs" />
+    <Compile Include="Repositories\IApprovalRepository.cs" />
+    <Compile Include="Repositories\IBankAccountRepository.cs" />
+    <Compile Include="Repositories\IBankRepository.cs" />
+    <Compile Include="Repositories\IBranchRepository.cs" />
+    <Compile Include="Repositories\ICategoryRepository.cs" />
+    <Compile Include="Repositories\ICityRepository.cs" />
+    <Compile Include="Repositories\ICompanyRepository.cs" />
+    <Compile Include="Repositories\ICourierCompanyRepository.cs" />
+    <Compile Include="Repositories\ICurrencyRepository.cs" />
+    <Compile Include="Repositories\ICustomerRepository.cs" />
+    <Compile Include="Repositories\IDcGroupRepository.cs" />
+    <Compile Include="Repositories\IDcSummaryRepository.cs" />
+    <Compile Include="Repositories\IDesignationRepository.cs" />
+    <Compile Include="Repositories\IEmailAccountRepository.cs" />
+    <Compile Include="Repositories\IEmailSMSTemplateRepository.cs" />
+    <Compile Include="Repositories\IEmailTemplateTypeRepository.cs" />
+    <Compile Include="Repositories\IEmployeeBonusRepository.cs" />
+    <Compile Include="Repositories\IEmployeeLoanRepository.cs" />
+    <Compile Include="Repositories\IEmployeeRepository.cs" />
+    <Compile Include="Repositories\IGeoLocationRepository.cs" />
+    <Compile Include="Repositories\IHomePageSlideRepository.cs" />
+    <Compile Include="Repositories\IImageUploadRepository.cs" />
+    <Compile Include="Repositories\IInventoryRequestRepository.cs" />
+    <Compile Include="Repositories\ImageUploadRepository.cs" />
+    <Compile Include="Repositories\IManufacturerRepository.cs" />
+    <Compile Include="Repositories\IMissingItemRepository.cs" />
+    <Compile Include="Repositories\INashAclRepository.cs" />
+    <Compile Include="Repositories\INashPageRepository.cs" />
+    <Compile Include="Repositories\INashUserRepository.cs" />
+    <Compile Include="Repositories\INashUserRoleRepository.cs" />
+    <Compile Include="Repositories\INashUserSessionRepository.cs" />
+    <Compile Include="Repositories\INewsConfigurationRepository.cs" />
+    <Compile Include="Repositories\INewsLetterRepository.cs" />
+    <Compile Include="Repositories\INewsLetterSubscriberRepository.cs" />
+    <Compile Include="Repositories\INewsLetterTemplateRepository.cs" />
+    <Compile Include="Repositories\INewsListRepository.cs" />
+    <Compile Include="Repositories\InventoryRequestRepository.cs" />
+    <Compile Include="Repositories\IOrderRepository.cs" />
+    <Compile Include="Repositories\IPageContentRepository.cs" />
+    <Compile Include="Repositories\IPaymentTypeRepository.cs" />
+    <Compile Include="Repositories\IPayslipRepository.cs" />
+    <Compile Include="Repositories\IPerformaInvoiceRepository.cs" />
+    <Compile Include="Repositories\IProductImageRepository.cs" />
+    <Compile Include="Repositories\IProductInStoreRepository.cs" />
+    <Compile Include="Repositories\IProductRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\IReturnProductRepository.cs" />
+    <Compile Include="Repositories\IRolesRepository.cs" />
+    <Compile Include="Repositories\ISiteSettingRepository.cs" />
+    <Compile Include="Repositories\ISmsConfigurationRepository.cs" />
+    <Compile Include="Repositories\ISmsTypeRepository.cs" />
+    <Compile Include="Repositories\IInvoiceSummaryRepository.cs" />
+    <Compile Include="Repositories\IStaticPageRepository.cs" />
+    <Compile Include="Repositories\ITransactionRepository.cs" />
+    <Compile Include="Repositories\IUnitOfWork.cs" />
+    <Compile Include="Repositories\IWarrantyModeRepository.cs" />
+    <Compile Include="Repositories\IWarrantyOrRepairRequestRepository.cs" />
+    <Compile Include="Repositories\IWarrantyRequestStatusRepository.cs" />
+    <Compile Include="Repositories\ManufacturerRepository.cs" />
+    <Compile Include="Repositories\MissingItemRepository.cs" />
+    <Compile Include="Repositories\NashAclRepository.cs" />
+    <Compile Include="Repositories\NashPageRepository.cs" />
+    <Compile Include="Repositories\NashUserRepository.cs" />
+    <Compile Include="Repositories\NashUserRoleRepository.cs" />
+    <Compile Include="Repositories\NashUserSessionRepository.cs" />
+    <Compile Include="Repositories\NewsConfigurationRepository.cs" />
+    <Compile Include="Repositories\NewsLetterRepository.cs" />
+    <Compile Include="Repositories\NewsLetterSubscriberRepository.cs" />
+    <Compile Include="Repositories\NewsLetterTemplateRepository.cs" />
+    <Compile Include="Repositories\NewsListRepository.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
+    <Compile Include="Repositories\PageContentRepository.cs" />
+    <Compile Include="Repositories\PaymentTypeRepository.cs" />
+    <Compile Include="Repositories\PayslipRepository.cs" />
+    <Compile Include="Repositories\PerformaInvoiceRepository.cs" />
+    <Compile Include="Repositories\ProductImageRepository.cs" />
+    <Compile Include="Repositories\ProductInStoreRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\ReturnProductRepository.cs" />
+    <Compile Include="Repositories\RolesRepository.cs" />
+    <Compile Include="Repositories\SiteSettingRepository.cs" />
+    <Compile Include="Repositories\SmsConfigurationRepository.cs" />
+    <Compile Include="Repositories\SmsTypeRepository.cs" />
+    <Compile Include="Repositories\InvoiceSummaryRepository.cs" />
+    <Compile Include="Repositories\StaticPageRepository.cs" />
+    <Compile Include="Repositories\TransactionRepository.cs" />
+    <Compile Include="Repositories\UnitOfWork.cs" />
+    <Compile Include="Repositories\WarrantyModeRepository.cs" />
+    <Compile Include="Repositories\WarrantyOrRepairRequestRepository.cs" />
+    <Compile Include="Repositories\WarrantyRequestStatusRepository.cs" />
+    <Compile Include="RouteConfig.cs" />
+    <Compile Include="Services\AccountsHeadService.cs" />
+    <Compile Include="Services\BloodLab\AppointmentService.cs" />
+    <Compile Include="Services\BloodLab\AppointmentTestResultService.cs" />
+    <Compile Include="Services\BloodLab\AppointmentTestService .cs" />
+    <Compile Include="Services\BloodLab\IAppointmentOfferService.cs" />
+    <Compile Include="Services\BloodLab\IAppointmentService.cs" />
+    <Compile Include="Services\BloodLab\IAppointmentTestResultService.cs" />
+    <Compile Include="Services\BloodLab\IAppointmentTestService.cs" />
+    <Compile Include="Services\BloodLab\IAppointmentSlotService.cs" />
+    <Compile Include="Services\BloodLab\IPatientService.cs" />
+    <Compile Include="Services\BloodLab\IOfferService.cs" />
+    <Compile Include="Services\BloodLab\ITestService.cs" />
+    <Compile Include="Services\BloodLab\AppointmentOfferService.cs" />
+    <Compile Include="Services\BloodLab\AppointmentSlotService.cs" />
+    <Compile Include="Services\BloodLab\PatientService .cs" />
+    <Compile Include="Services\BloodLab\OfferService.cs" />
+    <Compile Include="Services\BloodLab\SmsService.cs" />
+    <Compile Include="Services\BloodLab\TestService.cs" />
+    <Compile Include="Services\ICompanySettingService.cs" />
+    <Compile Include="Services\IPurchaseDeliveryItemService.cs" />
+    <Compile Include="Services\ISaleDeliveryItemService.cs" />
+    <Compile Include="Services\IPurchaseDeliveryService.cs" />
+    <Compile Include="Services\ISaleDeliveryrService.cs" />
+    <Compile Include="Services\ISellOrderService.cs" />
+    <Compile Include="Services\IPurchaseOrderService.cs" />
+    <Compile Include="Services\CompanySettingService.cs" />
+    <Compile Include="Services\PurchaseDeliveryItemService.cs" />
+    <Compile Include="Services\SaleDeliveryItemService.cs" />
+    <Compile Include="Services\PurchaseDeliveryService.cs" />
+    <Compile Include="Services\SaleDeliveryService.cs" />
+    <Compile Include="Services\SellOrderService.cs" />
+    <Compile Include="Services\PurchaseOrderService.cs" />
+    <Compile Include="Services\IItemService.cs" />
+    <Compile Include="Services\ItemService.cs" />
+    <Compile Include="Services\OrderProductWarrantyService.cs" />
+    <Compile Include="Services\IOrderProductWarrantyService.cs" />
+    <Compile Include="Services\WPQuantityService.cs" />
+    <Compile Include="Services\IWPQuantityService.cs" />
+    <Compile Include="Services\WarehouseService.cs" />
+    <Compile Include="Services\IWarehouseService.cs" />
+    <Compile Include="Services\IInventoryStockService.cs" />
+    <Compile Include="Services\IVendorPODetailService.cs" />
+    <Compile Include="Services\InventoryStockService.cs" />
+    <Compile Include="Services\VendorPODetailService.cs" />
+    <Compile Include="Services\IWarrantyService.cs" />
+    <Compile Include="Services\WarrantyService.cs" />
+    <Compile Include="Services\ProductWarrantyService.cs" />
+    <Compile Include="Services\IAccountsHeadService.cs" />
+    <Compile Include="Services\IB2BTransferService.cs" />
+    <Compile Include="Services\IProductWarrantyService.cs" />
+    <Compile Include="Services\IOtherPaymentService.cs" />
+    <Compile Include="Services\IPaymentDetailService.cs" />
+    <Compile Include="Services\B2BTransferService.cs" />
+    <Compile Include="Services\OtherPaymentService.cs" />
+    <Compile Include="Services\PaymentDetailService.cs" />
+    <Compile Include="Services\IBillToTypeService.cs" />
+    <Compile Include="Services\BillToTypeService.cs" />
+    <Compile Include="Services\IInvoiceDetailService.cs" />
+    <Compile Include="Services\IInvoiceMasterService.cs" />
+    <Compile Include="Services\InvoiceDetailService.cs" />
+    <Compile Include="Services\InvoiceMasterService.cs" />
+    <Compile Include="Services\VendorPurchaseOrderService.cs" />
+    <Compile Include="Services\IVendorPurchaseOrderService.cs" />
+    <Compile Include="Services\IImportPaymentService.cs" />
+    <Compile Include="Services\ImportPaymentService.cs" />
+    <Compile Include="Services\FreightForwarderService.cs" />
+    <Compile Include="Services\IFreightForwarderService.cs" />
+    <Compile Include="Services\IClearingAgentService.cs" />
+    <Compile Include="Services\IPayToTypeService.cs" />
+    <Compile Include="Services\IVendorService.cs" />
+    <Compile Include="Services\IMoneyChangerService.cs" />
+    <Compile Include="Services\ClearingAgentService.cs" />
+    <Compile Include="Services\PayToTypeService.cs" />
+    <Compile Include="Services\VendorService.cs" />
+    <Compile Include="Services\MoneyChangerService.cs" />
+    <Compile Include="Services\DcGroupService.cs" />
+    <Compile Include="Services\IDcGroupService.cs" />
+    <Compile Include="Services\IDcSummaryService.cs" />
+    <Compile Include="Services\IInventoryRequestService.cs" />
+    <Compile Include="Services\DcSummaryService.cs" />
+    <Compile Include="Services\InventoryRequestService.cs" />
+    <Compile Include="Services\IProductInStoreService.cs" />
+    <Compile Include="Services\INewsLetterSubscriberService.cs" />
+    <Compile Include="Services\IMissingItemService.cs" />
+    <Compile Include="Services\ISmsConfigurationService.cs" />
+    <Compile Include="Services\ISmsTypeService.cs" />
+    <Compile Include="Services\ISiteSettingService.cs" />
+    <Compile Include="Services\IPageContentService.cs" />
+    <Compile Include="Services\INewsLetterTemplateService.cs" />
+    <Compile Include="Services\INewsLetterService.cs" />
+    <Compile Include="Services\IInvoiceSummaryService.cs" />
+    <Compile Include="Services\ProductInStoreService.cs" />
+    <Compile Include="Services\NewsLetterSubscriberService.cs" />
+    <Compile Include="Services\MissingItemService.cs" />
+    <Compile Include="Services\SmsConfigurationService.cs" />
+    <Compile Include="Services\SmsTypeService.cs" />
+    <Compile Include="Services\SiteSettingService.cs" />
+    <Compile Include="Services\PageContentService.cs" />
+    <Compile Include="Services\CurrencyService.cs" />
+    <Compile Include="Services\CourierCompanyService.cs" />
+    <Compile Include="Services\NewsLetterTemplateService.cs" />
+    <Compile Include="Services\NewsLetterService.cs" />
+    <Compile Include="Services\InvoiceSummaryService.cs" />
+    <Compile Include="Services\StaticPageService.cs" />
+    <Compile Include="Services\IStaticPageService.cs" />
+    <Compile Include="Services\NewsConfigurationService.cs" />
+    <Compile Include="Services\INewsConfigurationService.cs" />
+    <Compile Include="Services\NewsListService.cs" />
+    <Compile Include="Services\EmailAccountService.cs" />
+    <Compile Include="Services\EmailSMSTemplateService.cs" />
+    <Compile Include="Services\BankService.cs" />
+    <Compile Include="Services\AccountService.cs" />
+    <Compile Include="Services\ApprovalService.cs" />
+    <Compile Include="Services\AdvanceSalaryService.cs" />
+    <Compile Include="Services\BankAccountService.cs" />
+    <Compile Include="Services\EmailTemplateTypeService.cs" />
+    <Compile Include="Services\ICurrencyService.cs" />
+    <Compile Include="Services\ICourierCompanyService.cs" />
+    <Compile Include="Services\INewsListService.cs" />
+    <Compile Include="Services\IEmailAccountService.cs" />
+    <Compile Include="Services\IEmailSMSTemplateService.cs" />
+    <Compile Include="Services\IBankAccountService.cs" />
+    <Compile Include="Services\IEmailTemplateTypeService.cs" />
+    <Compile Include="Services\IHomePageSlideService.cs" />
+    <Compile Include="Services\IWarrantyModeService.cs" />
+    <Compile Include="Services\HomePageSlideService.cs" />
+    <Compile Include="Services\WarrantyModeService.cs" />
+    <Compile Include="Services\WarrantyRequestStatusService.cs" />
+    <Compile Include="Services\IWarrantyRequestStatusService.cs" />
+    <Compile Include="Services\IWarrantyOrRepairRequestService.cs" />
+    <Compile Include="Services\IReturnProductService.cs" />
+    <Compile Include="Services\IPerformaInvoiceService.cs" />
+    <Compile Include="Services\WarrantyOrRepairRequestService.cs" />
+    <Compile Include="Services\ReturnProductService.cs" />
+    <Compile Include="Services\PerformaInvoiceService.cs" />
+    <Compile Include="Services\OrderService.cs" />
+    <Compile Include="Services\CustomerService.cs" />
+    <Compile Include="Services\IOrderService.cs" />
+    <Compile Include="Services\ICustomerService.cs" />
+    <Compile Include="Services\PayslipService.cs" />
+    <Compile Include="Services\IBankService.cs" />
+    <Compile Include="Services\IAdvanceSalaryService.cs" />
+    <Compile Include="Services\IPayslipService.cs" />
+    <Compile Include="Services\IPaymentTypeService.cs" />
+    <Compile Include="Services\PaymentTypeService.cs" />
+    <Compile Include="Services\DesignationService.cs" />
+    <Compile Include="Services\EmployeeLoanService.cs" />
+    <Compile Include="Services\EmployeeBonusService.cs" />
+    <Compile Include="Services\EmployeeService.cs" />
+    <Compile Include="Services\IApprovalService.cs" />
+    <Compile Include="Services\IEmployeeLoanService.cs" />
+    <Compile Include="Services\IEmployeeBonusService.cs" />
+    <Compile Include="Services\IEmployeeService.cs" />
+    <Compile Include="Services\IDesignationService.cs" />
+    <Compile Include="Services\TransactionService.cs" />
+    <Compile Include="Services\BranchService.cs" />
+    <Compile Include="Services\IAccountService.cs" />
+    <Compile Include="Services\ITransactionService.cs" />
+    <Compile Include="Services\IBranchService.cs" />
+    <Compile Include="Services\IProductImageService.cs" />
+    <Compile Include="Services\IProductService.cs" />
+    <Compile Include="Services\ProductImageService.cs" />
+    <Compile Include="Services\ProductService.cs" />
+    <Compile Include="Services\ICategoryService.cs" />
+    <Compile Include="Services\IManufacturerService.cs" />
+    <Compile Include="Services\CategoryService.cs" />
+    <Compile Include="Services\ManufacturerService.cs" />
+    <Compile Include="Services\ImageUploadService.cs" />
+    <Compile Include="Services\IImageUploadService.cs" />
+    <Compile Include="Services\ILookUpService.cs" />
+    <Compile Include="Services\INashAclService.cs" />
+    <Compile Include="Services\INashPageService.cs" />
+    <Compile Include="Services\ICompanyService.cs" />
+    <Compile Include="Services\INashUserRoleService.cs" />
+    <Compile Include="Services\INashRoleService.cs" />
+    <Compile Include="Services\INashUserService.cs" />
+    <Compile Include="Services\LookUpService.cs" />
+    <Compile Include="Services\NashAclService.cs" />
+    <Compile Include="Services\NashPageService.cs" />
+    <Compile Include="Services\CompanyService.cs" />
+    <Compile Include="Services\NashUserRoleService.cs" />
+    <Compile Include="Services\NashRoleService.cs" />
+    <Compile Include="Services\NashUserService.cs" />
+    <Compile Include="ViewModels\AccountsHeadViewModel.cs" />
+    <Compile Include="ViewModels\BloodLab\AppointmentOfferViewModel.cs" />
+    <Compile Include="ViewModels\BloodLab\AppointmentTestResultViewModel.cs" />
+    <Compile Include="ViewModels\BloodLab\AppointmentTestViewModel.cs" />
+    <Compile Include="ViewModels\BloodLab\AppointmentSlotViewModel.cs" />
+    <Compile Include="ViewModels\BloodLab\AppointmentViewModel.cs" />
+    <Compile Include="ViewModels\BloodLab\PatientViewModel.cs" />
+    <Compile Include="ViewModels\BloodLab\OfferViewModel.cs" />
+    <Compile Include="ViewModels\BloodLab\TestViewModel.cs" />
+    <Compile Include="ViewModels\CompanySettingViewModel.cs" />
+    <Compile Include="ViewModels\PurchaseDeliveryItemViewModel.cs" />
+    <Compile Include="ViewModels\SaleDeliveryItemViewModel.cs" />
+    <Compile Include="ViewModels\PurchaseDeliveryViewModel.cs" />
+    <Compile Include="ViewModels\SaleDeliveryViewModel.cs" />
+    <Compile Include="ViewModels\SellOrderViewModel.cs" />
+    <Compile Include="ViewModels\PurchaseOrderViewModel.cs" />
+    <Compile Include="ViewModels\ItemViewModel.cs" />
+    <Compile Include="ViewModels\OrderProductWarrantyViewModel.cs" />
+    <Compile Include="ViewModels\WPQuantityViewModel.cs" />
+    <Compile Include="ViewModels\WarehouseViewModel.cs" />
+    <Compile Include="ViewModels\InventoryStockViewModel.cs" />
+    <Compile Include="ViewModels\VendorPODetailViewModel.cs" />
+    <Compile Include="ViewModels\WarrantyViewModel.cs" />
+    <Compile Include="ViewModels\ProductWarrantyViewModel.cs" />
+    <Compile Include="ViewModels\TrailBalanceViewModel.cs" />
+    <Compile Include="ViewModels\B2BTranferViewModel.cs" />
+    <Compile Include="ViewModels\OtherPaymentViewModel.cs" />
+    <Compile Include="ViewModels\PaymentDetailViewModel.cs" />
+    <Compile Include="ViewModels\TransactionInquiryViewModel.cs" />
+    <Compile Include="ViewModels\BillToTypeViewModel.cs" />
+    <Compile Include="ViewModels\InvoiceDetailViewModel.cs" />
+    <Compile Include="ViewModels\InvoiceMasterViewModel.cs" />
+    <Compile Include="ViewModels\VendorPurchaseOrderViewModel.cs" />
+    <Compile Include="ViewModels\ImportPaymentViewModel.cs" />
+    <Compile Include="ViewModels\FreightForwarderViewModel.cs" />
+    <Compile Include="ViewModels\ClearingAgentViewModel.cs" />
+    <Compile Include="ViewModels\PayToTypeViewModel.cs" />
+    <Compile Include="ViewModels\VendorViewModel.cs" />
+    <Compile Include="ViewModels\MoneyChangerViewModel.cs" />
+    <Compile Include="ViewModels\DcGroupViewModel.cs" />
+    <Compile Include="ViewModels\DcSummaryViewModel.cs" />
+    <Compile Include="ViewModels\InventoryRequestViewModel.cs" />
+    <Compile Include="ViewModels\ProductInStoreViewModel.cs" />
+    <Compile Include="ViewModels\MissingItemViewModel.cs" />
+    <Compile Include="ViewModels\NewsLetterSubscriberViewModel.cs" />
+    <Compile Include="ViewModels\NewsLetterViewModel.cs" />
+    <Compile Include="ViewModels\ProfitLossReportViewModel.cs" />
+    <Compile Include="ViewModels\SmsConfigurationViewModel.cs" />
+    <Compile Include="ViewModels\SmsTypeViewModel.cs" />
+    <Compile Include="ViewModels\SiteSettingViewModel.cs" />
+    <Compile Include="ViewModels\PageContentViewModel.cs" />
+    <Compile Include="ViewModels\CurrencyViewModel.cs" />
+    <Compile Include="ViewModels\CourierCompanyViewModel.cs" />
+    <Compile Include="ViewModels\NewsLetterTemplateViewModel.cs" />
+    <Compile Include="ViewModels\InvoiceSummaryViewModel.cs" />
+    <Compile Include="ViewModels\StaticPageViewModel.cs" />
+    <Compile Include="ViewModels\NewsConfigurationViewModel.cs" />
+    <Compile Include="ViewModels\NewsListViewModel.cs" />
+    <Compile Include="ViewModels\EmailAccountViewModel.cs" />
+    <Compile Include="ViewModels\EmailSMSTemplateViewModel.cs" />
+    <Compile Include="ViewModels\AccountViewModel.cs" />
+    <Compile Include="ViewModels\ApprovalViewModel.cs" />
+    <Compile Include="ViewModels\BankViewModel.cs" />
+    <Compile Include="ViewModels\AdvanceSalaryViewModel.cs" />
+    <Compile Include="ViewModels\BankAccountViewModel.cs" />
+    <Compile Include="ViewModels\EmailTemplateTypeViewModel.cs" />
+    <Compile Include="ViewModels\HomePageSlideViewModel.cs" />
+    <Compile Include="ViewModels\WarrantyModeViewModel.cs" />
+    <Compile Include="ViewModels\WarrantyRequestStatusViewModel.cs" />
+    <Compile Include="ViewModels\WarrantyOrRepairRequestViewModel.cs" />
+    <Compile Include="ViewModels\ReturnProductViewModel.cs" />
+    <Compile Include="ViewModels\PerformaInvoiceViewModel.cs" />
+    <Compile Include="ViewModels\OrderViewModel.cs" />
+    <Compile Include="ViewModels\CustomerViewModel.cs" />
+    <Compile Include="ViewModels\PaslipViewModel.cs" />
+    <Compile Include="ViewModels\PaymentTypeViewModel.cs" />
+    <Compile Include="ViewModels\EmployeeLoanViewModel.cs" />
+    <Compile Include="ViewModels\EmployeeBonusViewModel.cs" />
+    <Compile Include="ViewModels\DesignationViewModel.cs" />
+    <Compile Include="ViewModels\EmployeeViewModel.cs" />
+    <Compile Include="ViewModels\TransactionViewModel.cs" />
+    <Compile Include="ViewModels\BrandViewModel.cs" />
+    <Compile Include="ViewModels\BranchViewModel.cs" />
+    <Compile Include="ViewModels\ProductImageViewModel.cs" />
+    <Compile Include="ViewModels\ProductViewModel.cs" />
+    <Compile Include="ViewModels\ManufacturerViewModel.cs" />
+    <Compile Include="ViewModels\CompanyViewModel.cs" />
+    <Compile Include="ViewModels\NashRolesViewModel.cs" />
+    <Compile Include="ViewModels\ReedemViewModel.cs" />
+    <Compile Include="ViewModels\OfferViewModel.cs" />
+    <Compile Include="ViewModels\ImageUploadViewModel.cs" />
+    <Compile Include="ViewModels\CategoryViewModel.cs" />
+    <Compile Include="ViewModels\CityViewModel.cs" />
+    <Compile Include="ViewModels\FacilityViewModel.cs" />
+    <Compile Include="ViewModels\GeoLocationViewModel.cs" />
+    <Compile Include="ViewModels\IAuditFieldViewModel.cs" />
+    <Compile Include="ViewModels\NashAclViewModel.cs" />
+    <Compile Include="ViewModels\NashPageViewModel.cs" />
+    <Compile Include="ViewModels\NashUserRoleViewModel.cs" />
+    <Compile Include="ViewModels\NashUserTypeViewModel.cs" />
+    <Compile Include="ViewModels\NashUserViewModel.cs" />
+    <Compile Include="ViewModels\RatingViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202101181317114_InitailCreate.resx">
+      <DependentUpon>202101181317114_InitailCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101191314013_Appointmentupdated.resx">
+      <DependentUpon>202101191314013_Appointmentupdated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101202126254_AppointmentTableUpdated.resx">
+      <DependentUpon>202101202126254_AppointmentTableUpdated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101221232289_AppointTestResultUpdated.resx">
+      <DependentUpon>202101221232289_AppointTestResultUpdated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102111448352_AppointmentSlotEntityCreated.resx">
+      <DependentUpon>202102111448352_AppointmentSlotEntityCreated.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49988</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49988/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

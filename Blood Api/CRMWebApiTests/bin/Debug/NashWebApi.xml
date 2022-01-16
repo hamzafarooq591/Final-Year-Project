@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NashWebApi</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "P:NashWebApi.BindingModels.ImportPaymentBindingModel.ConfirmationDate" -->
+        <member name="M:NashWebApi.Controllers.EmployeeLoanController.DeleteEmployeeLoan(System.Int32)">
+            <summary>
+            EmployeeLoan Controller
+            </summary>
+            <param name="EmployeeLoanId"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:NashWebApi.Entities.ImportPayment.ConfirmationDate" -->
+        <member name="M:NashWebApi.Mappers.NashUserMapper.ToEntity(NashWebApi.BindingModels.NashUserTypeBindingModel,System.Int32,NashWebApi.Entities.NashUserType)">
+            end
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:NashWebApi.ViewModels.ImportPaymentViewModel.ConfirmationDate" -->
+    </members>
+</doc>
