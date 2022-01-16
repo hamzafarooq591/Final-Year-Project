@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Alpha Lab Admin Panel</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <script src="dist/js/pages/login.js"></script>
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div style="text-align: center;margin-top: 50px;">
+    <img src="dist/img/logo1.JPG" alt="LOGO">
+  </div>
+  <div class="wrapper" style="top: 20px;">
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row" style="justify-content: center;">
+          <!-- left column -->
+          <div class="col-md-4">
+            <!-- jquery validation -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Login</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <div role="form" id="quickForm">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="txtInputNumber">Email address</label>
+                    <input type="email" name="number" class="form-control" id="txtInputNumber"
+                      placeholder="Enter Email Address">
+                  </div>
+                  <div class="form-group">
+                    <label for="txtInputPassword">Password</label>
+                    <input type="password" name="password" class="form-control" id="txtInputPassword"
+                      placeholder="Password">
+                  </div>
+                  <div>
+                    <p id="invalidID" style="display:none;"></p>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer" style="text-align: center;">
+                  <button id="loginBtn" type="submit" class="btn btn-primary" onclick="checkForm()">Login</button>
+                </div>
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+          <!--/.col (left) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- jquery-validation -->
+  <script src="plugins/jquery-validation/jquery.validate.min.js"></script>
+  <script src="plugins/jquery-validation/additional-methods.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
+  <script type="text/javascript">
+  </script>
+  <script>
+    var input = document.getElementById("txtInputPassword");
+    input.addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("loginBtn").click();
+      }
+    });
+    var input = document.getElementById("txtInputNumber");
+    input.addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("loginBtn").click();
+      }
+    });
+
+  </script>
+
+</body>
+
+</html>
