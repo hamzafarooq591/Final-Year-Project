@@ -1,4 +1,4 @@
-var nashApi = "nash.pk:8991";
+var nashApi = "http://localhost:49988";
 
 function sideBar(){
     checkifUserIsLogin();

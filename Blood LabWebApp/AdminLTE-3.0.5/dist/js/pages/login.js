@@ -1,6 +1,6 @@
 function checkForm() {
     debugger;
-    var nashApi = "nash.pk:8991";
+    var nashApi = " localhost:49988";
     //----- authenticate call
     var inputNumber = document.getElementById("txtInputNumber").value;
     var inputPassword = document.getElementById("txtInputPassword").value;

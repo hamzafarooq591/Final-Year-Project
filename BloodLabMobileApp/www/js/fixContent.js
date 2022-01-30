@@ -1,4 +1,4 @@
-var nashApi = 'http://nash.pk:8991';
+var nashApi = 'http://localhost:49988/';
 var tokenValue = "cbfaf390-7fe7-4e24-9510-97c2b8f81926";
 
 function showLoader() {
