@@ -25,7 +25,7 @@ function checkRandomNumber(){
 function authenticate(inputRandomNumberGenerated){
     showLoader();
     debugger;
-    var nashApi = "http://nash.pk:8991";
+    var nashApi = "http://localhost:49988/";
     var inputFullNameSignUp = document.getElementById("txtFullNameSignUp").value;
     var inputAddressSignUp = document.getElementById("txtAddressSignUp").value;
     var inputNumberSignUp = document.getElementById("txtPhoneNumberSignUp").value;

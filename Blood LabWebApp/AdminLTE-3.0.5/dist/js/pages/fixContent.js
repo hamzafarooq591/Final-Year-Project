@@ -1,7 +1,7 @@
 var nashApi = "http://localhost:49988";
 
 function sideBar(){
-    checkifUserIsLogin();
+    // checkifUserIsLogin();
     var sideBarContent = '';
     sideBarContent += '<a href="dashboard.html">';
     sideBarContent += '<img src="dist/img/logo1.jpg" alt="logo1 Logo" class="brand-image elevation-3" style="opacity: .8;width:100%;height:100%">';

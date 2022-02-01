@@ -2165,8 +2165,9 @@
 
     <script>
         $(document).ready(function () {
-            goToLandingPage();
-            //getTodayDate();
+            goToSignInPage()
+            // goToLandingPage();
+            // getTodayDate();
             // goToEnterAddressPage()
             // goToLabResultDetailsPage()
         });
@@ -2180,6 +2181,7 @@
         function goToSignUpPage() {
             emptyDiv();
             document.getElementById('signUp').style.display = "block";
+            document.getElementById('offersAndDiscount').style.display = "none";
         }
 
         function goToVerificationNumberPage() {
@@ -2285,9 +2287,9 @@
 
 
         function emptyDiv() {
-            document.getElementById('signIn').style.display = "none";
+            document.getElementById('signIn').style.display = "block";
             document.getElementById('signUp').style.display = "none";
-            document.getElementById('verifyNumber').style.display = "none";
+            document.getElementById('verifyNumber').style.display = "none"; 
             document.getElementById('landingPage').style.display = "none";
             document.getElementById('bookAppointmentPage').style.display = "none";
             document.getElementById('testOffersDiv').style.display = "none";
