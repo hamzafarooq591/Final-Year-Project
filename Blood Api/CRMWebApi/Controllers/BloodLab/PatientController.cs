@@ -73,7 +73,7 @@
         }
        
         //save
-        [HttpPost, Route("")]
+        [HttpPost, Route("Post")]
         public DataActionResponse Post(PatientBindingModel model)
         {
             var header = Request.Headers.Contains("token") ? ((string[])Request.Headers.GetValues("token"))[0] : "";

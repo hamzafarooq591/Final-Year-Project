@@ -25,7 +25,7 @@
             PatientViewModel model2 = new PatientViewModel();
             PatientRepository repository = new PatientRepository(context);
             Patient patient = repository.GetAll().
-                FirstOrDefault(x => x.FullName.Contains(entity.FullName));
+                FirstOrDefault(x => x.FullName.Contains(entity.FullName) && x.PhoneNumber.Contains(entity.PhoneNumber));
            
             using (UnitOfWork work = new UnitOfWork(context))
             {
@@ -53,8 +53,8 @@
                 throw new NashHandledExceptionNotFound("Invalid PatientId. Patient Not Found.");
             }
           
-           // if (entity.PatientHeadId != null)
-           // {
+           else 
+            {
                 entity.IsDeleted = true;
                 using (UnitOfWork work = new UnitOfWork(context))
                 {
@@ -62,21 +62,21 @@
                     work.Complete();
                 }
                 return true;
-            //}
+            }
             //else
-              //  throw new NashException("Head Patient can't be deleted.");
+             //throw new NashException("Head Patient can't be deleted.");
         }
 
         public PatientViewModel Authenticate(string PatientPhoneNumber, string Password)
         {
             NashWebApi.NashContext context = new NashWebApi.NashContext();
             PatientRepository repository = new PatientRepository(context);
-            
-            var patient = repository.GetAll()
-                .FirstOrDefault<Patient>(x => x.PhoneNumber == PatientPhoneNumber
-                && x.Password == Password && x.IsActive == true
-                && x.IsVerified == true && x.IsDeleted == false);
 
+            //var patient = repository.GetAll()
+            //    .FirstOrDefault<Patient>(x => x.PhoneNumber == PatientPhoneNumber
+            //    && x.Password == Password && x.IsActive == true
+            //    && x.IsVerified == true && x.IsDeleted == false);
+            var patient = context.Patients.Where(w => w.PhoneNumber == PatientPhoneNumber && w.Password == Password && w.IsVerified == true && w.IsDeleted == false).FirstOrDefault();
             if (patient == null)
             {
                 return null;

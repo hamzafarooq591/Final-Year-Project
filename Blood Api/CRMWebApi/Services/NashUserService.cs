@@ -291,7 +291,7 @@
 
             var nashUser = repository.GetAll()
                 .FirstOrDefault(x => x.IsDeleted == false
-                && x.UserName == model.Username && x.password == model.Password);
+                && (x.UserName == model.Username || x.Email==model.Username) && x.password == model.Password);
 
             if (nashUser == null)
             {
@@ -316,17 +316,17 @@
 
         }
 
-        public bool ValidateSession(String SessionKey, int userId)
+        public bool ValidateSession(string SessionKey, int userId)
         {
             bool valid = false;
             NashWebApi.NashContext context = new NashWebApi.NashContext();
             NashUserSessionRepository repository = new NashUserSessionRepository(context);
             // Validate Session Key
-            NashUserSession nashUserSession = 
-            repository.GetAll()
-            .FirstOrDefault(x => x.SessionKey == SessionKey && 
-            //(x.SessionStart <= DateTime.Now && x.SessionEnd >= DateTime.Now) &&
-            x.IsDeleted == false && x.IsExpired == false);
+            NashUserSession nashUserSession = context.NashUserSessions.Where(w => w.SessionKey == SessionKey && w.IsDeleted == false && w.IsExpired == false).FirstOrDefault();
+            //repository.GetAll()
+            //.FirstOrDefault(x => x.SessionKey == SessionKey && 
+            ////(x.SessionStart <= DateTime.Now && x.SessionEnd >= DateTime.Now) &&
+            //x.IsDeleted == false && x.IsExpired == false);
             var nashUserSessionBindingModel = new NashUserSessionBindingModel();
             var SessionDuration = NashConstants.Globals.SessionDuration;
             if (nashUserSession == null)

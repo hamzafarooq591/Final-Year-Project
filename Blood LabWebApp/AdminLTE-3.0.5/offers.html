@@ -74,7 +74,7 @@
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
-  <div id="overlay"  onclick="overlayOff()">
+  <div id="overlay"  >
     <section class="content" style="margin-top: 85px" id="displayEditDiv">
       <input type="hidden" id="hiddenIDNew">
       <div class="container-fluid">
@@ -113,7 +113,7 @@
                     <input type="number" class="form-control" id="txtEditNewPrice" placeholder="Enter New Price">
                   </div>
                   <div>
-                    <button type="submit" class="btn btn-primary px-5" onclick="SaveForm('')">Update</button>
+                    <button type="button" class="btn btn-primary px-5" onclick="SaveForm('')">Update</button>
                   </div>
                 </div>
               </div>
@@ -215,7 +215,7 @@
                     </div>
                   </div>
                   <div>
-                    <button type="submit" class="btn btn-primary px-5 mb-3 ml-3" onclick="SaveForm('add')">Add</button>
+                    <button type="button" class="btn btn-primary px-5 mb-3 ml-3" onclick="SaveForm('add')">Add</button>
                   </div>
               </div>
             </div>
@@ -347,10 +347,10 @@
         var URL = '';
         debugger;
         if (id > 0) {
-            URL = 'http://'+nashApi+'/api/Offer/Put/'+ id;
+            URL = nashApi+'/api/Offer/Put/'+ id;
         }
         else {
-            URL = 'http://'+nashApi+'/api/Offer';
+            URL = nashApi+'/api/Offer';
         }
         $.ajax({
             url: URL,
@@ -373,7 +373,7 @@
     }
 
     function fillList() {
-        var URL = 'http://' + nashApi + '/api/Offer?Size=' + rowSize + "&page=" + currentPage;
+        var URL =  nashApi + '/api/Offer?Size=' + rowSize + "&page=" + currentPage;
         $.ajax({
             url: URL,
             type: 'GET',
@@ -428,7 +428,7 @@
             return;
         }
         $.ajax({
-            url: 'http://' + nashApi + '/api/Offer/Delete/' + recordId,
+            url:  nashApi + '/api/Offer/Delete/' + recordId,
                 type: 'POST',
                 headers: { 'token': tokenValue },
                 success: function (data) {
@@ -457,7 +457,7 @@
     }
     function getRecord(recId) {
         $.ajax({
-            url: 'http://' + nashApi + '/api/Offer/' + recId, //get
+            url: nashApi + '/api/Offer/' + recId, //get
             type: 'GET',
             dataType: 'json',
             headers: { 'token': tokenValue },

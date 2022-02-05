@@ -9,7 +9,7 @@ namespace NashWebApi.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(NashWebApi.NashContext context)

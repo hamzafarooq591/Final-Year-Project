@@ -166,8 +166,8 @@ SEARCH FORM -->
                 </div>
                 <!-- /.card-body -->
                 <div>
-                  <button type="submit" id="editButton" class="btn btn-primary px-5 ml-3 mb-4" onclick="SaveForm()">Add</button>
-                  <button type="submit" style="display: none;" id="cancelButton" class="btn btn-primary px-5 ml-3 mb-4" onclick="resetMasterAfterEdit()">Cancel</button>
+                  <button type="button" id="editButton" class="btn btn-primary px-5 ml-3 mb-4" onclick="SaveForm()">Add</button>
+                  <button type="button" style="display: none;" id="cancelButton" class="btn btn-primary px-5 ml-3 mb-4" onclick="resetMasterAfterEdit()">Cancel</button>
                 </div>
               </div>
             </div>
@@ -189,7 +189,7 @@ SEARCH FORM -->
                   <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
 
                   <div class="input-group-append">
-                    <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+                    <button type="button" class="btn btn-default"><i class="fas fa-search"></i></button>
                   </div>
                 </div>
               </div>
@@ -277,7 +277,7 @@ SEARCH FORM -->
 
     function fillPatientNameList() {
       $.ajax({
-        url: 'http://' + nashApi + '/api/Patient?Size=' + rowSize + "&page=" + currentPage,
+        url:  nashApi + '/api/Patient?Size=' + rowSize + "&page=" + currentPage,
         type: 'GET',
         dataType: 'json',
         headers: { 'token': tokenValue },
@@ -303,7 +303,7 @@ SEARCH FORM -->
       var patientDropdown = document.getElementById('ddlPatientName');
       var patientID = patientDropdown.options[patientDropdown.selectedIndex].getAttribute('patientid');
       $.ajax({
-        url: 'http://' + nashApi + '/api/Appointment/GetAppointmentByPatientId/ ' + patientID,
+        url: nashApi + '/api/Appointment/GetAppointmentByPatientId/ ' + patientID,
         type: 'GET',
         dataType: 'json',
         headers: { 'token': tokenValue },
@@ -373,7 +373,7 @@ SEARCH FORM -->
     document.querySelector('#file-input').addEventListener("change", previewImages);
 
     function fillList() {
-      var URL = 'http://' + nashApi + '/api/AppointmentTestResult?Size=' + rowSize + "&page=" + currentPage;
+      var URL = nashApi + '/api/AppointmentTestResult?Size=' + rowSize + "&page=" + currentPage;
       $.ajax({
         url: URL,
         type: 'GET',
@@ -418,7 +418,7 @@ SEARCH FORM -->
         return;
       }
       $.ajax({
-        url: 'http://' + nashApi + '/api/AppointmentTestResult/Delete/' + recordId,
+        url: nashApi + '/api/AppointmentTestResult/Delete/' + recordId,
         type: 'POST',
         headers: { 'token': tokenValue },
         success: function (data) {
@@ -446,10 +446,10 @@ SEARCH FORM -->
                 };
                 debugger;
                 if (id > 0) {
-                    URL = 'http://' + nashApi + '/api/AppointmentTestResult/Put/' + id;
+                    URL = nashApi + '/api/AppointmentTestResult/Put/' + id;
                 }
                 else {
-                    URL = 'http://' + nashApi + '/api/AppointmentTestResult';
+                    URL = nashApi + '/api/AppointmentTestResult';
                 }
 
                 $.ajax({
@@ -510,7 +510,7 @@ SEARCH FORM -->
 
     function getRecord(recId) {
         $.ajax({
-            url: 'http://' + nashApi + '/api/AppointmentTestResult/' + recId, //get
+            url: nashApi + '/api/AppointmentTestResult/' + recId, //get
             type: 'GET',
             dataType: 'json',
             headers: { 'token': tokenValue },

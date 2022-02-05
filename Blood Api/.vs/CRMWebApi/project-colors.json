@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d676bda3-c07e-4894-be5f-7faebafba5ff": {
+      "ProjectGuid": "d676bda3-c07e-4894-be5f-7faebafba5ff",
+      "DisplayName": "CRMWebApi",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

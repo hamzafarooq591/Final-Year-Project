@@ -35,7 +35,10 @@
                 .Where(x => x.Id == PatientId && x.IsDeleted == false);
         }
 
-      
+        public IQueryable<Patient> GetAll(int PatientId)
+        {
+            return NashContext.Patients;
+        }
 
         public NashWebApi.NashContext NashContext =>
           (base.Context as NashWebApi.NashContext);

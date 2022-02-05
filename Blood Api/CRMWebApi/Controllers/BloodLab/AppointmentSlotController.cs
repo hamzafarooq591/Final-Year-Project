@@ -59,7 +59,7 @@
         }
        
         //save
-        [HttpPost, Route("")]
+        [HttpPost, Route("Post")]
         public DataActionResponse Post(AppointmentSlotBindingModel model)
         {
             var header = Request.Headers.Contains("token") ? ((string[])Request.Headers.GetValues("token"))[0] : "";

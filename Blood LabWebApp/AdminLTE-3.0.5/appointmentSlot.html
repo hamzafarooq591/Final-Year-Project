@@ -175,7 +175,7 @@
                     <div class="mt-4">
                       <button type="submit" onclick="saveSlot()" id="editButton"
                         class="btn btn-primary px-5">Add</button>
-                      <button type="submit" style="display: none;" id="cancelButton" class="btn btn-primary px-5"
+                      <button type="button" style="display: none;" id="cancelButton" class="btn btn-primary px-5"
                         onclick="">Cancel</button>
                     </div>
                   </div>
@@ -324,7 +324,7 @@
           
         };debugger;
         $.ajax({
-          url: 'http://' + nashApi + '/api/AppointmentSlot',
+          url:  nashApi + '/api/AppointmentSlot/Post',
           type: 'POST',
           dataType: 'json',
           headers: { 'token': tokenValue },
@@ -349,7 +349,7 @@
     }
     function fillList() {
       debugger;
-      var URL = 'http://' + nashApi + '/api/AppointmentSlot?Size=' + rowSize + "&page=" + currentPage;
+      var URL = nashApi + '/api/AppointmentSlot?Size=' + rowSize + "&page=" + currentPage;
       $.ajax({
         url: URL,
         type: 'GET',
@@ -395,7 +395,7 @@
         return;
       }
       $.ajax({
-        url: 'http://' + nashApi + '/api/AppointmentSlot/Delete/' + recordId,
+        url: nashApi + '/api/AppointmentSlot/Delete/' + recordId,
         type: 'POST',
         headers: { 'token': tokenValue },
         success: function (data) {

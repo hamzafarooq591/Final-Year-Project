@@ -1,6 +1,6 @@
 function checkForm() {
     showLoader();
-    var nashApi = "http://nash.pk:8991";
+    var nashApi = "http://localhost:49988/";
     var inputNumber = document.getElementById("txtPhoneNumberSignIn").value;
     var inputPassword = document.getElementById("txtPasswordSignIn").value;
 
@@ -13,11 +13,13 @@ function checkForm() {
     }
     else {
         $.ajax({
-            url: ' '+ nashApi + '/api/Patient/Authenticate?PatientPhoneNumber='+inputNumber+'&Password='+ inputPassword,
+            url:nashApi + '/api/Patient/Authenticate?PatientPhoneNumber='+inputNumber+'&Password='+ inputPassword,
             type: 'GET',
             dataType: 'json',
             success: function (data) {
                 debugger
+                hideLoader();
+                if (data==null) document.getElementById('invalidID').innerHTML = "Invalid Number or Password";
                 var value = data.data;
                 var patientID = value.patientId;
                 setLocalStorage("PatientID", patientID);

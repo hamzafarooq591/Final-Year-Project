@@ -67,7 +67,7 @@
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
   
-  <div id="overlay" onclick="overlayOff()"> 
+  <div id="overlay"> 
     <section class="content" style="margin-top: 85px;" id="displayEditDiv">
 
          <div class="container-fluid">
@@ -95,8 +95,8 @@
                   </div>
                   <div class="form-group">
                     <label for="Gender">Gender</label>
-                    <select class="form-control select2" id="Gendertxt" style="width: 100%;">
-                      <option>---SELECT YOUR Gender---</option>
+                    <select class="form-control select2" id="Gendertxtedit" style="width: 100%;">
+                      <option value="">---SELECT YOUR Gender---</option>
                       <option value="Male"> Male</option>
                       <option value="Female"> Female</option>
                     </select>
@@ -215,7 +215,7 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form">
+              <div role="form">
                 <div class="card-body">
                   <div class="form-group">
                     <label for="txtFullName">Full Name</label>
@@ -261,14 +261,14 @@
                     <input type="hidden" id="hiddenIDNew">
                   </fieldset> 
                   <div>
-                    <button type="submit" class="btn btn-primary px-5" onclick="SaveForm('add')">Add</button>
+                    <button type="button" class="btn btn-primary px-5" onclick="SaveForm('add')">Add</button>
                   </div>   
                 </div>
             
                 <!-- /.card-body -->
 
               
-              </form>
+              </div>
             </div>
             <!-- /.card -->
           </div>
@@ -345,7 +345,7 @@
 <script src="dist/js/demo.js"></script>
 <script src="dist/js/pages/fixContent.js"></script>
 <script type="text/javascript">
-
+ var nashApi = "localhost:49988";
 var ta = [];
     var rowCounter = 0;
     var currentPage = 1;
@@ -379,7 +379,7 @@ var ta = [];
               fullName: document.getElementById('txtEditFullName').value,
               address: document.getElementById('txtEditAddress').value,
               phoneNumber: document.getElementById('txtEditPhoneNumber').value,
-              gender:document.getElementById('Gendertxt').value,
+              gender:$('#Gendertxtedit').val(),
               password: document.getElementById('txtEditPassword').value,
               email: document.getElementById('txtEditEmail').value,
               country: document.getElementById('txtEditCountry').value,
@@ -401,7 +401,7 @@ var ta = [];
               fullName: document.getElementById('txtFullName').value,
               address: document.getElementById('txtAddress').value,
               phoneNumber: document.getElementById('txtPhoneNumber').value,
-              gender:document.getElementById('Gendertxt').value,
+              gender:$('#Gendertxt').val(),
               password: document.getElementById('txtPassword').value,
               email: document.getElementById('txtEmail').value,
               country: document.getElementById('txtCountry').value,
@@ -422,7 +422,7 @@ var ta = [];
             URL = 'http://'+nashApi+'/api/Patient/Put/'+ id;
         }
         else {
-            URL = 'http://'+nashApi+'/api/Patient';
+            URL = 'http://'+nashApi+'/api/Patient/Post';
         }
         $.ajax({
             url: URL,
@@ -432,7 +432,7 @@ var ta = [];
             data: formData,
             success: function (data) {
                 var value = data.data;
-                fillList();
+              fillList();
                 overlayOff();
                 resetMaster();
             },
@@ -472,7 +472,6 @@ var ta = [];
                     tableCol = document.createElement("td");
                     tableCol.innerHTML = value.phoneNumber;
                     tableRow.appendChild(tableCol);
-
                     tableCol = document.createElement("td");
                     tableCol.innerHTML = value.fullName;
                     tableRow.appendChild(tableCol);
@@ -512,7 +511,7 @@ var ta = [];
                 type: 'POST',
                 headers: { 'token': tokenValue },
                 success: function (data) {
-                  //  fillList();
+                  fillList();
                 },
                 error: function (request, message, error) {
                     console.log(error);
@@ -564,7 +563,7 @@ var ta = [];
                 debugger;
                 value = data.data;
                 document.getElementById('txtEditFullName').value = value.fullName;
-                document.getElementById('Gendertxt').value = value.gender;
+                document.getElementById('Gendertxtedit').value = value.gender;
                 document.getElementById('txtEditAddress').value = value.address;
                 document.getElementById('txtEditPhoneNumber').value = value.phoneNumber;
                 document.getElementById('txtEditPassword').value = value.password;
