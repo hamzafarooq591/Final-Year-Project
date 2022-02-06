@@ -746,3 +746,4 @@ F:\FiverrProject\BloodCRM\Final-Year-Project-main\Final-Year-Project-main\Blood 
 F:\FiverrProject\BloodCRM\Final-Year-Project-main\Final-Year-Project-main\Blood Api\CRMWebApi\obj\Debug\NashWebApi.dll
 F:\FiverrProject\BloodCRM\Final-Year-Project-main\Final-Year-Project-main\Blood Api\CRMWebApi\obj\Debug\NashWebApi.pdb
 F:\FiverrProject\BloodCRM\Final-Year-Project-main\Final-Year-Project-main\Blood Api\CRMWebApi\obj\Debug\NashWebApi.Migrations.rk.resources
+D:\Final-Year-Project\Blood Api\CRMWebApi\obj\Debug\NashWebApi.Migrations.rk.resources
