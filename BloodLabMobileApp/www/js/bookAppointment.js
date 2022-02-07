@@ -1,3 +1,6 @@
+var pricelist=[];
+var sdate="";
+var sslot;
 function fillTestList() {
     showLoader();
     $.ajax({
@@ -76,27 +79,37 @@ function addTestForPrice(divValues) {
     var addRow = '';
     debugger
     if (inputValue.checked == true) {
+        var tname={'name':valueTitle,'price':valuePrice};
+        pricelist.push(tname);
         if (testSummaryDiv.childElementCount == 0) {
             addRow += '<div id="' + rowIdTestSummary + '" class="row" style="border-bottom:1px solid #80808047">';
             addRow += '<div class="col-8" style="font-weight: bold;">' + valueTitle + '</div>';
             addRow += '<div class="col-4">' + valuePrice + '</div>';
             document.getElementById('testSummary').innerHTML = addRow;
+           
             grandTotalCalculation(valuePrice);
+           
         }
         else {
             addRow += '<div id="' + rowIdTestSummary + '"  class="row" style="border-bottom:1px solid #80808047">';
             addRow += '<div class="col-8" style="font-weight: bold;">' + valueTitle + '</div>';
             addRow += '<div class="col-4">' + valuePrice + '</div>';
             $('#testSummary').append(addRow);
+            
             grandTotalCalculation(valuePrice);
         }
     }
     else {
         $("#" + rowIdTestSummary).remove();
+        var index= pricelist.findIndex(s=> s.name==valueTitle);
+        if (index > -1) {
+            pricelist.splice(index, 1); 
+          }
         grandTotalCalculation(valuePrice);
+
     }
 }
-
+var updatedAmount = 0;
 function grandTotalCalculation(price) {
     var amount = document.getElementById('testSummary');
     var rowcounter = amount.childElementCount;
@@ -129,11 +142,92 @@ function getTodayDate() {
         var monthlist = ["Jan", "Feb", "Mar", "Apr ", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
         var monthName = monthlist[mm];
         var today = dayName + "," + dd + " " + monthName;
+        var sadate=date.getMonth().toString()+'/'+date.getDate().toString()+'/'+date.getFullYear().toString();
         console.log(today);
         dateRow += '<div style="margin-right: 10px;">';
-        dateRow += '<button style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">';
+        dateRow += '<button style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;" onclick="confirmdate(\''+sadate+'\');">';
         dateRow += '' + today + '</button>';
         dateRow += '</div>';
         document.getElementById('fillDateRow').innerHTML = dateRow;
     }
 }
+function fillTimeSlotList() {
+    debugger
+    showLoader();
+    $.ajax({
+        url: ' ' + nashApi + '/api/AppointmentSlot',
+        type: 'GET',
+        datatype: 'json',
+        headers: { 'token': tokenValue },
+        success: function (data) {
+            debugger;
+            var value = data.data;
+            var htm="";
+            for(var i=0; i< value.length; i++){
+                htm+=' <div class="col-4" style="margin-bottom: 15px;">';
+                htm+='<button  style="width: 100%;background: lightgray;border-radius: 5px;font-size: 11px; padding: 5px;" onclick="selectslot(\''+value[i].appointmentSlotId+'\');">';
+                htm+='Slot: '+value[i].appointmentSlotId+'<br/> Time:'+value[i].slotTime;
+                htm+='</button></div>';
+            }
+$('#slotid').html(htm);
+            hideLoader();
+        },
+        error: function (request, message, error) {
+            hideLoader();
+            console.log(error);
+        }
+    });
+}
+function confirmdate(x){
+    sdate=x;
+}
+function selectslot(y){
+    sslot=y;
+}
+var txtgender='';
+function gender(z){
+    txtgender=z;
+}
+function goToThankyouPage() {
+           
+    var nashApi="http://localhost:49988/";
+    formData = {
+      Address: document.getElementById('address').value,
+      City: document.getElementById('cityid').value,
+      AppointmentDateTime:sdate,
+      Comment: document.getElementById('comments').value,
+      Slot:sslot,
+      CreatedByUserId: 1,
+      IsBookingForMyself: true,
+      AppointmentPatientName:  document.getElementById('txtname').value,
+      PatientPhoneNumber:  document.getElementById('txtphone').value,
+      PatientGender:txtgender,
+      PatientRelationship: document.getElementById('txtrel').value,
+     PatNumber : document.getElementById("txtPhoneNumberSignIn").value,
+    PatPassword : document.getElementById("txtPasswordSignIn").value,
+    Total: updatedAmount,
+     Value:pricelist
+    };
+    URL = nashApi+'api/Appointment/Post';
+    $.ajax({
+    url: URL,
+    type: 'POST',
+    dataType: 'json',
+    headers: { 'token': tokenValue },
+    data:formData,
+    success: function (data) {
+        emptyDiv();
+    document.getElementById('thankyoupage').style.display = "block";
+    },
+    error: function (request, message, error) {
+        emptyDiv();
+        alert("Someting is worng");
+    }
+});
+    
+}
+
+
+//
+//
+//

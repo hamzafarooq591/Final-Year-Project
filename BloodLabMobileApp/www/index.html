@@ -788,8 +788,8 @@
         <div class="row" style="padding-left: 15px;">
             <p style="margin-top: 15px;font-weight: bold;">Select Date</p>
         </div>
-
-        <div class="row">
+<div id="slotid">
+        <div class="row" >
             <div class="col-2">
                 <p style="margin-top: 15px;font-weight: bold;font-size: 15px;">Morning</p>
             </div>
@@ -950,7 +950,7 @@
                     Feb</button>
             </div>
         </div>
-
+    </div>
         <div class="selectTimeSlotSummary" style="height: 140px; background-color: lightgray;">
             <div class="row" style="padding-top: 15px;">
                 <div class="col-8">
@@ -1031,21 +1031,21 @@
         <div class="bookingConfirmation" style="overflow-y: scroll;height: 270px;">
             <div class="col-12" style="margin-top: 10px;">
                 <span style="font-size: 15px;">Name</span>
-                <input type="text"
+                <input type="text" id="txtname"
                     style="width: 100%;padding: 8px;background: lightgray;border: 2px solid darkgrey;border-radius: 5px;"
                     placeholder="Enter Name">
             </div>
 
             <div class="col-12" style="margin-top: 10px;">
                 <span style="font-size: 15px;">Phone Number</span>
-                <input type="number"
+                <input type="number" id="txtphone"
                     style="width: 100%;padding: 8px;background: lightgray;border: 2px solid darkgrey;border-radius: 5px;"
                     placeholder="Enter Phone Number">
             </div>
 
             <div class="col-12" style="margin-top: 10px;">
                 <span style="font-size: 15px;">Relationship</span>
-                <input type="text"
+                <input type="text" id="txtrel"
                     style="width: 100%;padding: 8px;background: lightgray;border: 2px solid darkgrey;border-radius: 5px;"
                     placeholder="Enter Relationship">
             </div>
@@ -1055,11 +1055,11 @@
                 <div class="row" style="margin-bottom: 10px;">
                     <div class="col-6" style="padding: 0px;">
                         <button class="gndr-btn"
-                            style="border-top-left-radius: 5px;border-bottom-left-radius: 5px;width: 100%;padding: 8px;border: 2px solid darkgrey;">Male</button>
+                            style="border-top-left-radius: 5px;border-bottom-left-radius: 5px;width: 100%;padding: 8px;border: 2px solid darkgrey;" onclick="gender('Male')">Male</button>
                     </div>
                     <div class="col-6" style="padding: 0px;">
                         <button class="gndr-btn"
-                            style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;width: 100%;padding: 8px;border: 2px solid darkgrey;">Female</button>
+                            style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;width: 100%;padding: 8px;border: 2px solid darkgrey;" onclick="gender('Female')">Female</button>
                     </div>
                 </div>
             </div>
@@ -1295,7 +1295,7 @@
                 <span style="font-size: 15px;color:#797A7C;">Select City*</span>
                 <select
                     style="width: 100%;padding: 8px;background: #EEEEEE;border: 2px solid darkgrey;border-radius: 5px;"
-                    placeholder="Enter City">
+                    placeholder="Enter City" id="cityid">
                     <option value="Hyderabad">Hyderabad</option>
                     <option value="Karachi">Karachi</option>
                     <option value="Lahore">Lahore</option>
@@ -1304,14 +1304,14 @@
             </div>
             <div class="col-12" style="margin-top: 10px;">
                 <span style="font-size: 15px;color:#797A7C;">Address*</span>
-                <input type="text"
+                <input type="text" id="address"
                     style="width: 100%;padding: 8px;background: #EEEEEE;border: 2px solid darkgrey;border-radius: 5px;">
                 <input type="checkbox" name="" id="">
                 <span style="font-size: 10px; font-weight: 600;color:#797A7C;">Save Address</span>
             </div>
             <div class="col-12" style="margin-top: 10px;">
                 <span style="font-size: 15px;color:#797A7C;">Add comment</span>
-                <textarea rows="4" cols="50"
+                <textarea rows="4" cols="50" id="comments"
                     style="width: 100%;padding: 8px;background: #EEEEEE;border: 2px solid darkgrey;border-radius: 5px;"></textarea>
             </div>
 
@@ -2262,11 +2262,7 @@
             fillDiscountAndOfferList();
         }
 
-        function goToThankyouPage() {
-            emptyDiv();
-            document.getElementById('thankyoupage').style.display = "block";
-        }
-
+       
         function goToProfilePage() {
             emptyDiv();
             mainFooter();
