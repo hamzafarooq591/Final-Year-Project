@@ -1,6 +1,6 @@
 function checkForm() {
     debugger;
-    var nashApi = "localhost:49988";
+    var nashApi = "http://adminhamza-001-site1.dtempurl.com";
     //----- authenticate call
     var inputNumber = document.getElementById("txtInputNumber").value;
     var inputPassword = document.getElementById("txtInputPassword").value;
@@ -17,7 +17,7 @@ function checkForm() {
             password: inputPassword
         };
         $.ajax({
-            url: 'http://' + nashApi + '/api/NashUser/NashUserSession' ,
+            url: nashApi + '/api/NashUser/NashUserSession' ,
             type: 'POST',
             dataType: 'json',
             data: formData,

@@ -33,7 +33,7 @@ function saveForm() {
 
     else{
         var SmsBody = randomNumberGenerated + "is your OTP for Authentication"; 
-        var nashApi = "http://localhost:49988";  
+        var nashApi = "http://adminhamza-001-site1.dtempurl.com";  
         var tokenValue = "cbfaf390-7fe7-4e24-9510-97c2b8f81926";
         $.ajax({
         url: ' '+ nashApi + '/api/Sms/SendSms?ToNumber='+inputNumberSignUp+'&smsText='+ SmsBody ,

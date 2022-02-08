@@ -488,7 +488,8 @@ SEARCH FORM -->
             // var td = '[';
              //var td = '[';
             for (i = 0; i < rowcounter; i++) {
-                var appointmentStringBase64 = previewDiv.childNodes[i].src;
+              console.log(previewDiv.childNodes[i]);
+                var appointmentStringBase64 = previewDiv.childNodes[i].nextElementSibling.childNodes[2].currentSrc;
                 rowDataAppointment.push(appointmentStringBase64);
             }
         }

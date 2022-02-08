@@ -190,7 +190,7 @@ function gender(z){
 }
 function goToThankyouPage() {
            
-    var nashApi="http://localhost:49988/";
+    var nashApi="http://adminhamza-001-site1.dtempurl.com";
     formData = {
       Address: document.getElementById('address').value,
       City: document.getElementById('cityid').value,
