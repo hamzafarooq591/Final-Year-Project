@@ -1,6 +1,6 @@
 function checkForm() {
     showLoader();
-    var nashApi = "http://localhost:49988/";
+    var nashApi = "http://adminhamza-001-site1.dtempurl.com";
     var inputNumber = document.getElementById("txtPhoneNumberSignIn").value;
     var inputPassword = document.getElementById("txtPasswordSignIn").value;
 

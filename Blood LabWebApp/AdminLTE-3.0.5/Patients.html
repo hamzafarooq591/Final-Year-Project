@@ -194,7 +194,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="file:///D:/bloodlabwebapp/AdminLTE-3.0.5/dashboard.html">Dashboard </a></li>
+              <li class="breadcrumb-item"><a href="/dashboard.html">Dashboard </a></li>
               <li class="breadcrumb-item  active">Patient</li>
             </ol>
           </div>
@@ -321,7 +321,7 @@
     <div class="float-right d-none d-sm-block">
       <!-- <b>Version</b> 3.0.5 -->
     </div>
-    <strong>Copyright &copy; 2021<a href="https://nash.pk/">NASH</a>.</strong> All rights
+    <strong>Copyright &copy; 2022<a href="/">Hamza</a>.</strong> All rights
     reserved.
   </footer>
 
@@ -345,7 +345,7 @@
 <script src="dist/js/demo.js"></script>
 <script src="dist/js/pages/fixContent.js"></script>
 <script type="text/javascript">
- var nashApi = "localhost:49988";
+ 
 var ta = [];
     var rowCounter = 0;
     var currentPage = 1;
@@ -419,10 +419,10 @@ var ta = [];
         var URL = '';
         debugger;
         if (id > 0) {
-            URL = 'http://'+nashApi+'/api/Patient/Put/'+ id;
+            URL = nashApi+'/api/Patient/Put/'+ id;
         }
         else {
-            URL = 'http://'+nashApi+'/api/Patient/Post';
+            URL = nashApi+'/api/Patient/Post';
         }
         $.ajax({
             url: URL,
@@ -445,7 +445,7 @@ var ta = [];
     }
 
     function fillList() {
-        var URL = 'http://' + nashApi + '/api/Patient?Size=' + rowSize + "&page=" + currentPage;
+        var URL = nashApi + '/api/Patient?Size=' + rowSize + "&page=" + currentPage;
         debugger;
         $.ajax({
             url: URL,
@@ -507,7 +507,7 @@ var ta = [];
             return;
         }
         $.ajax({
-            url: 'http://' + nashApi + '/api/Patient/Activate/' + recordId+'?isActive='+isActiveCheckBox.checked,
+            url:  nashApi + '/api/Patient/Activate/' + recordId+'?isActive='+isActiveCheckBox.checked,
                 type: 'POST',
                 headers: { 'token': tokenValue },
                 success: function (data) {
@@ -525,7 +525,7 @@ var ta = [];
             return;
         }
         $.ajax({
-            url: 'http://' + nashApi + '/api/Patient/Delete/' + recordId,
+            url: nashApi + '/api/Patient/Delete/' + recordId,
                 type: 'POST',
                 headers: { 'token': tokenValue },
                 success: function (data) {
@@ -555,7 +555,7 @@ var ta = [];
     }
     function getRecord(recId) {
         $.ajax({
-            url: 'http://' + nashApi + '/api/Patient/' + recId, //get
+            url:  nashApi + '/api/Patient/' + recId, //get
             type: 'GET',
             dataType: 'json',
             headers: { 'token': tokenValue },

@@ -208,7 +208,7 @@ function goToThankyouPage() {
     Total: updatedAmount,
      Value:pricelist
     };
-    URL = nashApi+'api/Appointment/Post';
+    URL = nashApi+'/api/Appointment/Post';
     $.ajax({
     url: URL,
     type: 'POST',
