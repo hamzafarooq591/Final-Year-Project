@@ -431,7 +431,7 @@
 
     function fillPatientNameList() {
       $.ajax({
-        url: 'http://' + nashApi + '/api/Patient?Size=' + rowSize + "&page=" + currentPage,
+        url: nashApi + '/api/Patient?Size=' + rowSize + "&page=" + currentPage,
         type: 'GET',
         dataType: 'json',
         headers: { 'token': tokenValue },
@@ -456,7 +456,7 @@
 
     function fillTestNameList() {
       $.ajax({
-        url: 'http://' + nashApi + '/api/Test?Size=' + rowSize + "&page=" + currentPage,
+        url: nashApi + '/api/Test?Size=' + rowSize + "&page=" + currentPage,
         type: 'GET',
         dataType: 'json',
         headers: { 'token': tokenValue },
@@ -482,7 +482,7 @@
 
     function fillOffersList() {
       $.ajax({
-        url: 'http://' + nashApi + '/api/Offer?Size=' + rowSize + "&page=" + currentPage,
+        url: nashApi + '/api/Offer?Size=' + rowSize + "&page=" + currentPage,
         type: 'GET',
         dataType: 'json',
         headers: { 'token': tokenValue },
@@ -629,7 +629,7 @@
     }
 
     function fillList() {
-      var URL = 'http://' + nashApi + '/api/Appointment?Size=' + rowSize + "&page=" + currentPage;
+      var URL = nashApi + '/api/Appointment?Size=' + rowSize + "&page=" + currentPage;
       $.ajax({
         url: URL,
         type: 'GET',
@@ -696,7 +696,7 @@
 
     function getRecord(recId) {
       $.ajax({
-        url: 'http://' + nashApi + '/api/Appointment/' + recId, //get
+        url: nashApi + '/api/Appointment/' + recId, //get
         type: 'GET',
         dataType: 'json',
         headers: { 'token': tokenValue },
@@ -773,7 +773,7 @@
         return;
       }
       $.ajax({
-        url: 'http://' + nashApi + '/api/Appointment/Delete/' + recordId,
+        url: nashApi + '/api/Appointment/Delete/' + recordId,
         type: 'POST',
         headers: { 'token': tokenValue },
         success: function (data) {
@@ -833,10 +833,10 @@
           };
           debugger
           if (id > 0) {
-            URL = 'http://' + nashApi + '/api/Appointment/Put/' + id;
+            URL = nashApi + '/api/Appointment/Put/' + id;
           }
           else {
-            URL = 'http://' + nashApi + '/api/Appointment';
+            URL = nashApi + '/api/Appointment';
           }
 
           $.ajax({
