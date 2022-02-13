@@ -604,13 +604,13 @@
       if (amountOfTest == "") {
         amountOfTest = 0;
       }
-      else if (amountOfTest == "") {
+      else if (amountOfOffer == "") {
         amountOfOffer = 0;
       }
       amountOfTest = parseInt(amountOfTest, 10);
       amountOfOffer = parseInt(amountOfOffer, 10);
       debugger;
-      var grandAmount = amountOfTest + amountOfOffer;
+      var grandAmount = amountOfTest - amountOfOffer;
       document.getElementById('GrandtotalAmountOfOffer').innerHTML = grandAmount;
 
     }
@@ -800,9 +800,9 @@
           document.getElementById('ddlTestName').value != 0 &&
           document.getElementById('ddlOffersName').value != 0) {
           ListDetailsOffer();
-          var rowDataJsonOffer = JSON.parse(rowDataOffer);
+          var rowDataJsonOffer = rowDataOffer==""?"":JSON.stringify(rowDataOffer);
           ListDetailsTest();
-          var rowDataJsonTest = JSON.parse(rowDataTest);
+          var rowDataJsonTest = rowDataTest==""?"":JSON.stringify(rowDataTest);
           var ddvalueTest = document.getElementById('ddlTestName');
           var ddvalueOffers = document.getElementById('ddlOffersName');
           var ddvaluePatient = document.getElementById('ddlPatientName');
@@ -836,7 +836,7 @@
             URL = nashApi + '/api/Appointment/Put/' + id;
           }
           else {
-            URL = nashApi + '/api/Appointment';
+            URL = nashApi + '/api/Appointment/Postappointment';
           }
 
           $.ajax({

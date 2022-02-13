@@ -1205,7 +1205,7 @@
             </div>
         </div>
 
-        <div style="height: 100%;overflow-y: scroll;">
+        <div style="height: 100%;overflow-y: scroll;" id="reportsection">
             <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">
                 <div class="col-8" style="font-weight: bolder;">Complete Blood Count (CBC)</div>
                 <div class="col-4"><button
@@ -2278,7 +2278,48 @@
             document.getElementById('mainReportDiv').style.display = "block";
             document.getElementById('mainFooterDiv').style.display = "block";
             document.getElementById('footerBackgroundHome').style.backgroundColor = "lightgray";
-        }
+          
+            var inputNumber = document.getElementById("txtPhoneNumberSignIn").value;
+            var inputPassword = document.getElementById("txtPasswordSignIn").value;
+
+           URL = nashApi+'/api/Appointment/Appointmentby?PatientPhoneNumber='+inputNumber+'&Password='+ inputPassword;
+           $.ajax({
+           url: URL,
+           type: 'GET',
+           dataType: 'json',
+           success: function (data) {
+            var value = data;
+            var htm="";
+            for(var i=0; i< value.length; i++){
+                htm+=' <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">';
+                htm+=' <div class="col-8" style="font-weight: bolder;">'+value[i].title+'</div>';
+                htm+=' <div class="col-4"><button style="width: 100%;height: 100%;background: #b4c8db;border: lightgray;border-radius: 5px;font-size: 11px;">'+value[i].appointmentStatus+'</button> </div>';
+                htm+=' <div class="row" style="width: 100%;"><div class="col-4" style="padding-right: 0px;font-size: 15px;color: lightgray;"> '+value[i].createdOn+' </div>';
+                htm+=' <div class="col-4" style="padding-right: 0px;color: lightgray;font-weight: bold;font-size: 15px;"> '+value[i].price+'</div></div>  </div>';
+               
+            }
+            $('#reportsection').html(htm);
+            
+           },
+           error: function (request, message, error) {
+           }
+        })
+           
+       }
+                
+                
+                        
+               
+               
+                    
+                      
+                   
+                    
+                       
+                
+          
+       
+       
 
 
 

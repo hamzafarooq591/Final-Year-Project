@@ -83,31 +83,46 @@
             foreach(var Test in model.TestList)
             {
                 Test.AppointmentId = AppointmentId;
+                if (Test.TestId == 0) continue;
 
-                NashWebApi.NashContext appointmentTestContext = new NashContext();
-                AppointmentTestRepository appointmentTestRepository = new AppointmentTestRepository(appointmentTestContext);
-                AppointmentTest appointmentTestEntity = Test.ToEntity(userId, null);
-
-                using (UnitOfWork work = new UnitOfWork(appointmentTestContext))
+                    NashWebApi.NashContext appointmentTestContext = new NashContext();
+                if (Test.TestId == 0)
                 {
-                    appointmentTestEntity = appointmentTestRepository.Add(appointmentTestEntity);
-                    work.Complete();
+                    Test.TestId = appointmentTestContext.Tests.FirstOrDefault().Id;
                 }
+                AppointmentTestRepository appointmentTestRepository = new AppointmentTestRepository(appointmentTestContext);
+                AppointmentTest appointmentTestEntity = new AppointmentTest();
+                appointmentTestEntity.TestId = Test.TestId;
+                appointmentTestEntity.AppointmentId = Test.AppointmentId;
+                appointmentTestEntity.CreatedByUserId = 1;
+                appointmentTestEntity.ModifiedByUserId = 1;
+                appointmentTestEntity.CreatedOn = DateTime.Now;
+                appointmentTestEntity.ModifiedOn = DateTime.Now;
+
+                appointmentTestContext.AppointmentTests.Add(appointmentTestEntity);
+                appointmentTestContext.SaveChanges();
             }
 
             foreach (var Offer in model.OfferList)
             {
                 Offer.AppointmentId = AppointmentId;
-
+                if (Offer.OfferId == 0) continue;
                 NashWebApi.NashContext appointmentOfferContext = new NashContext();
-                AppointmentOfferRepository appointmentOfferRepository = new AppointmentOfferRepository(appointmentOfferContext);
-                AppointmentOffer appointmentOfferEntity = Offer.ToEntity(userId, null);
-
-                using (UnitOfWork work = new UnitOfWork(appointmentOfferContext))
+                if (Offer.OfferId == 0)
                 {
-                    appointmentOfferEntity = appointmentOfferRepository.Add(appointmentOfferEntity);
-                    work.Complete();
+                    Offer.OfferId = appointmentOfferContext.AppointmentOffers.FirstOrDefault().Id;
                 }
+                AppointmentOfferRepository appointmentOfferRepository = new AppointmentOfferRepository(appointmentOfferContext);
+                AppointmentOffer appointmentOfferEntity = new AppointmentOffer();
+                appointmentOfferEntity.OfferId = (int)Offer.AppointmentOfferId;
+                appointmentOfferEntity.AppointmentId = Offer.AppointmentId;
+                appointmentOfferEntity.CreatedByUserId = 1;
+                appointmentOfferEntity.ModifiedByUserId = 1;
+                appointmentOfferEntity.CreatedOn = DateTime.Now;
+                appointmentOfferEntity.ModifiedOn = DateTime.Now;
+
+                appointmentOfferContext.AppointmentOffers.Add(appointmentOfferEntity);
+                appointmentOfferContext.SaveChanges();
             }
 
             return null;// repository.FindOneMapped(entity.Id);

@@ -114,6 +114,20 @@
             }
             return null;
         }
+        //save
+        [HttpPost, Route("Postappointment")]
+
+        public DataActionResponse Postappointment(AppointmentBindingModel model)
+        {
+            var header = Request.Headers.Contains("token") ? ((string[])Request.Headers.GetValues("token"))[0] : "";
+            if (header == "")
+                return null;
+            var isSessionValid = _nashUserService.ValidateSession(header, UserId);
+            if (isSessionValid == false)
+                return null;
+            return this._AppointmentService.CreateAppointment(model, this.UserId).CreateDataActionResponseSuccess();
+        }
+
 
         //Update
         [HttpPost, Route("Put/{AppointmentId}")]
@@ -128,7 +142,14 @@
             return this._AppointmentService.UpdateAppointment(model, this.UserId).CreateDataActionResponseSuccess();
         }
 
-
+        [HttpGet, Route("Appointmentby")]
+        public IHttpActionResult Appointmentby(string PatientPhoneNumber, string Password)
+        {
+            var result = (from p in db.AppointmentTests.Where(w => w.Appointment.Patient.PhoneNumber == PatientPhoneNumber && w.Appointment.Patient.Password == Password)
+                        
+                        select new {p.Test.Title, CreatedOn=p.CreatedOn, p.Test.Price,p.Appointment.AppointmentStatus }).ToList();
+            return Ok(result);
+        }
     }
 }
 
