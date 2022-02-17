@@ -1,6 +1,7 @@
 function checkForm() {
     showLoader();
-    var nashApi = "http://adminhamza-001-site1.dtempurl.com";
+  var nashApi = "http://adminhamza-001-site1.dtempurl.com";
+    // var nashApi = "http://localhost:49988";
     var inputNumber = document.getElementById("txtPhoneNumberSignIn").value;
     var inputPassword = document.getElementById("txtPasswordSignIn").value;
 
@@ -17,9 +18,15 @@ function checkForm() {
             type: 'GET',
             dataType: 'json',
             success: function (data) {
-                debugger
+
                 hideLoader();
-                if (data==null) document.getElementById('invalidID').innerHTML = "Invalid Number or Password";
+                if (data.data==null)
+                {
+                    document.getElementById('invalidID').style.display = 'Block';
+                    document.getElementById('invalidID').style.color = 'red';
+                    document.getElementById('invalidID').innerHTML = "Invalid Number or Password"; 
+                    return; 
+                } 
                 var value = data.data;
                 var patientID = value.patientId;
                 setLocalStorage("PatientID", patientID);

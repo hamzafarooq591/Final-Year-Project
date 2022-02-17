@@ -812,7 +812,7 @@
           var GrandTotal = document.getElementById("GrandtotalAmountOfOffer").innerHTML;
           var formData = {
             appointmentId: id,
-            appointmentStatus: document.getElementById("ddlAppointmentStatus").value,
+            appointmentStatus: $('#ddlAppointmentStatus').val(),
             addres: document.getElementById("txtAddress").value,
             city: "Hyderabad",
             appointmentDateTime: document.getElementById("txtTime").value,

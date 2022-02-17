@@ -180,9 +180,13 @@ $('#slotid').html(htm);
 }
 function confirmdate(x){
     sdate=x;
+    var dat='<p>Select date:'+x+'</p>'
+    $('#datt').html(dat);
 }
 function selectslot(y){
     sslot=y;
+    var dat='<p>Schedule slot:'+y+'</p>'
+    $('#itmt').html(dat);
 }
 var txtgender='';
 function gender(z){
@@ -191,6 +195,8 @@ function gender(z){
 function goToThankyouPage() {
            
     var nashApi="http://adminhamza-001-site1.dtempurl.com";
+    //var nashApi="http://localhost:49988";
+    
     formData = {
       Address: document.getElementById('address').value,
       City: document.getElementById('cityid').value,
@@ -226,7 +232,6 @@ function goToThankyouPage() {
 });
     
 }
-
 
 //
 //
