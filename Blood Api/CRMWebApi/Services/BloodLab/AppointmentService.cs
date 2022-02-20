@@ -78,27 +78,47 @@
                     work.Complete();
                     AppointmentId = entity.Id;    
             }
-
-
-            foreach(var Test in model.TestList)
+            NashWebApi.NashContext appointmentTestContext = new NashContext();
+            
+                       
+            foreach (var Test in model.TestList)
             {
-                Test.AppointmentId = AppointmentId;
-                if (Test.TestId == 0) continue;
-
-                    NashWebApi.NashContext appointmentTestContext = new NashContext();
-                if (Test.TestId == 0)
+                var stest = appointmentTestContext.AppointmentTests.Where(w => w.Appointment.PatientId == model.PatientId && w.TestId==Test.TestId).FirstOrDefault();
+                stest.AppointmentId = AppointmentId;
+                var app = appointmentTestContext.Appointments.Where(w => w.Id == stest.AppointmentId).FirstOrDefault();
+                if (app == null)
                 {
-                    Test.TestId = appointmentTestContext.Tests.FirstOrDefault().Id;
+                    Appointment ap = new Appointment();
+                    ap.PatientId = model.PatientId;
+                    ap.AppointmentStatus = model.AppointmentStatus;
+                    ap.Addres = model.Addres;
+                    ap.AppointmentDateTime = model.AppointmentDateTime;
+                    ap.City = model.City;
+                    ap.IsBookingForMyself = model.IsBookingForMyself;
+                    ap.AppointmentPatientName = model.AppointmentPatientName;
+                    ap.PatientPhoneNumber = model.PatientPhoneNumber;
+                    ap.PatientGender = model.PatientGender;
+                    ap.PatientRelationship = model.PatientRelationship;
+                    ap.Comment = model.Comment;
+                    ap.TotalAmount = model.TotalAmount;
+                    appointmentTestContext.Appointments.Add(ap);
+                    appointmentTestContext.SaveChanges();
+                }
+                else
+                {
+                    app.AppointmentStatus =model.AppointmentStatus; 
+                    app.TotalAmount = model.TotalAmount;
                 }
                 AppointmentTestRepository appointmentTestRepository = new AppointmentTestRepository(appointmentTestContext);
                 AppointmentTest appointmentTestEntity = new AppointmentTest();
                 appointmentTestEntity.TestId = Test.TestId;
-                appointmentTestEntity.AppointmentId = Test.AppointmentId;
+                appointmentTestEntity.AppointmentId = stest.AppointmentId;
                 appointmentTestEntity.CreatedByUserId = 1;
                 appointmentTestEntity.ModifiedByUserId = 1;
                 appointmentTestEntity.CreatedOn = DateTime.Now;
                 appointmentTestEntity.ModifiedOn = DateTime.Now;
-
+                
+                
                 appointmentTestContext.AppointmentTests.Add(appointmentTestEntity);
                 appointmentTestContext.SaveChanges();
             }

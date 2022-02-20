@@ -13,6 +13,7 @@ namespace NashWebApi.BindingModels.BloodLab
         public int? AppointmentTestId { get; set; }
         public int AppointmentId { get; set; }
         public int TestId { get; set; }
-     
+        public decimal Price { get; set; }
+
     }
 }
