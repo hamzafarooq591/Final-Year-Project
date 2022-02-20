@@ -505,8 +505,9 @@
         ddlOffer.append(opt);
       });
     }
-
+var rowVal=[];
     function addRowTest() {
+      debugger;
       if (document.getElementById('ddlTestName').value != 0) {
         var table = document.getElementById("testOnChangeTableBody");
         var row = table.insertRow(0);
@@ -516,6 +517,8 @@
         var ddvalue = document.getElementById('ddlTestName');
         var price = ddvalue.options[ddvalue.selectedIndex].getAttribute("price");
         var testID = ddvalue.options[ddvalue.selectedIndex].getAttribute("testid");
+        var valtest={TestId:testID,Price:price};
+        rowVal.push(valtest);
         cell1.innerHTML = ddvalue.value;
         cell1.innerHTML += '<input type="hidden" id="hdnTestId' + rowCounter + '" value="' + testID + '" />';
         cell2.innerHTML = price;
@@ -527,7 +530,7 @@
         alert('Please Fill all values for Adding an Item');
       }
     }
-
+var rowOffer=[];
     function addRowOffer() {
       if (document.getElementById('ddlOffersName').value != 0) {
         var table = document.getElementById("offerOnChangeTableBody");
@@ -542,7 +545,10 @@
         newprice = parseInt(newprice, 10);
         oldprice = parseInt(oldprice, 10);
         price = newprice;
+       
         var offerID = ddvalue.options[ddvalue.selectedIndex].getAttribute("offerID");
+        var valOf={OfferId:offerID,Price:price};
+        rowOffer.push(valtest);
         cell1.innerHTML = ddvalue.value;
         cell1.innerHTML += '<input type="hidden" id="hdnOfferId" value="' + offerID + '" />';
         cell2.innerHTML = price;
@@ -617,13 +623,16 @@
 
     function deleteRowOffer(i) {
       var i = i - 1;
+      rowOffer.splice(i-1,1);
       document.getElementById("offerOnChangeTableBody").deleteRow(i);
       offerCalculation();
 
     }
 
     function deleteRowTest(i) {
+      debugger;
       var i = i - 1;
+      rowVal.splice(i-1,1);
       document.getElementById("testOnChangeTableBody").deleteRow(i);
       testCalculation();
     }
@@ -823,8 +832,8 @@
             patientPhoneNumber : document.getElementById('txtPatientPhoneNumber').value,
             patientGender : document.getElementById('txtGender').value,
             patientRelationship : document.getElementById('txtPatientRelationship').value,
-            testList: rowDataJsonTest,
-            offerList: rowDataJsonOffer,
+            testList: rowVal,
+            offerList: rowOffer,
             totalAmount: GrandTotal,
             createdBy: "string",
             dateCreated: "string",
