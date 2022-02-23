@@ -1,5 +1,5 @@
 var nashApi = "http://adminhamza-001-site1.dtempurl.com";
-
+//var nashApi = "http://localhost:49988";
 function sideBar(){
     // checkifUserIsLogin();
     var sideBarContent = '';

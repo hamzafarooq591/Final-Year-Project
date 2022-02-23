@@ -548,7 +548,7 @@ var rowOffer=[];
        
         var offerID = ddvalue.options[ddvalue.selectedIndex].getAttribute("offerID");
         var valOf={OfferId:offerID,Price:price};
-        rowOffer.push(valtest);
+        rowOffer.push(valOf);
         cell1.innerHTML = ddvalue.value;
         cell1.innerHTML += '<input type="hidden" id="hdnOfferId" value="' + offerID + '" />';
         cell2.innerHTML = price;

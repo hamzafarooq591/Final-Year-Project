@@ -147,7 +147,13 @@
         {
             var result = (from p in db.AppointmentTests.Where(w => w.Appointment.Patient.PhoneNumber == PatientPhoneNumber && w.Appointment.Patient.Password == Password)
                         
-                        select new {p.Test.Title, CreatedOn=p.CreatedOn, p.Test.Price,p.Appointment.AppointmentStatus }).ToList();
+                        select new {p.Id,p.Test.Title, CreatedOn=p.CreatedOn, p.Test.Price,p.Appointment.AppointmentStatus,p.AppointmentId }).ToList();
+            return Ok(result);
+        }
+        [HttpGet, Route("Appointmentdetails")]
+        public IHttpActionResult Appointmentdetails(int id)
+        {
+            var result = (db.AppointmentTests.Include("Test").Include("Appointment").Where(w=> w.AppointmentId==id)).FirstOrDefault();
             return Ok(result);
         }
     }

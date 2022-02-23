@@ -25,13 +25,14 @@
             PatientViewModel model2 = new PatientViewModel();
             PatientRepository repository = new PatientRepository(context);
             Patient patient = repository.GetAll().
-                FirstOrDefault(x => x.FullName.Contains(entity.FullName) && x.PhoneNumber.Contains(entity.PhoneNumber));
+                FirstOrDefault(x => x.FullName==entity.FullName && x.PhoneNumber==entity.PhoneNumber);
            
             using (UnitOfWork work = new UnitOfWork(context))
             {
                 if (patient != null)
                 {
-                    throw new NashHandledExceptionNotFound("Patient Name already Exist, Try another Name");
+                    return model2;
+                    
                 }
                 else
                 {
