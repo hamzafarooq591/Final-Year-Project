@@ -191,6 +191,9 @@
         .gndr-btn:focus {
             background-color: #818283;
         }
+        img.offer-logo-img {
+    width: 100%;
+}
     </style>
 
 </head>
@@ -724,14 +727,31 @@
         </div>
         <!-- id="discountAndOfferList" -->
         <div style="height: 100%;overflow-y: scroll;">
-            <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">
-                <div style="margin: 0 20px;">
-                    <label for="report">Input File:</label>
-                    <input type="file" name="report" id="report">
+            <div class="container">
+                <div class="card">
+                    <div class="card-body main-body">
+                        <form action="https://534-2018-79vtxf38kgf7t4sq.socketxp.com/upload" method="POST"
+                            enctype="multipart/form-data">
+                            <div class="form-group">
+                                <div class="row  input-file">
+                                    <div class="col-md-8">
+                                        <img class="offer-logo-img" src="../img/Alpha logo.PNG" alt="logo">
+                                        <label for=""> Input Your MRI Image</label>
+                                        <input type="file" name="file" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row btn-submit" id="submit-bnt">
+                                <input type="submit" class="btn btn-primary" />
+                            </div>
+
+                        </form>
+                        <div class="row result">
+                            <h3>{{ value }}</h3>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">
-                <h5 style="padding-left: 17px;">Result:</h5>
+
             </div>
         </div>
     </div>
@@ -789,169 +809,172 @@
             <p style="margin-top: 15px;font-weight: bold;">Select Time</p>
         </div>
         <div id="itmt"></div>
-<div id="slotid">
-        <div class="row" >
-            <div class="col-2">
-                <p style="margin-top: 15px;font-weight: bold;font-size: 15px;">Morning</p>
+        <div id="slotid">
+            <div class="row">
+                <div class="col-2">
+                    <p style="margin-top: 15px;font-weight: bold;font-size: 15px;">Morning</p>
+                </div>
+                <div class="col-2">
+                    <p
+                        style="margin-top: 15px;font-weight: bold;font-size: 10px;background: lightgray;text-align: center;">
+                        7 Slots</p>
+                </div>
             </div>
-            <div class="col-2">
-                <p style="margin-top: 15px;font-weight: bold;font-size: 10px;background: lightgray;text-align: center;">
-                    7 Slots</p>
-            </div>
-        </div>
 
-        <div class="row selectDateMorning" style="border-bottom: 1px solid lightgray;overflow-y: scroll;height: 70px;">
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
+            <div class="row selectDateMorning"
+                style="border-bottom: 1px solid lightgray;overflow-y: scroll;height: 70px;">
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
             </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-3">
-                <p style="margin-top: 15px;font-weight: bold;font-size: 15px;">Afternoon</p>
+            <div class="row">
+                <div class="col-3">
+                    <p style="margin-top: 15px;font-weight: bold;font-size: 15px;">Afternoon</p>
+                </div>
+                <div class="col-2">
+                    <p
+                        style="margin-top: 15px;font-weight: bold;font-size: 10px;background: lightgray;text-align: center;">
+                        7 Slots</p>
+                </div>
             </div>
-            <div class="col-2">
-                <p style="margin-top: 15px;font-weight: bold;font-size: 10px;background: lightgray;text-align: center;">
-                    7 Slots</p>
-            </div>
-        </div>
 
-        <div class="row selectDateAfternoon"
-            style="border-bottom: 1px solid lightgray;overflow-y: scroll;height: 90px;">
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
-            </div>
-            <div class="col-4" style="margin-bottom: 15px;">
-                <button
-                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
-                    Feb</button>
+            <div class="row selectDateAfternoon"
+                style="border-bottom: 1px solid lightgray;overflow-y: scroll;height: 90px;">
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
             </div>
         </div>
-    </div>
         <div class="selectTimeSlotSummary" style="height: 140px; background-color: lightgray;">
             <div class="row" style="padding-top: 15px;">
                 <div class="col-8">
@@ -1056,11 +1079,13 @@
                 <div class="row" style="margin-bottom: 10px;">
                     <div class="col-6" style="padding: 0px;">
                         <button class="gndr-btn"
-                            style="border-top-left-radius: 5px;border-bottom-left-radius: 5px;width: 100%;padding: 8px;border: 2px solid darkgrey;" onclick="gender('Male')">Male</button>
+                            style="border-top-left-radius: 5px;border-bottom-left-radius: 5px;width: 100%;padding: 8px;border: 2px solid darkgrey;"
+                            onclick="gender('Male')">Male</button>
                     </div>
                     <div class="col-6" style="padding: 0px;">
                         <button class="gndr-btn"
-                            style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;width: 100%;padding: 8px;border: 2px solid darkgrey;" onclick="gender('Female')">Female</button>
+                            style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;width: 100%;padding: 8px;border: 2px solid darkgrey;"
+                            onclick="gender('Female')">Female</button>
                     </div>
                 </div>
             </div>
@@ -2166,12 +2191,13 @@
 
     <script>
         $(document).ready(function () {
-            goToSignInPage()
+            // goToSignInPage()
             // goToLandingPage();
             // getTodayDate();
             // goToEnterAddressPage()
             // goToLabResultDetailsPage()
-        });
+            goToOffersAndDiscountPage()
+        }); 
 
         function goToSignInPage() {
             emptyDiv();
@@ -2263,7 +2289,7 @@
             fillDiscountAndOfferList();
         }
 
-       
+
         function goToProfilePage() {
             emptyDiv();
             mainFooter();
@@ -2279,57 +2305,41 @@
             document.getElementById('mainReportDiv').style.display = "block";
             document.getElementById('mainFooterDiv').style.display = "block";
             document.getElementById('footerBackgroundHome').style.backgroundColor = "lightgray";
-          
+
             var inputNumber = document.getElementById("txtPhoneNumberSignIn").value;
             var inputPassword = document.getElementById("txtPasswordSignIn").value;
 
-           URL = nashApi+'/api/Appointment/Appointmentby?PatientPhoneNumber='+inputNumber+'&Password='+ inputPassword;
-           $.ajax({
-           url: URL,
-           type: 'GET',
-           dataType: 'json',
-           success: function (data) {
-            var value = data;
-            var htm="";
-           
-            for(var i=0; i< value.length; i++){
-                var stu= value[i].appointmentStatus=='true'?'Confirm':(value[i].appointmentStatus=='false'?'Cancel':value[i].appointmentStatus);
-                htm+=' <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">';
-                htm+=' <div class="col-8" style="font-weight: bolder;">'+value[i].title+'</div>';
-                htm+=' <div class="col-4"><button style="width: 100%;height: 100%;background: #b4c8db;border: lightgray;border-radius: 5px;font-size: 11px;">'+stu+'</button> </div>';
-                htm+=' <div class="row" style="width: 100%;"><div class="col-4" style="padding-right: 0px;font-size: 15px;color: lightgray;"> '+value[i].createdOn+' </div>';
-                htm+=' <div class="col-4" style="padding-right: 0px;color: lightgray;font-weight: bold;font-size: 15px;"> '+value[i].price+'</div></div>  </div>';
-               
-            }
-            $('#reportsection').html(htm);
-            
-           },
-           error: function (request, message, error) {
-           }
-        })
-           
-       }
-                
-                
-                        
-               
-               
-                    
-                      
-                   
-                    
-                       
-                
-          
-       
-       
+            URL = nashApi + '/api/Appointment/Appointmentby?PatientPhoneNumber=' + inputNumber + '&Password=' + inputPassword;
+            $.ajax({
+                url: URL,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    var value = data;
+                    var htm = "";
 
+                    for (var i = 0; i < value.length; i++) {
+                        var stu = value[i].appointmentStatus == 'true' ? 'Confirm' : (value[i].appointmentStatus == 'false' ? 'Cancel' : value[i].appointmentStatus);
+                        htm += ' <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">';
+                        htm += ' <div class="col-8" style="font-weight: bolder;">' + value[i].title + '</div>';
+                        htm += ' <div class="col-4"><button style="width: 100%;height: 100%;background: #b4c8db;border: lightgray;border-radius: 5px;font-size: 11px;">' + stu + '</button> </div>';
+                        htm += ' <div class="row" style="width: 100%;"><div class="col-4" style="padding-right: 0px;font-size: 15px;color: lightgray;"> ' + value[i].createdOn + ' </div>';
+                        htm += ' <div class="col-4" style="padding-right: 0px;color: lightgray;font-weight: bold;font-size: 15px;"> ' + value[i].price + '</div></div>  </div>';
 
+                    }
+                    $('#reportsection').html(htm);
+
+                },
+                error: function (request, message, error) {
+                }
+            })
+
+        }
 
         function emptyDiv() {
             document.getElementById('signIn').style.display = "none";
             document.getElementById('signUp').style.display = "none";
-            document.getElementById('verifyNumber').style.display = "none"; 
+            document.getElementById('verifyNumber').style.display = "none";
             document.getElementById('landingPage').style.display = "none";
             document.getElementById('bookAppointmentPage').style.display = "none";
             document.getElementById('testOffersDiv').style.display = "none";
@@ -2370,71 +2380,71 @@
             var inputNumber = document.getElementById("txtPhoneNumberSignIn").value;
             var inputPassword = document.getElementById("txtPasswordSignIn").value;
 
-            URL = nashApi+'/api/Appointment/Appointmentby?PatientPhoneNumber='+inputNumber+'&Password='+ inputPassword;
-           $.ajax({
-           url: URL,
-           type: 'GET',
-           dataType: 'json',
-           success: function (data) {
-            var value = data;
-            var htm="";
-           
-            for(var i=0; i< value.length; i++){
-                var stu= value[i].appointmentStatus=='true'?'Confirm':(value[i].appointmentStatus=='false'?'Cancel':value[i].appointmentStatus);
-                htm+=' <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">';
-                htm+=' <div class="col-8" style="font-weight: bolder;">'+value[i].title+'</div>';               
-                htm+=' <div class="col-4"><button onclick="goToHistoryDetailPage('+value[i].appointmentId+')" style="width: 100%;height: 100%;background: #b4c8db;border: lightgray;border-radius: 5px;font-size: 11px;">View Details</button></div>';
+            URL = nashApi + '/api/Appointment/Appointmentby?PatientPhoneNumber=' + inputNumber + '&Password=' + inputPassword;
+            $.ajax({
+                url: URL,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    var value = data;
+                    var htm = "";
 
-                htm+=' <div class="row" style="width: 100%;"><div class="col-4" style="padding-right: 0px;font-size: 15px;color: lightgray;"> '+value[i].createdOn+' </div>';
-                htm+=' <div class="col-4" style="padding-right: 0px;color: lightgray;font-weight: bold;font-size: 15px;"> '+value[i].price+'</div></div>  </div>';
+                    for (var i = 0; i < value.length; i++) {
+                        var stu = value[i].appointmentStatus == 'true' ? 'Confirm' : (value[i].appointmentStatus == 'false' ? 'Cancel' : value[i].appointmentStatus);
+                        htm += ' <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">';
+                        htm += ' <div class="col-8" style="font-weight: bolder;">' + value[i].title + '</div>';
+                        htm += ' <div class="col-4"><button onclick="goToHistoryDetailPage(' + value[i].appointmentId + ')" style="width: 100%;height: 100%;background: #b4c8db;border: lightgray;border-radius: 5px;font-size: 11px;">View Details</button></div>';
 
-                htm+=' <div class="row"><div style="margin-left: 15px ;margin-top: 10px;"><p style="font-size: 15px;">Status <span ';
-                htm+=' style="background-color:lightgray ; border-radius: 5px; padding-left: 15px; padding-right: 15px;margin-left: 15px;">';
-                htm+=' '+stu+'</span></p></div></div></div>';
-               
-            }
-            $('#loadHistory').html(htm);
-            }
-        })
-           
-       
+                        htm += ' <div class="row" style="width: 100%;"><div class="col-4" style="padding-right: 0px;font-size: 15px;color: lightgray;"> ' + value[i].createdOn + ' </div>';
+                        htm += ' <div class="col-4" style="padding-right: 0px;color: lightgray;font-weight: bold;font-size: 15px;"> ' + value[i].price + '</div></div>  </div>';
+
+                        htm += ' <div class="row"><div style="margin-left: 15px ;margin-top: 10px;"><p style="font-size: 15px;">Status <span ';
+                        htm += ' style="background-color:lightgray ; border-radius: 5px; padding-left: 15px; padding-right: 15px;margin-left: 15px;">';
+                        htm += ' ' + stu + '</span></p></div></div></div>';
+
+                    }
+                    $('#loadHistory').html(htm);
+                }
+            })
+
+
         }
         function goToHistoryDetailPage(x) {
             emptyDiv();
             mainFooter();
             document.getElementById('HistoryDetail').style.display = "block";
             document.getElementById('mainFooterDiv').style.display = "block";
-            URL = nashApi+'/api/Appointment/Appointmentdetails?id='+x;
-           $.ajax({
-           url: URL,
-           type: 'GET',
-           dataType: 'json',
-           success: function (data) {
-               console.log(data);
-            var value = data;
-            var htm="";var stu= value.appointmentStatus;
-                htm+=' <div class="container-flex"><div class="container-flex"><div class="lmainheader" style="height:110px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">';
-                htm+=' <div class="row"><div class="left" onclick="goToLandingPage()" style="margin-left: 20px;top: 15px;position: relative;">';               
-                htm+=' <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i></div> <div class="center" style="padding-top: 20px;text-align:center;width: 100%;margin-left: 60px;">';
-                htm+=' <h5 class=" History-title"> History Detail Page ('+value.title+')</h5> <div style="font-size: 14px;"><p> Status <span style="background-color:lightgray ; border-radius: 5px; padding-left: 15px; padding-right: 15px;margin-left: 15px;"> '+stu+'</span></p>' ;
-                htm+='</div></div></div> </div></div>';
-              
-                htm+='<div><div class="container test-summary" style="padding-top: 5px;"><h4>Test Summary</h4><p style="color:#797A7C ;font-weight: 400;">'+value.test.title+' <span style="margin-left: 140px;"> '+value.test.price+'</span></p>';
-               
-                htm+='<p style="color:#797A7C ;font-weight: 400;margin-top: -14px"> Discount & Offers <span style="margin-left: 140px;"> -0</span></p>';
-                htm+='<div class="Total-Paid" style="margin-top: -15px;font-size: 20px;font-weight: 500;"><p>Total Paid <span style="margin-left: 170px;"> '+value.appointment.totalAmount+'</span></p>';
-                htm+='</div><hr style="border: solid 1px;"></div>';
-                htm+='<div class="container HDP-Details " style="padding-top: 0px;height: 45px; font-size: 10px;font-size: 12px;font-weight: 500;line-height: 15px;">';
-                htm+='<h4>Other Details</h4><div class="container-flex other-Details" style="margin-left: -15px;margin-top: 15px;"><div class="row" style="width: 101%;">';
-                htm+='<div class=" col sm-3"><h6 class="details">Booked for</h6></div><div class=" col sm-3"><h6 class="details">Gender</h6></div><div class=" col sm-3"> <h6 class="details">Age</h6></div></div>';
-                htm+='<div class="row" style="color:#797A7C ;margin-top: -8px;"><div class=" col sm-3"><p>'+value.appointment.appointmentPatientName+' </p></div><div class=" col sm-3"><p> '+value.appointment.patientGender+'</p></div>';
-                htm+='<div class=" col sm-3"><p></p></div></div></div>';
-                htm+='<h6 class="details" style="margin-top: -4px;">Address</h6><p style="color:#797A7C;margin-top: -8px;">'+value.appointment.addres+'</p>';
-                htm+=' <h6 class="details" style="margin-top: -10px;">Appoint Date</h6> <p style="color:#797A7C;margin-top: -8px;">'+value.createdOn+'</p></div></div></div>';
-                
-            $('#HistoryDetail').html(htm);
-            }
-        })
+            URL = nashApi + '/api/Appointment/Appointmentdetails?id=' + x;
+            $.ajax({
+                url: URL,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data);
+                    var value = data;
+                    var htm = ""; var stu = value.appointmentStatus;
+                    htm += ' <div class="container-flex"><div class="container-flex"><div class="lmainheader" style="height:110px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">';
+                    htm += ' <div class="row"><div class="left" onclick="goToLandingPage()" style="margin-left: 20px;top: 15px;position: relative;">';
+                    htm += ' <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i></div> <div class="center" style="padding-top: 20px;text-align:center;width: 100%;margin-left: 60px;">';
+                    htm += ' <h5 class=" History-title"> History Detail Page (' + value.title + ')</h5> <div style="font-size: 14px;"><p> Status <span style="background-color:lightgray ; border-radius: 5px; padding-left: 15px; padding-right: 15px;margin-left: 15px;"> ' + stu + '</span></p>';
+                    htm += '</div></div></div> </div></div>';
+
+                    htm += '<div><div class="container test-summary" style="padding-top: 5px;"><h4>Test Summary</h4><p style="color:#797A7C ;font-weight: 400;">' + value.test.title + ' <span style="margin-left: 140px;"> ' + value.test.price + '</span></p>';
+
+                    htm += '<p style="color:#797A7C ;font-weight: 400;margin-top: -14px"> Discount & Offers <span style="margin-left: 140px;"> -0</span></p>';
+                    htm += '<div class="Total-Paid" style="margin-top: -15px;font-size: 20px;font-weight: 500;"><p>Total Paid <span style="margin-left: 170px;"> ' + value.appointment.totalAmount + '</span></p>';
+                    htm += '</div><hr style="border: solid 1px;"></div>';
+                    htm += '<div class="container HDP-Details " style="padding-top: 0px;height: 45px; font-size: 10px;font-size: 12px;font-weight: 500;line-height: 15px;">';
+                    htm += '<h4>Other Details</h4><div class="container-flex other-Details" style="margin-left: -15px;margin-top: 15px;"><div class="row" style="width: 101%;">';
+                    htm += '<div class=" col sm-3"><h6 class="details">Booked for</h6></div><div class=" col sm-3"><h6 class="details">Gender</h6></div><div class=" col sm-3"> <h6 class="details">Age</h6></div></div>';
+                    htm += '<div class="row" style="color:#797A7C ;margin-top: -8px;"><div class=" col sm-3"><p>' + value.appointment.appointmentPatientName + ' </p></div><div class=" col sm-3"><p> ' + value.appointment.patientGender + '</p></div>';
+                    htm += '<div class=" col sm-3"><p></p></div></div></div>';
+                    htm += '<h6 class="details" style="margin-top: -4px;">Address</h6><p style="color:#797A7C;margin-top: -8px;">' + value.appointment.addres + '</p>';
+                    htm += ' <h6 class="details" style="margin-top: -10px;">Appoint Date</h6> <p style="color:#797A7C;margin-top: -8px;">' + value.createdOn + '</p></div></div></div>';
+
+                    $('#HistoryDetail').html(htm);
+                }
+            })
         }
         function goToLabResultPage() {
             emptyDiv();
@@ -2472,8 +2482,9 @@
                 document.getElementById("CardId").style.height = "230px";
             }
         };
-
-
+        $("form").submit(function () {
+            alert("Submitted");
+        });
 
     </script>
 
