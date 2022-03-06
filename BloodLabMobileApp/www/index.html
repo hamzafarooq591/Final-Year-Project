@@ -735,7 +735,7 @@
                             <div class="form-group">
                                 <div class="row  input-file">
                                     <div class="col-md-8">
-                                        <img class="offer-logo-img" src="../img/Alpha logo.PNG" alt="logo">
+                                        <img class="offer-logo-img" src="./img/Alpha logo.PNG" alt="logo">
                                         <label for=""> Upload your MRI image</label>
                                         <input type="file" name="file" class="form-control" />
                                     </div>
@@ -2188,12 +2188,12 @@
 
     <script>
         $(document).ready(function () {
-            // goToSignInPage()
+            goToSignInPage()
             // goToLandingPage();
             // getTodayDate();
             // goToEnterAddressPage()
             // goToLabResultDetailsPage()
-            goToOffersAndDiscountPage()
+            // goToOffersAndDiscountPage()
         }); 
 
         function goToSignInPage() {
@@ -2423,7 +2423,7 @@
                     htm += ' <div class="container-flex"><div class="container-flex"><div class="lmainheader" style="height:110px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">';
                     htm += ' <div class="row"><div class="left" onclick="goToLandingPage()" style="margin-left: 20px;top: 15px;position: relative;">';
                     htm += ' <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i></div> <div class="center" style="padding-top: 20px;text-align:center;width: 100%;margin-left: 60px;">';
-                    htm += ' <h5 class=" History-title"> History Detail Page (' + value.title + ')</h5> <div style="font-size: 14px;"><p> Status <span style="background-color:lightgray ; border-radius: 5px; padding-left: 15px; padding-right: 15px;margin-left: 15px;"> ' + stu + '</span></p>';
+                    htm += ' <h5 class=" History-title"> History Detail Page </h5> <div style="font-size: 14px;">';
                     htm += '</div></div></div> </div></div>';
 
                     htm += '<div><div class="container test-summary" style="padding-top: 5px;"><h4>Test Summary</h4><p style="color:#797A7C ;font-weight: 400;">' + value.test.title + ' <span style="margin-left: 140px;"> ' + value.test.price + '</span></p>';
