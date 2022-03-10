@@ -11,9 +11,10 @@
     <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
     <meta name='apple-mobile-web-app-title' content='' />
     <meta name='copyright' content='copyright 2021 ABC Company' />
-    <meta http-equiv='Content-Security-Policy' content="default-src * file:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; img-src 'self' data:;" />
+    <meta http-equiv='Content-Security-Policy'
+        content="default-src * file:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; img-src 'self' data:;" />
     <script src="cordova.js"></script>
-    
+
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,7 +30,7 @@
     <script src="js/jquery/jquery-3.3.1.min.js"></script>
     <script src="js/fixContent.js"></script>
     <script src="js/bookAppointment.js"></script>
-    
+
 
     <title>Alpha Laboratory</title>
 
@@ -195,14 +196,104 @@
         .gndr-btn:focus {
             background-color: #818283;
         }
+
         img.offer-logo-img {
-    width: 100%;
-}
+            width: 100%;
+        }
+
+        #slotid {
+            display: flex;
+            flex-wrap: wrap;
+            height: 30vh;
+        }
+
+        .logout-btn {
+            padding: 8px 16px;
+            border: 2px solid #21418C;
+            border-radius: 50px;
+            background-color: #B4C8DB;
+            font-weight: 700;
+            font-size: 16px;
+            color: #dc3545;
+        }
+
+        .splash {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            /* background-color: #85C1E9; */
+            background-image: linear-gradient(#D6EAF8, #85C1E9);
+            z-index: 9999999;
+            color: white;
+            text-align: center;
+            line-height: 90vh;
+        }
+
+        .splash.display-none {
+            position: fixed;
+            opacity: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            /* background-color: #85C1E9; */
+            background-image: linear-gradient(#D6EAF8, #85C1E9);
+            z-index: -20;
+            text-align: center;
+            color: white;
+            line-height: 90vh;
+            transition: all 0.5s;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+            width: 50%;
+        }
+
+        #spinner-wrapper {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            cursor: pointer;
+            background-color: #ffff;
+            opacity: .8;
+        }
+
+        #spinner {
+            display: inline-block;
+            position: relative;
+            width: 50%;
+            top: 220px;
+            left: 100px;
+        }
     </style>
 
 </head>
 
 <body style="background: white;text-transform: inherit;">
+
+    <div class="splash">
+        <img src="img/Alpha logo.PNG" alt="logo" class="fade-in">
+    </div>
+
+    <div id="spinner-wrapper">
+        <img src="img/spinner.gif" alt="loader" id="spinner">
+    </div>
 
     <!-- footer start -->
     <div id="mainFooterDiv">
@@ -213,20 +304,7 @@
     <!-- overlay start -->
 
     <div id="overlay">
-        <div class="lds-default" style="left: 40%;top: 40%;">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+        <img src="img/spinner.gif" alt="loader" id="spinner">
     </div>
 
     <!-- overlay end -->
@@ -234,33 +312,22 @@
     <!-- sign in start -->
     <div id="signIn" style="display: block;">
         <!-- <div id="overlay">
-            <div class="lds-default" style="left: 40%;top: 40%;">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+                        <img src="img/spinner.gif" alt="loader" id="spinner">
         </div> -->
+        <div style="text-align: center; background-color: #B4C8DB">
+            <img width="40%" src="img/alphalogo-1.png">
+        </div>
         <div class="container-flex">
             <div class="mainheader">
                 <div class="row rowMargin">
-
-                    <div class="col sm-4 mt-4 logo  ">
+                    <!-- <div class="col sm-4 mt-4 logo  ">
                         <img class="logo " src="img/logo-1.JPG">
-                    </div>
-                    <div class="col sm-5 mt-5 col-flex-item vertical-divider">
+                    </div> -->
+                    <div class="col sm-6 mt-5 col-flex-item vertical-divider">
                         <h2 class="heading">Deliver Smooth<br>Blood Test at Your<br>doorstep!</h2>
                     </div>
-                    <div class="col sm-3 mt-4">
-                        <img src="img/lab.png" style="width: 100%; height: 88px; margin-top:20px;">
+                    <div class="col sm-6 mt-4">
+                        <img src="img/lab.png" style="width: 80%; height: 130px; margin-top: 10px;">
                     </div>
                 </div>
                 <div class="col ">
@@ -283,10 +350,10 @@
                 <div>
                     <p id="invalidID" style="display: none;"></p>
                 </div>
-                <div class="">
+                <!-- <div class="">
                     <a class="forgettxt" style="color: red;" onclick="goToForgotPasswordPage()">Forget Password?
                     </a>
-                </div>
+                </div> -->
 
                 <div>
                     <button type="submit" class="btn btn-primary px-2 py-3 mt-2" onclick="checkForm()">Sign in
@@ -319,18 +386,17 @@
                 <div></div>
             </div>
         </div> -->
+        <div style="text-align: center; background-color: #B4C8DB">
+            <img width="40%" src="img/alphalogo-1.png" style="padding-bottom: 15px;">
+        </div>
         <div class="container-flex">
             <div class="mainheader">
                 <div class="row rowMargin">
-
-                    <div class="col sm-4 mt-4 logo  ">
-                        <img class="logo " src="img/logo-1.JPG">
-                    </div>
-                    <div class="col sm-5 mt-5 col-flex-item vertical-divider">
+                    <div class="col sm-8 mt-5 col-flex-item vertical-divider">
                         <h2 class="heading">Deliver Smooth<br>Blood Test at Your<br>doorstep!</h2>
                     </div>
-                    <div class="col sm-3 mt-4">
-                        <img src="img/lab.png" style="width: 100%; height: 88px; margin-top:20px;">
+                    <div class="col sm-4 mt-4">
+                        <img src="img/lab.png" style="width: 70%; height: 115px;">
                     </div>
                 </div>
                 <div class="col ">
@@ -491,18 +557,15 @@
         <div class="container-flex">
             <div class="container-flex">
                 <div class="lmainheader" style="padding-bottom: 35px;">
-                    <div class="row">
-
-                        <div class="center cstmlogo">
-                            <img src="img/logo-1.JPG" style="width: 100%;">
-                        </div>
+                    <div style="text-align: center; background-color: #B4C8DB">
+                        <img width="40%" src="img/alphalogo-1.png" style="padding-bottom: 15px;">
                     </div>
-                    <div class="row ">
+                    <div class="row">
                         <div class="col sm-6 main-title">
                             <h2 style="font-size: 22px; color: #21438C;">
                                 Welcome! </h2>
                             <h2 style="font-size: 12px;">
-                                You are one click away to<br>
+                                You are one click away to
                                 book your Appointment</h2>
                         </div>
                         <div class="col sm-6">
@@ -586,7 +649,7 @@
             <div class="col-6 Discount-title" id="appointmentPageOfferDivButton"
                 onclick="goToOffersBookAppointmentDiv()"
                 style="border: 1px solid;border-radius: 30px;text-align: center;padding: 10px;">
-                Tumor Detection</div>
+                Offers & Discount</div>
         </div>
 
         <div id="testOffersDiv" style="display: none;">
@@ -735,7 +798,7 @@
                 <div class="card">
                     <div class="card-body main-body">
                         <form action="https://534-2018-79vtxf38kgf7t4sq.socketxp.com/upload" method="POST"
-                            enctype="multipart/form-data">
+                            enctype="multipart/form-data" id="tumor-form">
                             <div class="form-group">
                                 <div class="row  input-file">
                                     <div class="col-md-8">
@@ -798,7 +861,7 @@
             <p style="margin-top: 15px;font-weight: bold;">Select Day</p>
         </div>
 
-        <div id="fillDateRow" style="display: -webkit-box;overflow-x: scroll;padding-left: 15px;">
+        <div id="fillDateRow" style="display: -webkit-box;overflow-x: scroll;padding-left: 15px; height: 50px;">
             <!-- <div style="margin-right: 10px;">
                 <button
                     style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
@@ -1120,14 +1183,13 @@
             <div class="container-flex">
                 <div class="lmainheader" style="height:65px; border-bottom-left-radius: 0px;
                 border-bottom-right-radius: 0px;">
-                    <div class="row">
-                        <img src="img/logo-1.JPG" alt=""
-                            style="width: 35%; border-radius: 8px; margin: 10px 0 10px 30%;">
+                    <div style="text-align: center; background-color: #D6EAF8">
+                        <img width="40%" src="img/alphalogo-1.png" style="padding-bottom: 15px;">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" style="height: 100vh; background-image: linear-gradient(#D6EAF8, #85C1E9);">
             <div class="ty-page">
                 <img src="img/tick.png" alt="" style="width: 35%;">
                 <h1>Thank You!</h1>
@@ -1157,7 +1219,7 @@
             </div>
         </div>
 
-        <div class="">
+        <div style="background-color: aliceblue; height: 100vh; padding: 5px;">
             <div id="profileFullName" class="col-12" style="margin-top: 10px;">
                 <!-- <span style="font-size: 15px;">Name</span> -->
                 <!-- <input type="text" disabled id="profileFullName"
@@ -1189,6 +1251,14 @@
                     <div class="col-6" style="padding: 0px;">
                         <button
                             style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;width: 100%;padding: 8px;background: #b4c8db;border: 2px solid darkgrey;">Female</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="margin-top: 40px;">
+                <div class="row" style="margin-bottom: 10px;">
+                    <div class="col-12" style="padding: 0px;">
+                        <button class="logout-btn" onclick="goToSignInPage()">Log Out <img src="img/logout.png"
+                                alt=""></button>
                     </div>
                 </div>
             </div>
@@ -1323,8 +1393,8 @@
                 <select
                     style="width: 100%;padding: 8px;background: #EEEEEE;border: 2px solid darkgrey;border-radius: 5px;"
                     placeholder="Enter City" id="cityid">
-                    <option value="Hyderabad">Hyderabad</option>
                     <option value="Karachi">Karachi</option>
+                    <option value="Hyderabad">Hyderabad</option>
                     <option value="Lahore">Lahore</option>
                     <option value="Islamabad">Islamabad</option>
                 </select>
@@ -1411,9 +1481,9 @@
             </div>
         </div>
 
-        <div class="NH-main-div">
+        <div class="NH-main-div" style="background-image: linear-gradient(#D6EAF8, #85C1E9); padding: 6px;">
             <div class="col-12" style="margin-top: 10px;">
-                <span style="font-size: 15px;color:#797A7C;">Add your message</span>
+                <span style="font-size: 16px;">Add your message</span>
                 <textarea class="txtArea" rows="4" cols="50" style=""></textarea>
             </div>
 
@@ -1449,14 +1519,14 @@
                 <h5 class="NH-Address">
                     Address
                 </h5>
-                <p style="color:#797A7C;">
+                <p>
                     ST-2D, Block-17, Gulshan-e-Iqbal, Adjacent to، National Stadium Rd
                     National Stadium Colony, Karachi.
                 </p>
                 <h5 class="NH-Address">
                     Email
                 </h5>
-                <p style="color:#797A7C;">
+                <p>
                     info@alpha-laboratory.com
                 </p>
 
@@ -2198,7 +2268,7 @@
             // goToEnterAddressPage()
             // goToLabResultDetailsPage()
             // goToOffersAndDiscountPage()
-        }); 
+        });
 
         function goToSignInPage() {
             emptyDiv();
@@ -2483,9 +2553,24 @@
                 document.getElementById("CardId").style.height = "230px";
             }
         };
-            // $("form").submit(function () {
-            //     alert("Submitted");
-            // });
+        // $("form").submit(function () {
+        //     alert("Submitted");
+        // });
+
+        const splash = document.querySelector('.splash')
+        document.addEventListener('DOMContentLoaded', (e) => {
+            setTimeout(() => {
+                splash.classList.add('display-none');
+            }, 3000);
+        })
+
+        var spinner = $('#spinner-wrapper');
+        $(function () {
+            $('#tumor-form').submit(function (e) {
+                // e.preventDefault();
+                spinner.show();
+            });
+        });
 
     </script>
 

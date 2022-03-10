@@ -28,7 +28,7 @@ function mainFooter() {
   mainFooterContent += '</a>';
   mainFooterContent += '</div>';
 
-  mainFooterContent += '<div onclick="goToLabResultPage()" class="col-2" id="footerBackgroundOrder" style="padding-top: 15px;height: 100%;margin-right: 5px;">';
+  mainFooterContent += '<div onclick="goToReportPage()" class="col-2" id="footerBackgroundOrder" style="padding-top: 15px;height: 100%;margin-right: 5px;">';
   mainFooterContent += '<a><img class="footer" style="width: 60%;" src="img/002-Order.svg" alt="">';
   mainFooterContent += '<p style="font-size: 12px;color: gray;">Reports</p>';
   mainFooterContent += '</a>';

@@ -1,10 +1,10 @@
 var nashApi = "http://adminhamza-001-site1.dtempurl.com";
 //var nashApi = "http://localhost:49988";
-function sideBar(){
+function sideBar() {
     // checkifUserIsLogin();
     var sideBarContent = '';
     sideBarContent += '<a href="dashboard.html">';
-    sideBarContent += '<img src="dist/img/logo1.jpg" alt="logo1 Logo" class="brand-image elevation-3" style="opacity: .8;width:100%;height:100%">';
+    sideBarContent += '<img src="dist/img/logo-1.png" alt="logo1 Logo" class="brand-image elevation-3" style="opacity: 1; width:100%;height:80%">';
     // sideBarContent += '<span class="brand-text font-weight-light">NOOR</span>';
     sideBarContent += '</a>';
     sideBarContent += '<div  class="sidebar">';
@@ -78,19 +78,19 @@ function sideBar(){
     sideBarContent += ' </p>';
     sideBarContent += '</a>';
     sideBarContent += '  <ul class="nav nav-treeview">';
-     sideBarContent += '<li class="nav-item">';
+    sideBarContent += '<li class="nav-item">';
     sideBarContent += '<a href="Patients.html" class="nav-link">';
     sideBarContent += ' <i class="fas fa-user-injured mr-2"></i>';
     sideBarContent += ' <p>Patients</p>';
-    sideBarContent += ' </a>'; 
+    sideBarContent += ' </a>';
     sideBarContent += ' </li>';
     sideBarContent += '<li class="nav-item">';
     sideBarContent += '<a href="appointmentSlot.html" class="nav-link">';
     sideBarContent += ' <i class="fas fa-calendar-check mr-2"></i>';
     sideBarContent += ' <p>Appointment Slot</p>';
-    sideBarContent += ' </a>'; 
+    sideBarContent += ' </a>';
     sideBarContent += ' </li>';
-     sideBarContent += '<li class="nav-item">';
+    sideBarContent += '<li class="nav-item">';
     sideBarContent += ' <a href="Labtest.html" class="nav-link">';
     sideBarContent += ' <i class="fas fa-vials mr-2"></i>';
     sideBarContent += ' <p>Lab Test</p>';
@@ -147,7 +147,7 @@ function sideBar(){
     document.getElementById('sideBarContent').innerHTML = sideBarContent;
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
     sideBar();
 });
 
@@ -162,24 +162,24 @@ function setLocalStorage(c_name, value) {
 }
 
 var sessionKeyifExist = localStorage.getItem("SessionKeyFromLogin");
-function checkifUserIsLogin(){
-    if(sessionKeyifExist == null){
-        window.open("index.html",'_self');
+function checkifUserIsLogin() {
+    if (sessionKeyifExist == null) {
+        window.open("index.html", '_self');
         return false;
     }
-    else{
+    else {
         return true;
     }
 }
 
 function overlayOn() {
     document.getElementById("overlay").style.display = "block";
-  }
-  
-  function overlayOff() {
+}
+
+function overlayOff() {
     document.getElementById("overlay").style.display = "none";
-  }
-  function logout() {
+}
+function logout() {
     localStorage.clear();
-    window.open('index.html','_self');
-  }
+    window.open('index.html', '_self');
+}
