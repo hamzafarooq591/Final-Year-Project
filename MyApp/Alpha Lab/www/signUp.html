@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <script>src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"</script>
+       <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="js/signUp.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    
+
+</style>
+
+<body style="background-color: rgb(237,237,237);">
+
+    <div class="container-flex">
+        <div class="mainheader">
+            <div class="row" >
+
+                <div class="col mt-5 logo col-flex-item vertical-divider ">
+                    <img class="logo" src="img/logo-1.JPG" style="border-radius: 15px ;">
+                </div>
+                <div class="col mt-5 main-title">
+                    <h2 class="heading"style=" margin-top:40px;">Delivery Smooth </h2>
+                    <h2 class="heading">Blood Test At</h2>
+                    <h2 class="heading">your doorstep</h2>
+                </div>
+                <div class="col mt-5">
+                    <img src="img/lab.png" style="width: 95%; height: 290px; margin-top:20px;">
+                </div>
+            </div>
+            <div class="ol sm-3 ml-5 mb-5">
+                <h2 class="title" >Signup</h2>
+            </div>
+        </div>
+    </div>
+
+    <form role="form">
+        <div class="card-body" >
+            <div class="form-group mt-5 " >
+                <label class="txtlable" for="txtFullName" >Phone Number</label>
+                <input type="number" class="form-control" id="txtFullName" placeholder=" Enter Number">
+            </div>
+            <div class="form-group  mt-4" >
+                <label class="txtlable"for="txtAddress" >Password</label>
+                <input type="password" class="form-control" id="password-field" placeholder="Enter Password">
+                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+            </div>
+
+            <div class="form-group  mt-4">
+                <label class="txtlable" for="txtPassword" >Confirm Password</label>
+                <input  id="c_password-field"  type="password" class="form-control" placeholder="Confirm Password" >
+                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-Cpassword" ></span>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-primary px-5 py-5 mt-5 " onclick="saveForm();">Sign up </button>
+            </div>
+        </div>
+
+   
+<script >
+    $(".toggle-password").click(function() {
+$(this).toggleClass("fa-eye fa-eye-slash");
+var x = document.getElementById("password-field");
+  if (x.type === "password") {
+    x.type = "text";
+    document.getElementById("password-field").style.fontSize ="50px";
+    document.getElementById("password-field").style.fontWeight ="500";
+  } else {
+    x.type = "password";
+}
+});
+$(".toggle-Cpassword").click(function() {
+$(this).toggleClass("fa-eye fa-eye-slash");
+var y = document.getElementById("c_password-field");
+  if (y.type === "password") {
+    y.type = "text";
+    document.getElementById("c_password-field").style.fontSize ="50px";
+    document.getElementById("c_password-field").style.fontWeight ="500";
+  } else {
+    y.type = "password";
+}
+});
+
+
+</script>
+</body>
+
+</html>

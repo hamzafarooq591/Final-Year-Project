@@ -1,0 +1,2589 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name='mobile-web-app-capable' content='yes' />
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+    <meta name='apple-mobile-web-app-title' content='' />
+    <meta name='copyright' content='copyright 2021 ABC Company' />
+    <meta http-equiv='Content-Security-Policy'
+        content="default-src * file:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; img-src 'self' data:;" />
+    <script src="cordova.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- style sheets -->
+    <link rel="stylesheet" href="css/fixContent.css">
+    <link rel="stylesheet" href="css/signIn.css">
+    <link rel="stylesheet" href="css/landingPage.css">
+    <link rel="stylesheet" href="css/signUp.css">
+    <link rel="stylesheet" href="css/verifyNumber.css">
+
+    <script src="js/jquery/jquery-3.3.1.js"></script>
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/jquery/jquery-3.3.1.min.js"></script>
+    <script src="js/fixContent.js"></script>
+    <script src="js/bookAppointment.js"></script>
+
+
+    <title>Alpha Laboratory</title>
+
+    <style>
+        #overlay {
+            position: fixed;
+            /* Sit on top of the page content */
+            display: none;
+            /* Hidden by default */
+            width: 100%;
+            /* Full width (cover the whole page) */
+            height: 100%;
+            /* Full height (cover the whole page) */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Black background with opacity */
+            z-index: 2;
+            /* Specify a stack order in case you're using a different order for other elements */
+            cursor: pointer;
+            /* Add a pointer on hover */
+        }
+
+        .lds-default {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+
+        .lds-default div {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #fff;
+            border-radius: 50%;
+            animation: lds-default 1.2s linear infinite;
+        }
+
+        .lds-default div:nth-child(1) {
+            animation-delay: 0s;
+            top: 37px;
+            left: 66px;
+        }
+
+        .lds-default div:nth-child(2) {
+            animation-delay: -0.1s;
+            top: 22px;
+            left: 62px;
+        }
+
+        .lds-default div:nth-child(3) {
+            animation-delay: -0.2s;
+            top: 11px;
+            left: 52px;
+        }
+
+        .lds-default div:nth-child(4) {
+            animation-delay: -0.3s;
+            top: 7px;
+            left: 37px;
+        }
+
+        .lds-default div:nth-child(5) {
+            animation-delay: -0.4s;
+            top: 11px;
+            left: 22px;
+        }
+
+        .lds-default div:nth-child(6) {
+            animation-delay: -0.5s;
+            top: 22px;
+            left: 11px;
+        }
+
+        .lds-default div:nth-child(7) {
+            animation-delay: -0.6s;
+            top: 37px;
+            left: 7px;
+        }
+
+        .lds-default div:nth-child(8) {
+            animation-delay: -0.7s;
+            top: 52px;
+            left: 11px;
+        }
+
+        .lds-default div:nth-child(9) {
+            animation-delay: -0.8s;
+            top: 62px;
+            left: 22px;
+        }
+
+        .lds-default div:nth-child(10) {
+            animation-delay: -0.9s;
+            top: 66px;
+            left: 37px;
+        }
+
+        .lds-default div:nth-child(11) {
+            animation-delay: -1s;
+            top: 62px;
+            left: 52px;
+        }
+
+        .lds-default div:nth-child(12) {
+            animation-delay: -1.1s;
+            top: 52px;
+            left: 62px;
+        }
+
+        @keyframes lds-default {
+
+            0%,
+            20%,
+            80%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.5);
+            }
+        }
+
+        .backNextButns {
+            border-radius: 8px;
+            width: 100%;
+            padding: 8px;
+            background: #b4c8db;
+            border: 1px solid darkgrey;
+            font-weight: 700;
+            color: white;
+        }
+
+        .History-title {
+            font-size: 18px;
+
+        }
+
+        .details-2 {
+            font-size: 12px !important;
+            font-weight: 700;
+        }
+
+        .Total-Paid-2 {
+            font-size: 12px !important;
+            margin-top: -10px;
+            ;
+            font-weight: 500;
+        }
+
+        .divider {
+            margin-top: -10px;
+        }
+
+        .gndr-btn {
+            background-color: lightgrey;
+        }
+
+        .gndr-btn:focus {
+            background-color: #818283;
+        }
+
+        img.offer-logo-img {
+            width: 100%;
+        }
+
+        #slotid {
+            display: flex;
+            flex-wrap: wrap;
+            height: 30vh;
+        }
+
+        .logout-btn {
+            padding: 8px 16px;
+            border: 2px solid #21418C;
+            border-radius: 50px;
+            background-color: #B4C8DB;
+            font-weight: 700;
+            font-size: 16px;
+            color: #dc3545;
+        }
+
+        .splash {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            /* background-color: #85C1E9; */
+            background-image: linear-gradient(#D6EAF8, #85C1E9);
+            z-index: 9999999;
+            color: white;
+            text-align: center;
+            line-height: 90vh;
+        }
+
+        .splash.display-none {
+            position: fixed;
+            opacity: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            /* background-color: #85C1E9; */
+            background-image: linear-gradient(#D6EAF8, #85C1E9);
+            z-index: -20;
+            text-align: center;
+            color: white;
+            line-height: 90vh;
+            transition: all 0.5s;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+            width: 50%;
+        }
+
+        #spinner-wrapper {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            cursor: pointer;
+            background-color: #ffff;
+            opacity: .8;
+        }
+
+        #spinner {
+            display: inline-block;
+            position: relative;
+            width: 50%;
+            top: 220px;
+            left: 100px;
+        }
+    </style>
+
+</head>
+
+<body style="background: white;text-transform: inherit;">
+
+    <div class="splash">
+        <img src="img/Alpha logo.PNG" alt="logo" class="fade-in">
+    </div>
+
+    <div id="spinner-wrapper">
+        <img src="img/spinner.gif" alt="loader" id="spinner">
+    </div>
+
+    <!-- footer start -->
+    <div id="mainFooterDiv">
+
+    </div>
+    <!-- footer end -->
+
+    <!-- overlay start -->
+
+    <div id="overlay">
+        <img src="img/spinner.gif" alt="loader" id="spinner">
+    </div>
+
+    <!-- overlay end -->
+
+    <!-- sign in start -->
+    <div id="signIn" style="display: block;">
+        <!-- <div id="overlay">
+                        <img src="img/spinner.gif" alt="loader" id="spinner">
+        </div> -->
+        <div style="text-align: center; background-color: #B4C8DB">
+            <img width="40%" src="img/alphalogo-1.png">
+        </div>
+        <div class="container-flex">
+            <div class="mainheader">
+                <div class="row rowMargin">
+                    <!-- <div class="col sm-4 mt-4 logo  ">
+                        <img class="logo " src="img/logo-1.JPG">
+                    </div> -->
+                    <div class="col sm-6 mt-5 col-flex-item vertical-divider">
+                        <h2 class="heading">Deliver Smooth<br>Blood Test at Your<br>doorstep!</h2>
+                    </div>
+                    <div class="col sm-6 mt-4">
+                        <img src="img/lab.png" style="width: 80%; height: 130px; margin-top: 10px;">
+                    </div>
+                </div>
+                <div class="col ">
+                    <h2 class="title">Sign in</h2>
+                </div>
+            </div>
+        </div>
+
+        <div role="form">
+            <div class="card-body">
+                <div class="form-group  ">
+                    <label class="txtlable" for="txtPhoneNumberSignIn">Phone Number</label>
+                    <input type="number" class="form-control" id="txtPhoneNumberSignIn" placeholder="Enter Number">
+                </div>
+                <div class="form-group ">
+                    <label class="txtlable" for="txtPasswordSignIn">Password</label>
+                    <input type="password" class="form-control" id="txtPasswordSignIn" placeholder="Enter Password">
+                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                </div>
+                <div>
+                    <p id="invalidID" style="display: none;"></p>
+                </div>
+                <!-- <div class="">
+                    <a class="forgettxt" style="color: red;" onclick="goToForgotPasswordPage()">Forget Password?
+                    </a>
+                </div> -->
+
+                <div>
+                    <button type="submit" class="btn btn-primary px-2 py-3 mt-2" onclick="checkForm()">Sign in
+                    </button>
+                </div>
+                <div class="col-sm-4">
+                    <a class="anchortxt" href="#" onclick="goToSignUpPage()"> Dont have an Account? <b
+                            style="text-decoration: underline">Sign Up</b> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sign in end  -->
+
+    <!-- sign up start -->
+    <div id="signUp" style="display: block;">
+        <!-- <div id="overlay">
+            <div class="lds-default" style="left: 40%;top: 40%;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+        <div style="text-align: center; background-color: #B4C8DB">
+            <img width="40%" src="img/alphalogo-1.png" style="padding-bottom: 15px;">
+        </div>
+        <div class="container-flex">
+            <div class="mainheader">
+                <div class="row rowMargin">
+                    <div class="col sm-8 mt-5 col-flex-item vertical-divider">
+                        <h2 class="heading">Deliver Smooth<br>Blood Test at Your<br>doorstep!</h2>
+                    </div>
+                    <div class="col sm-4 mt-4">
+                        <img src="img/lab.png" style="width: 70%; height: 115px;">
+                    </div>
+                </div>
+                <div class="col ">
+                    <h2 class="title">Signup</h2>
+                </div>
+            </div>
+        </div>
+
+        <div role="form">
+            <div class="card-body">
+                <div class="form-group  ">
+                    <label class="txtlable" for="txtFullNameSignUp">Full Name</label>
+                    <input type="text" class="form-control" id="txtFullNameSignUp" placeholder=" Enter Full Name">
+                </div>
+                <div class="form-group  ">
+                    <label class="txtlable" for="txtAddressSignUp">Address</label>
+                    <input type="text" class="form-control" id="txtAddressSignUp" placeholder=" Enter Address">
+                </div>
+                <div class="form-group  ">
+                    <label class="txtlable" for="txtEmailSignUp">Email</label>
+                    <input type="email" class="form-control" id="txtEmailSignUp" placeholder=" Enter Address">
+                </div>
+                <div class="form-group  ">
+                    <label class="txtlable" for="txtPhoneNumberSignUp">Phone Number</label>
+                    <input type="number" class="form-control" id="txtPhoneNumberSignUp" placeholder=" Enter Number">
+                </div>
+                <div class="form-group ">
+                    <label class="txtlable" for="txtPasswordSignUp">Password</label>
+                    <input type="password" class="form-control" id="txtPasswordSignUp" placeholder="Enter Password">
+                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                </div>
+                <div class="form-group ">
+                    <label class="txtlable" for="txtConfirmPasswordSignUp">Confirm Password</label>
+                    <input id="txtConfirmPasswordSignUp" type="password" class="form-control"
+                        placeholder="Confirm Password">
+                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-Cpassword"></span>
+                </div>
+                <div>
+                    <p id="invalidIdSignUp" style="display: none;"></p>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary px-2 py-3 mt-2 " onclick="saveForm()">Sign up </button>
+                </div>
+                <div class="">
+                    <a class="anchortxt" href="#" onclick="goToSignInPage()" style="text-decoration: underline">Already
+                        Have an Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sign up end  -->
+
+    <!-- verify number start -->
+    <div id="verifyNumber" style="display: none; margin-right: 0px !important;">
+        <!-- <div id="overlay">
+            <div class="lds-default" style="left: 40%;top: 40%;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+        <div class="container-flex">
+            <div class="mainheader">
+                <div class="row rowMargin">
+
+                    <div class="col sm-4 mt-4 logo  ">
+                        <img class="logo " src="img/logo-1.JPG">
+                    </div>
+                    <div class="col sm-5 mt-5 col-flex-item vertical-divider">
+                        <h2 class="heading">Deliver Smooth<br>Blood Test at Your<br>doorstep!</h2>
+                    </div>
+                    <div class="col sm-3 mt-4">
+                        <img src="img/lab.png" style="width: 100%; height: 88px; margin-top:20px;">
+                    </div>
+                </div>
+                <div class="col ">
+                    <h2 class="title">Signup</h2>
+                </div>
+            </div>
+        </div>
+        <div class=" container-flex">
+            <div class="row">
+                <div class="col sm-8 ">
+                    <h2 class="vanchortxt"> Please Enter 5 Digit Code</h2>
+                </div>
+                <div class="col sm-4 ">
+                    <a class="resend" href="#"> Resend
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div role="form">
+            <div class="container">
+                <div class="row">
+
+                    <div class=" col sm-2 padding-0 ">
+                        <input type="number" class="form-control" id="txtInput1VerificationPage" placeholder="-"
+                            style="text-align: center; border-radius: 13px;width: 42px;">
+                    </div>
+                    <div class=" col sm-2 padding-0 ">
+                        <input type="number" class="form-control" id="txtInput2VerificationPage" placeholder="-"
+                            style="text-align: center; border-radius: 13px;width: 42px;">
+                    </div>
+                    <div class=" col sm-2 padding-0">
+                        <input type="number" class="form-control" id="txtInput3VerificationPage" placeholder="-"
+                            style="text-align: center; border-radius: 13px;width: 42px;">
+                    </div>
+                    <div class=" col sm-2 padding-0 ">
+                        <input type="number" class="form-control" id="txtInput4VerificationPage" placeholder="-"
+                            style="text-align: center; border-radius: 13px;width: 42px;">
+                    </div>
+                    <div class=" col sm-2 padding-0 ">
+                        <input type="number" class="form-control" id="txtInput5VerificationPage" placeholder="-"
+                            style="text-align: center; border-radius: 13px;width: 42px;">
+                    </div>
+                </div>
+                <div>
+                    <p id="invalidIdVerification" style="display: none;margin-top: 15px;"></p>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary px-2 py-3 mt-3 " onclick="checkRandomNumber()">Get
+                        Started </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- verify number end -->
+
+    <!-- landing page start -->
+    <div id="landingPage" style="background-color: rgb(237,237,237);display: none;">
+        <!-- <div id="overlay">
+            <div class="lds-default" style="left: 40%;top: 40%;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+        <div class="container-flex">
+            <div class="container-flex">
+                <div class="lmainheader" style="padding-bottom: 35px;">
+                    <div style="text-align: center; background-color: #B4C8DB">
+                        <img width="40%" src="img/alphalogo-1.png" style="padding-bottom: 15px;">
+                    </div>
+                    <div class="row">
+                        <div class="col sm-6 main-title">
+                            <h2 style="font-size: 22px; color: #21438C;">
+                                Welcome! </h2>
+                            <h2 style="font-size: 12px;">
+                                You are one click away to
+                                book your Appointment</h2>
+                        </div>
+                        <div class="col sm-6">
+                            <img class="lab-img" src="img/lab.png">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-flex landingPageBoxDiv">
+            <div class="row blood" style="text-align: center;margin: -40px 15px !important;">
+                <div class="col-5" onclick="goToBookAppointmentPage()"
+                    style="background-color: white;padding: 15px 18px 12px 18px;left:6%; border-radius: 8px ">
+                    <img class="landingCard" src="img/bloodTest.png" />
+                    <h3 class="subtitile">Book Appointment</h3>
+                </div>
+
+                <div class="col-5" onclick="goToReportPage()"
+                    style="background-color: white;padding: 15px 18px 12px 18px;right: -10%; border-radius: 8px">
+                    <img class="landingCard" src="img/report.png" />
+                    <h3 class="subtitile">Report Collection</h3>
+                </div>
+                <div class="col-5" onclick="goToHistoryPage()"
+                    style="background-color: white;top: 24px;padding: 15px 18px 12px 18px;left:6%; border-radius: 8px">
+                    <img class="landingCard" src="img/medicalReport.png" />
+                    <h3 class="subtitile">Appointment History</h3>
+                </div>
+
+                <div class="col-5" onclick="goToOffersAndDiscountPage()"
+                    style="background-color: white;top: 24px;padding: 15px 18px 12px 18px;right: -10%; border-radius: 8px">
+                    <img class="landingCard" src="img/brain.png" />
+                    <h3 class="subtitile">Tumor Detection</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- landing page end  -->
+
+    <!-- book appointment page start -->
+    <div id="bookAppointmentPage" style="background-color: white;display: none;">
+        <!-- <div id="overlay">
+            <div class="lds-default" style="left: 40%;top: 40%;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+
+        <div class="container-flex">
+            <div class="container-flex">
+                <div class="lmainheader" style="height:65px; border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;">
+                    <div class="row">
+                        <div class="left" onclick="goToLandingPage()"
+                            style="margin-left: 20px;top: 15px;position: relative;">
+                            <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i>
+                        </div>
+                        <div class="center" style="padding-top: 20px;text-align:center">
+                            <h5>Book Appointment</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row FirstRow" style="padding: 20px;">
+            <div class="col-3" id="appointmentPageTestDivButton" onclick="goToTestBookAppointmentDiv()"
+                style="border: 1px solid;border-radius: 30px;margin-right: 10px;text-align: center;padding: 10px;">Test
+            </div>
+            <div class="col-6 Discount-title" id="appointmentPageOfferDivButton"
+                onclick="goToOffersBookAppointmentDiv()"
+                style="border: 1px solid;border-radius: 30px;text-align: center;padding: 10px;">
+                Offers & Discount</div>
+        </div>
+
+        <div id="testOffersDiv" style="display: none;">
+            <div id="testOfferBookAppointment" class="testOfferScroll" style="height: 290px;overflow-y: scroll;">
+                <!-- <div class="row" style="border-bottom:1px solid #80808047;padding:7px">
+                    <div class="col-1" style="font-weight: bold;"><input type="checkbox"></div>
+                    <div class="col-7" style="font-weight: bold;">Test A</div>
+                    <div class="col-4">Rs 1200</div>
+                </div> -->
+            </div>
+
+            <div class="bookAppointmentTestPayment" style="height: 230px;background-color: #d8ddde;overflow-y: scroll;">
+                <div class="row" style="padding-top: 15px;">
+                    <div class="col-8">
+                        <p style="color: #090986;font-weight: bold;">Test Summary</p>
+                    </div>
+                </div>
+                <div id="testSummary">
+                    <!-- <div  class="row" style="border-bottom:1px solid #80808047"> -->
+                    <!-- <div class="col-8" style="font-weight: bold;">Test A</div>
+                    <div class="col-4">Rs 1200</div> -->
+                </div>
+                <!-- <div class="row" style="border-bottom:1px solid #80808047">
+                    <div class="col-8" style="font-weight: bold;">Test D</div>
+                    <div class="col-4">Rs 300</div>
+                </div> -->
+                <div class="row" style="padding-top: 15px;">
+                    <div class="col-8">
+                        <p style="color: #090986;font-weight: bold;margin: auto;">Offers</p>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom:1px solid #80808047">
+                    <div class="col-8" style="font-weight: bold;">50% off on First Appointment</div>
+                    <div class="col-4" style="color: #bb1212;font-weight:bold">-Rs 750</div>
+                </div>
+                <div class="row">
+                    <div class="col-5" style="font-weight: bold;"></div>
+                    <div id="grandTotalAmount" class="col-7" style="color: black;font-weight:bold;">
+                    </div>
+                </div>
+
+                <div style="width: 80%;margin-left: 35px;margin-top: 10px;margin-bottom: 20px;">
+                    <button onclick="goToSelectTimeSlotPage()"
+                        style="width: 100%;padding: 10px;color: white;background-color: #090986;border: #090986;border-radius: 10px;">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="dicountOffersDiv" style="display: none;">
+            <div id="discountOfferBookAppointment" class="discountOfferScroll"
+                style="height: 270px;overflow-y: scroll;">
+                <!-- <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">
+                    <div class="col-8" style="font-weight: bolder;">Blood Test A,B,C & E</div>
+                    <div class="col-4"><button
+                            style="width: 100%;height: 100%;background: #b4c8db;border: lightgray;border-radius: 5px;font-size: 11px;">Book
+                            Appointment</button></div>
+                    <div class="row" style="width: 100%;">
+                        <div class="col-2" style="padding-right: 0px;text-decoration: line-through;font-size: 15px;">Rs
+                            200
+                        </div>
+                        <div class="col-2" style="padding-right: 0px;color: #090986;font-weight: bold;font-size: 15px;">
+                            Rs
+                            350</div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="bookAppointmentTestPayment" style="height: 250px;background-color: #d8ddde;overflow-y: scroll;">
+                <div class="row" style="padding-top: 15px;">
+                    <div class="col-8">
+                        <p style="color: #090986;font-weight: bold;">Test Summary</p>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom:1px solid #80808047">
+                    <div class="col-8" style="font-weight: bold;">Test A</div>
+                    <div class="col-4">Rs 1200</div>
+                </div>
+                <div class="row" style="border-bottom:1px solid #80808047">
+                    <div class="col-8" style="font-weight: bold;">Test D</div>
+                    <div class="col-4">Rs 300</div>
+                </div>
+                <div class="row" style="padding-top: 15px;">
+                    <div class="col-8">
+                        <p style="color: #090986;font-weight: bold;">Offers</p>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom:1px solid #80808047">
+                    <div class="col-8" style="font-weight: bold;">50% off on First Appointment</div>
+                    <div class="col-4" style="color: #bb1212;font-weight:bold">-Rs 750</div>
+                </div>
+                <div class="row">
+                    <div class="col-5" style="font-weight: bold;"></div>
+                    <div class="col-7 grandTotal" style="color: black;font-weight:bold;padding-left: 34px;">Grand Total
+                        Rs 750
+                    </div>
+                </div>
+
+                <div style="width: 80%;margin-left: 35px;margin-top: 10px;margin-bottom: 20px;">
+                    <button onclick="goToSelectTimeSlotPage()"
+                        style="width: 100%;padding: 10px;color: white;background-color: #090986;border: #090986;border-radius: 10px;">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- book appointment page end -->
+
+    <!-- offer and discount start -->
+    <div id="offersAndDiscount" style="display: none;">
+        <!-- <div id="overlay">
+            <div class="lds-default" style="left: 40%;top: 40%;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+
+        <div class="container-flex">
+            <div class="container-flex">
+                <div class="lmainheader" style="height:65px; border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;">
+                    <div class="row">
+                        <div class="left" onclick="goToLandingPage()"
+                            style="margin-left: 20px;top: 15px;position: relative;">
+                            <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i>
+                        </div>
+                        <div class="center" style="padding-top: 20px;text-align:center">
+                            <h5>Brain Tumor Detection</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- id="discountAndOfferList" -->
+        <div style="height: 100%;overflow-y: scroll;">
+            <div class="container">
+                <div class="card">
+                    <div class="card-body main-body">
+                        <form action="https://534-2018-79vtxf38kgf7t4sq.socketxp.com/upload" method="POST"
+                            enctype="multipart/form-data" id="tumor-form">
+                            <div class="form-group">
+                                <div class="row  input-file">
+                                    <div class="col-md-8">
+                                        <img class="offer-logo-img" src="./img/Alpha logo.PNG" alt="logo">
+                                        <label for=""> Upload your MRI image</label>
+                                        <input type="file" name="file" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row btn-submit" id="submit-bnt">
+                                <input type="submit" class="btn btn-primary" />
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- offer and discount end -->
+
+    <!-- select time slot start -->
+    <div id="selectTimeSlot" style="display: none;">
+        <!-- <div id="overlay">
+            <div class="lds-default" style="left: 40%;top: 40%;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+
+        <div class="container-flex">
+            <div class="container-flex">
+                <div class="lmainheader" style="height:65px; border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;">
+                    <div class="row">
+                        <div class="left" onclick="goToBookAppointmentPage()"
+                            style="margin-left: 20px;top: 15px;position: relative;">
+                            <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i>
+                        </div>
+                        <div class="center" style="padding-top: 20px;text-align:center">
+                            <h5>Select A Time Slot</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <p style="margin-top: 15px;font-weight: bold;">Select Day</p>
+        </div>
+
+        <div id="fillDateRow" style="display: -webkit-box;overflow-x: scroll;padding-left: 15px; height: 50px;">
+            <!-- <div style="margin-right: 10px;">
+                <button
+                    style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                    Feb</button>
+            </div> -->
+        </div>
+        <div id="datt"></div>
+        <div class="row" style="padding-left: 15px;">
+            <p style="margin-top: 15px;font-weight: bold;">Select Time</p>
+        </div>
+        <div id="itmt"></div>
+        <div id="slotid">
+            <div class="row">
+                <div class="col-2">
+                    <p style="margin-top: 15px;font-weight: bold;font-size: 15px;">Morning</p>
+                </div>
+                <div class="col-2">
+                    <p
+                        style="margin-top: 15px;font-weight: bold;font-size: 10px;background: lightgray;text-align: center;">
+                        7 Slots</p>
+                </div>
+            </div>
+
+            <div class="row selectDateMorning"
+                style="border-bottom: 1px solid lightgray;overflow-y: scroll;height: 70px;">
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <p style="margin-top: 15px;font-weight: bold;font-size: 15px;">Afternoon</p>
+                </div>
+                <div class="col-2">
+                    <p
+                        style="margin-top: 15px;font-weight: bold;font-size: 10px;background: lightgray;text-align: center;">
+                        7 Slots</p>
+                </div>
+            </div>
+
+            <div class="row selectDateAfternoon"
+                style="border-bottom: 1px solid lightgray;overflow-y: scroll;height: 90px;">
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+                <div class="col-4" style="margin-bottom: 15px;">
+                    <button
+                        style="width: 100%;background: lightgray;border: lightgray;height: 30px;border-radius: 5px;font-size: 11px;">Tues,12
+                        Feb</button>
+                </div>
+            </div>
+        </div>
+        <div class="selectTimeSlotSummary" style="height: 210px; background-color: lightgray;">
+            <div class="row" style="padding-top: 15px;">
+                <div class="col-8">
+                    <p style="color: #090986;font-weight: bold;">Appointment Summary</p>
+                </div>
+            </div>
+            <div class="row" style="">
+                <div class="col-8" style="font-weight: bold;color: #7d7c7c;">Test A & D with 50% off</div>
+                <div class="col-4" style="font-weight: bold;">Rs 750</div>
+            </div>
+
+            <div class="row" style="">
+                <div class="col-6" style="font-weight: bold;color: #7d7c7c;padding-bottom: 20px;">
+                    <button onclick="goToBookAppointmentPage()"
+                        style="width: 100%;padding: 5px;color: white;background: darkgray;border: darkgray;border-radius: 5px;">Back</button>
+                </div>
+                <div class="col-6" style="font-weight: bold;">
+                    <button onclick="goToEnterAddressPage()"
+                        style="width: 100%;padding: 5px;color: white;background: #090986;border: #090986;border-radius: 5px;">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- select time slot end -->
+
+    <!-- Enter Patient Details start -->
+    <div id="patientDetails" style="display: none;">
+        <!-- <div id="overlay">
+            <div class="lds-default" style="left: 40%;top: 40%;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+
+        <div class="container-flex">
+            <div class="container-flex">
+                <div class="lmainheader" style="height:65px; border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;">
+                    <div class="row">
+                        <div class="left" onclick="goToSelectTimeSlotPage()"
+                            style="margin-left: 20px;top: 15px;position: relative;">
+                            <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i>
+                        </div>
+                        <div class="center" style="padding-top: 20px;text-align:center">
+                            <h5>Enter Patient Details</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <p style="margin-top: 15px;font-weight: bold;">Booking For?</p>
+        </div>
+
+        <div class="row">
+            <div class="col-6" style="font-weight: bold;color: #7d7c7c;">
+                <button onclick="goTopatientDetailsPage()"
+                    style="width: 100%;padding: 5px;color: white;background: darkgray;border: darkgray;border-radius: 5px;">Myself</button>
+            </div>
+            <div class="col-6" style="font-weight: bold;">
+                <button onclick="goTopatientDetailsPage()"
+                    style="width: 100%;padding: 5px;color: white;background: #b4c8db;border: #b4c8db;border-radius: 5px;">Someone
+                    Else</button>
+            </div>
+        </div>
+
+        <div class="bookingConfirmation" style="overflow-y: scroll;height: 270px;">
+            <div class="col-12" style="margin-top: 10px;">
+                <span style="font-size: 15px;">Name</span>
+                <input type="text" id="txtname"
+                    style="width: 100%;padding: 8px;background: lightgray;border: 2px solid darkgrey;border-radius: 5px;"
+                    placeholder="Enter Name">
+            </div>
+
+            <div class="col-12" style="margin-top: 10px;">
+                <span style="font-size: 15px;">Phone Number</span>
+                <input type="number" id="txtphone"
+                    style="width: 100%;padding: 8px;background: lightgray;border: 2px solid darkgrey;border-radius: 5px;"
+                    placeholder="Enter Phone Number">
+            </div>
+
+            <div class="col-12" style="margin-top: 10px;">
+                <span style="font-size: 15px;">Relationship</span>
+                <input type="text" id="txtrel"
+                    style="width: 100%;padding: 8px;background: lightgray;border: 2px solid darkgrey;border-radius: 5px;"
+                    placeholder="Enter Relationship">
+            </div>
+
+            <div class="col-12" style="margin-top: 10px;">
+                <span style="font-size: 15px;">Select Gender</span>
+                <div class="row" style="margin-bottom: 10px;">
+                    <div class="col-6" style="padding: 0px;">
+                        <button class="gndr-btn"
+                            style="border-top-left-radius: 5px;border-bottom-left-radius: 5px;width: 100%;padding: 8px;border: 2px solid darkgrey;"
+                            onclick="gender('Male')">Male</button>
+                    </div>
+                    <div class="col-6" style="padding: 0px;">
+                        <button class="gndr-btn"
+                            style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;width: 100%;padding: 8px;border: 2px solid darkgrey;"
+                            onclick="gender('Female')">Female</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="patientDetailsSummary" style="height: 180px; background-color: lightgray;padding-top: 15px;">
+            <div class="row" style="padding-top: 15px;">
+                <div class="col-8">
+                    <p style="color: #090986;font-weight: bold;">Appointment Summary</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8" style="font-weight: bold;color: #7d7c7c;">Test A & D with 50% off</div>
+                <div class="col-4" style="font-weight: bold;">Rs 750</div>
+            </div>
+
+            <div class="row">
+                <div class="col-12" style="font-weight: bold;color: #7d7c7c;padding-bottom: 20px;">
+                    <button onclick="goToThankyouPage()"
+                        style="width: 100%;padding: 5px;color: white;background: #297502;border: #297502;border-radius: 5px;">Confirm
+                        Booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Enter Patient Details end -->
+
+    <!-- Thankyou page start -->
+    <div id="thankyoupage" style="display: none;">
+        <div class="container-flex">
+            <div class="container-flex">
+                <div class="lmainheader" style="height:65px; border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;">
+                    <div style="text-align: center; background-color: #D6EAF8">
+                        <img width="40%" src="img/alphalogo-1.png" style="padding-bottom: 15px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="height: 100vh; background-image: linear-gradient(#D6EAF8, #85C1E9);">
+            <div class="ty-page">
+                <img src="img/tick.png" alt="" style="width: 35%;">
+                <h1>Thank You!</h1>
+                <h4>Your Appointement has been Booked!</h4>
+                <button onclick="goToLandingPage()" class="cstm-btn">Go Back</button>
+            </div>
+        </div>
+    </div>
+    <!-- Thankyou page end -->
+
+    <!-- profile start -->
+    <div id="mainProfile" style="display: none;">
+        <div class="container-flex">
+            <div class="container-flex">
+                <div class="lmainheader" style="height:65px; border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;">
+                    <div class="row">
+                        <div class="left" onclick="goToLandingPage()"
+                            style="margin-left: 20px;top: 15px;position: relative;">
+                            <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i>
+                        </div>
+                        <div class="center" style="padding-top: 20px;text-align:center">
+                            <h5>Profile</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: aliceblue; height: 100vh; padding: 5px;">
+            <div id="profileFullName" class="col-12" style="margin-top: 10px;">
+                <!-- <span style="font-size: 15px;">Name</span> -->
+                <!-- <input type="text" disabled id="profileFullName"
+                    style="width: 100%;padding: 8px;background: lightgray;border: 2px solid darkgrey;border-radius: 5px;"
+                    placeholder="Enter Name"> -->
+            </div>
+
+            <div id="profilePhoneNumber" class="col-12" style="margin-top: 10px;">
+                <!-- <span style="font-size: 15px;">Phone Number</span>
+                <input type="number" disabled id="profilePhoneNumber"
+                    style="width: 100%;padding: 8px;background: lightgray;border: 2px solid darkgrey;border-radius: 5px;"
+                    placeholder="Enter Phone Number"> -->
+            </div>
+
+            <div class="col-12" style="margin-top: 10px;">
+                <span style="font-size: 15px;">Relationship</span>
+                <input type="text" disabled id="profileRelationship"
+                    style="width: 100%;padding: 8px;background: lightgray;border: 2px solid darkgrey;border-radius: 5px;"
+                    placeholder="Enter Relationship">
+            </div>
+
+            <div class="col-12" style="margin-top: 10px;">
+                <span style="font-size: 15px;">Select Gender</span>
+                <div class="row" style="margin-bottom: 10px;">
+                    <div class="col-6" style="padding: 0px;">
+                        <button
+                            style="border-top-left-radius: 5px;border-bottom-left-radius: 5px;width: 100%;padding: 8px;background: lightgrey;border: 2px solid darkgrey;">Male</button>
+                    </div>
+                    <div class="col-6" style="padding: 0px;">
+                        <button
+                            style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;width: 100%;padding: 8px;background: #b4c8db;border: 2px solid darkgrey;">Female</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="margin-top: 40px;">
+                <div class="row" style="margin-bottom: 10px;">
+                    <div class="col-12" style="padding: 0px;">
+                        <button class="logout-btn" onclick="goToSignInPage()">Log Out <img src="img/logout.png"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- profile end -->
+
+    <!-- report start -->
+    <div id="mainReportDiv" style="display: none;">
+        <!-- <div id="overlay">
+            <div class="lds-default" style="left: 40%;top: 40%;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+
+        <div class="container-flex">
+            <div class="container-flex">
+                <div class="lmainheader" style="height:65px; border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;">
+                    <div class="row">
+                        <div class="left" onclick="goToLandingPage()"
+                            style="margin-left: 20px;top: 15px;position: relative;">
+                            <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i>
+                        </div>
+                        <div class="center" style="padding-top: 20px;text-align:center">
+                            <h5>Report</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="height: 100%;overflow-y: scroll;" id="reportsection">
+            <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">
+                <div class="col-8" style="font-weight: bolder;">Complete Blood Count (CBC)</div>
+                <div class="col-4"><button
+                        style="width: 100%;height: 100%;background: #b4c8db;border: lightgray;border-radius: 5px;font-size: 11px;">Pending</button>
+                </div>
+                <div class="row" style="width: 100%;">
+                    <div class="col-4" style="padding-right: 0px;font-size: 15px;color: lightgray;">
+                        Time
+                    </div>
+                    <div class="col-4" style="padding-right: 0px;color: lightgray;font-weight: bold;font-size: 15px;">
+                        Amount</div>
+                </div>
+            </div>
+
+            <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">
+                <div class="col-8" style="font-weight: bolder;">Complete Blood Count (CBC)</div>
+                <div class="col-4"><button
+                        style="width: 100%;height: 100%;background: #b4c8db;border: lightgray;border-radius: 5px;font-size: 11px;">Pending</button>
+                </div>
+                <div class="row" style="width: 100%;">
+                    <div class="col-4" style="padding-right: 0px;font-size: 15px;color: lightgray;">
+                        Time
+                    </div>
+                    <div class="col-4" style="padding-right: 0px;color: lightgray;font-weight: bold;font-size: 15px;">
+                        Amount</div>
+                </div>
+            </div>
+
+            <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">
+                <div class="col-8" style="font-weight: bolder;">Complete Blood Count (CBC)</div>
+                <div class="col-4"><button
+                        style="width: 100%;height: 100%;background: #b4c8db;border: lightgray;border-radius: 5px;font-size: 11px;">Pending</button>
+                </div>
+                <div class="row" style="width: 100%;">
+                    <div class="col-4" style="padding-right: 0px;font-size: 15px;color: lightgray;">
+                        Time
+                    </div>
+                    <div class="col-4" style="padding-right: 0px;color: lightgray;font-weight: bold;font-size: 15px;">
+                        Amount</div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- report end -->
+
+    <!-- Enter Address start -->
+    <div id="EnterAddress" style="display: none;">
+        <!-- <div id="overlay">
+            <div class="lds-default" style="left: 40%;top: 40%;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+
+        <div class="container-flex">
+            <div class="container-flex">
+                <div class="lmainheader" style="height:65px; border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;">
+                    <div class="row">
+                        <div class="left" onclick="goToLandingPage()"
+                            style="margin-left: 20px;top: 15px;position: relative;">
+                            <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i>
+                        </div>
+                        <div class="center" style="padding-top: 20px;text-align:center">
+                            <h5>Enter Address</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="col-12" style="margin-top: 10px;">
+                <span style="font-size: 15px;color:#797A7C;">Select City*</span>
+                <select
+                    style="width: 100%;padding: 8px;background: #EEEEEE;border: 2px solid darkgrey;border-radius: 5px;"
+                    placeholder="Enter City" id="cityid">
+                    <option value="Karachi">Karachi</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="Islamabad">Islamabad</option>
+                </select>
+            </div>
+            <div class="col-12" style="margin-top: 10px;">
+                <span style="font-size: 15px;color:#797A7C;">Address*</span>
+                <input type="text" id="address"
+                    style="width: 100%;padding: 8px;background: #EEEEEE;border: 2px solid darkgrey;border-radius: 5px;">
+                <input type="checkbox" name="" id="">
+                <span style="font-size: 10px; font-weight: 600;color:#797A7C;">Save Address</span>
+            </div>
+            <div class="col-12" style="margin-top: 10px;">
+                <span style="font-size: 15px;color:#797A7C;">Add comment</span>
+                <textarea rows="4" cols="50" id="comments"
+                    style="width: 100%;padding: 8px;background: #EEEEEE;border: 2px solid darkgrey;border-radius: 5px;"></textarea>
+            </div>
+
+            <div style="background-color:#EEEEEE;padding-top: 2px;padding-bottom: 10px; margin-top: 60px;">
+                <div class="col-12" style="margin-top: 10px;">
+
+                    <label class="txtlable" for="txtPhoneNumberSignUp">Appointment Summary</label>
+                    <p style="font-size: 11px;font-weight: 700;">Test A & D with 50% Off selected discount
+                        <span style="font-size: 15px;font-weight: 500; margin-left: 45px;">Fee</span>
+                        <span style="font-size: 15px;">Rs.750 </span>
+                    </p>
+
+                    <div class="container" style="padding-top: 0px;">
+                        <div class="row" style="margin-bottom: 10px;">
+                            <div class="col-6" style="padding: 0px;">
+                                <button class="backNextButns" style="background-color: #555B69;">Back</button>
+                            </div>
+                            <div class="col-6" style="padding: 0px;">
+                                <button class="backNextButns" onclick="goTopatientDetailsPage()"
+                                    style="background-color: #21418C;margin-left: 10px;">Next</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- Enter Address end -->
+
+    <!-- Need Help start -->
+    <div id="NeedHelp" style="display: none;">
+        <!-- <div id="overlay">
+            <div class="lds-default" style="left: 40%;top: 40%;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+
+        <div class="container-flex">
+            <div class="container-flex">
+                <div class="lmainheader NH-header-height" style="height:65px; border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;">
+                    <div class="row">
+                        <div class="left" onclick="goToLandingPage()"
+                            style="margin-left: 20px;top: 15px;position: relative;">
+                            <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i>
+                        </div>
+                        <div class="center NH-head-txt" style="padding-top: 20px;text-align:center">
+                            <h5>Need Help</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="NH-main-div" style="background-image: linear-gradient(#D6EAF8, #85C1E9); padding: 6px;">
+            <div class="col-12" style="margin-top: 10px;">
+                <span style="font-size: 16px;">Add your message</span>
+                <textarea class="txtArea" rows="4" cols="50" style=""></textarea>
+            </div>
+
+            <div class="container" style="padding-top: 0px;">
+                <div>
+                    <button style="background-color: #333132;" type="submit"
+                        class="btn btn-primary px-2 py-3 mt-2 NH-butns">Send Message
+                    </button>
+                </div>
+
+            </div>
+            <div style="line-height: 5px;">
+                <p style="text-align: center;margin-top: 20px; color:#797A7C; ">
+                    -----OR-----
+                </p>
+                <h5 class="NH-call-us-txt" style="text-align:center;">
+                    Call Us
+                </h5>
+
+            </div>
+
+
+            <div class="container " style="padding-top: 0px;">
+                <div>
+                    <button style="background-color: #4A9C4F;" type="submit"
+                        class="btn btn-primary px-2 py-3 mt-2 NH-butns">0313-8554924
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="container NH-Address" style="padding-top: 25px;line-height: 18px;">
+                <h5 class="NH-Address">
+                    Address
+                </h5>
+                <p>
+                    ST-2D, Block-17, Gulshan-e-Iqbal, Adjacent to، National Stadium Rd
+                    National Stadium Colony, Karachi.
+                </p>
+                <h5 class="NH-Address">
+                    Email
+                </h5>
+                <p>
+                    info@alpha-laboratory.com
+                </p>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- Need Help end -->
+
+    <!-- History start -->
+    <div id="Historyid" style="display: none;">
+        <!-- <div id="overlay">
+            <div class="lds-default" style="left: 40%;top: 40%;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+
+        <div class="container-flex">
+            <div class="container-flex">
+                <div class="lmainheader" style="height:65px; border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;">
+                    <div class="row">
+                        <div class="left" onclick="goToLandingPage()"
+                            style="margin-left: 20px;top: 15px;position: relative;">
+                            <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i>
+                        </div>
+                        <div class="center" style="padding-top: 20px;text-align:center">
+                            <h5>History </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="HistoryMainDiv" style="height: 100%;overflow-y: scroll;" id="loadHistory">
+            <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">
+                <div class="col-8" style="font-weight: bolder;">Complete Blood Count (CBC)</div>
+                <div class="col-4"><button onclick="goToHistoryDetailPage()"
+                        style="width: 100%;height: 100%;background: #b4c8db;border: lightgray;border-radius: 5px;font-size: 11px;">View
+                        Details</button>
+                </div>
+                <div class="row" style="width: 100%;">
+                    <div class="col-4" style="padding-right: 0px;font-size: 15px;color: lightgray;">
+                        Date & Time
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div style="margin-left: 15px ;margin-top: 10px;">
+                        <p style="font-size: 15px;">
+                            Status <span
+                                style="background-color:lightgray ; border-radius: 5px; padding-left: 15px; padding-right: 15px;margin-left: 15px;">
+                                In process</span>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">
+                <div class="col-8" style="font-weight: bolder;">Complete Blood Count (CBC)</div>
+                <div class="col-4"><button onclick="goToHistoryDetailPage()"
+                        style="width: 100%;height: 100%;background: #b4c8db;border: lightgray;border-radius: 5px;font-size: 11px;">View
+                        Details</button>
+                </div>
+                <div class="row" style="width: 100%;">
+                    <div class="col-4" style="padding-right: 0px;font-size: 15px;color: lightgray;">
+                        Date & Time
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div style="margin-left: 15px ;margin-top: 10px;">
+                        <p style="font-size: 15px;">
+                            Status <span
+                                style="background-color:lightgray ; border-radius: 5px; padding-left: 15px; padding-right: 15px;margin-left: 15px;">
+                                Complete</span>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">
+                <div class="col-8" style="font-weight: bolder;">Complete Blood Count (CBC)</div>
+                <div class="col-4"><button onclick="goToHistoryDetailPage()"
+                        style="width: 100%;height: 100%;background: #b4c8db;border: lightgray;border-radius: 5px;font-size: 11px;">View
+                        Details</button>
+                </div>
+                <div class="row" style="width: 100%;">
+                    <div class="col-4" style="padding-right: 0px;font-size: 15px;color: lightgray;">
+                        Date & Time
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div style="margin-left: 15px ;margin-top: 10px;">
+                        <p style="font-size: 15px;">
+                            Status <span
+                                style="background-color:lightgray ; border-radius: 5px; padding-left: 15px; padding-right: 15px;margin-left: 15px;">
+                                In process</span>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- History  end -->
+
+    <!-- History Detail start -->
+    <div id="HistoryDetail" style="display: none;">
+        <!-- <div id="overlay">
+            <div class="lds-default" style="left: 40%;top: 40%;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+        <div class="container-flex">
+            <div class="container-flex">
+                <div class="lmainheader" style="height:110px; border-bottom-left-radius: 0px;
+                    border-bottom-right-radius: 0px;">
+                    <div class="row">
+                        <div class="left" onclick="goToLandingPage()"
+                            style="margin-left: 20px;top: 15px;position: relative;">
+                            <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i>
+                        </div>
+                        <div class="center" style="padding-top: 20px;text-align:center;width: 100%;margin-left: 60px;">
+                            <h5 class=" History-title"> History Detail Page (CBC)</h5>
+                            <div style="font-size: 14px;">
+                                <p> Status <span
+                                        style="background-color:lightgray ; border-radius: 5px; padding-left: 15px; padding-right: 15px;margin-left: 15px;">
+                                        Complete</span></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="container test-summary" style="padding-top: 5px;">
+
+                    <h4>
+                        Test Summary
+                    </h4>
+                    <p style="color:#797A7C ;font-weight: 400;">
+                        Cbc Lorem ipsum. <span style="margin-left: 140px;"> Rs.1000</span>
+                    </p>
+                    <p style="color:#797A7C ;font-weight: 400;margin-top: -14px">
+                        Discount & Offers <span style="margin-left: 140px;"> -Rs.100</span>
+                    </p>
+                    <div class="Total-Paid" style="margin-top: -15px;font-size: 20px;font-weight: 500;">
+                        <p>
+                            Total Paid <span style="margin-left: 170px;"> -Rs.100</span>
+                        </p>
+
+                    </div>
+
+                    <hr style="border: solid 1px;">
+                </div>
+
+
+                <div class="container HDP-Details "
+                    style="padding-top: 0px;height: 45px; font-size: 10px;font-size: 12px;font-weight: 500;line-height: 15px;">
+                    <h4>
+                        Other Details
+                    </h4>
+
+                    <div class="container-flex other-Details" style="margin-left: -15px;margin-top: 15px;">
+                        <div class="row" style="width: 101%;">
+                            <div class=" col sm-3">
+                                <h6 class="details">
+                                    Booked for
+                                </h6>
+                            </div>
+                            <div class=" col sm-3">
+                                <h6 class="details">
+                                    Gender
+                                </h6>
+                            </div>
+                            <div class=" col sm-3">
+                                <h6 class="details">
+                                    Age
+                                </h6>
+                            </div>
+                        </div>
+
+                        <div class="row" style="color:#797A7C ;margin-top: -8px;">
+                            <div class=" col sm-3">
+                                <p>Zain-Myself </p>
+                            </div>
+                            <div class=" col sm-3">
+                                <p>
+                                    Male
+                                </p>
+                            </div>
+                            <div class=" col sm-3">
+                                <p>
+                                    29
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="details" style="margin-top: -4px;">
+                        Address
+                    </h6>
+                    <p style="color:#797A7C;margin-top: -8px;">
+                        ST-2D, Block-17, Gulshan-e-Iqbal<br>
+                        National Stadium Colony, Karachi.
+                    </p>
+                    <h6 class="details" style="margin-top: -10px;">
+                        Appoint Date
+                    </h6>
+                    <p style="color:#797A7C;margin-top: -8px;">
+                        Date & Time
+                    </p>
+                    <h6 class="details" style="margin-top: -10px;">
+                        Appoint Date
+                    </h6>
+                    <p style="color:#797A7C;margin-top: -8px;">
+                        Collection Date
+                    </p>
+                    <h6 class="details" style="margin-top: -10px;">
+                        Report Date
+                    </h6>
+                    <p style="color:#797A7C;margin-top: -8px;">
+                        Date & time
+                    </p>
+                    <h6 class="details" style="margin-top: -10px;">
+                        Lab Person
+                    </h6>
+                    <p style="color:#797A7C;margin-top: -8px;">
+                        Mr Habib
+                    </p>
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <!-- History Detail end -->
+
+    <!-- Lab Result Detail start -->
+    <div id="LabResultDetail" style="display: none; background-color: #FBFBFB;">
+        <!-- <div id="overlay">
+            <div class="lds-default" style="left: 40%;top: 40%;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+        <div>
+
+        </div>
+        <div class="container-flex" style="">
+            <div class="container-flex">
+                <div class="lmainheader header-height" style="height:75px; border-bottom-left-radius: 0px;
+                    border-bottom-right-radius: 0px;">
+                    <div class="row">
+                        <div class="left" onclick="goToLandingPage()"
+                            style="margin-left: 20px;top: 15px;position: relative;">
+                            <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i>
+                        </div>
+                        <div class="header-div" style="padding-top: 10px;text-align:center;width: 100%;">
+                            <h5 class="header-title" style="font-size: 20px;"> Lab Result detail Page (CBC)</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="container">
+                    <div class="card cardheight" style="height: 495px;top: -30px;background-color: #FBFBFB; ">
+                        <div class="card-body" style="padding-left: 5px;padding-top: 5px; padding-bottom: 0px;">
+                            <div class="row">
+                                <div class="col-1" style="left: -14px;">
+                                    <img style="width: 25px;" src="./img/test-results-icon.png" alt="">
+
+                                </div>
+                                <div class="new-lab" style="font-size:11px">
+                                    <p style="color:#797A7C ;font-weight: 500;font-size: 12px;">
+                                        Alpha Laboratory Area Name </p>
+                                    <h6 style="font-size: 14px; font-weight: 500; color:#21418C ;margin-top: -15px;">
+                                        Complete Blood Count (CBC)
+                                    </h6>
+                                    <p style="margin-top: -8px;">
+                                        Dr. Saima
+                                    </p>
+                                    <p style="margin-top: -16px;">
+                                        Pathologist
+                                    </p>
+                                    <div class="row">
+                                        <p>Status <span style="color: coral;">Done</span></p>
+                                        <div>
+                                            <button class="boton" type="button" style="margin-left: 22px;"><i
+                                                    class="fa fa-search"></i>
+                                                Preview</button>
+                                            <button class="boton" type="button" style="margin-left: 5px;"><i
+                                                    class="fa fa-download"></i>
+                                                Donwload </button>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="Summary-content" style=" font-size: 12px;line-height: 15px;">
+
+                                <h6 class="testSummary-title">
+                                    Test Summary
+                                </h6>
+                                <p style="color:#797A7C ;font-weight: 500;">
+                                    Cbc Lorem ipsum .
+                                </p>
+                                <p style="color:#797A7C ;font-weight: 500;margin-top: -14px">
+                                    Lorem ipsum doler Sit Lorem ipsum
+                                </p>
+                                <div class="Total-Paid-2" s>
+                                    <p>
+                                        Total Paid <span style="margin-left: 150px;color: #21418C;"> Rs.950</span>
+                                    </p>
+
+                                </div>
+
+                                <hr class="divider">
+                            </div>
+                            <div class="Detail-Content" style="font-size: 12px;font-weight: 500;line-height: 15px;">
+                                <h6 class="otherDetails-title">
+                                    Other Details
+                                </h6>
+
+                                <div class="other-Details" style="margin-left: -15px;">
+                                    <div class="row" style="width: 101%;">
+                                        <div class=" col sm-3">
+                                            <h6 class="details-2">
+                                                Booked for
+                                            </h6>
+                                        </div>
+                                        <div class=" col sm-3">
+                                            <h6 class="details-2">
+                                                Gender
+                                            </h6>
+                                        </div>
+                                        <div class=" col sm-3">
+                                            <h6 class="details-2">
+                                                Age
+                                            </h6>
+                                        </div>
+                                    </div>
+
+                                    <div class="row Myself" style="color:#797A7C ;margin-top: -8px;">
+                                        <div class=" col sm-3">
+                                            <p>Zain-Myself </p>
+                                        </div>
+                                        <div class=" col sm-3">
+                                            <p>
+                                                Male
+                                            </p>
+                                        </div>
+                                        <div class=" col sm-3">
+                                            <p>
+                                                29
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6 class="details-2" style="margin-top: -4px;">
+                                    Address
+                                </h6>
+                                <p style="color:#797A7C;margin-top: -8px;">
+                                    ST-2D, Block-17, Gulshan-e-Iqbal<br>
+                                    National Stadium Colony, Karachi.
+                                </p>
+                                <h6 class="details-2" style="margin-top: -10px;">
+                                    Appoint Date
+                                </h6>
+                                <p style="color:#797A7C;margin-top: -8px;">
+                                    Date & Time
+                                </p>
+                                <h6 class="details-2" style="margin-top: -10px;">
+                                    Appoint Date
+                                </h6>
+                                <p style="color:#797A7C;margin-top: -8px;">
+                                    Collection Date
+                                </p>
+                                <h6 class="details-2" style="margin-top: -10px;">
+                                    Report Date
+                                </h6>
+                                <p style="color:#797A7C;margin-top: -8px;">
+                                    Date & time
+                                </p>
+                                <h6 class="details-2" style="margin-top: -10px;">
+                                    Lab Person
+                                </h6>
+                                <p style="color:#797A7C;margin-top: -8px;">
+                                    Mr Habib
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Lab Result Detail end -->
+
+    <!-- Lab Result start -->
+    <div id="LabResult" style="display: none;background-color: #F8F8F8;">
+        <!-- <div id="overlay">
+            <div class="lds-default" style="left: 40%;top: 40%;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+        <div>
+
+        </div>
+        <div class="container-flex">
+            <div class="container-flex">
+                <div class="lmainheader" style="height:55px; border-bottom-left-radius: 0px;
+                    border-bottom-right-radius: 0px;">
+                    <div class="row">
+                        <div class="left" onclick="goToLandingPage()"
+                            style="margin-left: 20px;top: 15px;position: relative;">
+                            <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i>
+                        </div>
+                        <div class="" style="margin-top: -12px;text-align:center;width: 100%;">
+                            <h5 style="font-size: 20px;"> Lab Results</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="container ContainerHeight" style="padding-top: 0px ;background-color: #F8F8F8;">
+                    <div class="row">
+                        <div>
+                            <i class="fa fa-search" style="position: relative;top: 25px;left: 12px;"></i>
+                        </div>
+
+                        <input class="form-control search-bar" type="text" id="" placeholder="Search Reports"
+                            style="border: solid 1px #F5F5F5 !important; ">
+                    </div>
+                    <div class="card cardContent" onclick="goToLabResultDetailsPage()"
+                        style="height: 100px;top: 10px;margin-bottom: 10px;background-color: #FBFBFB;">
+                        <div class="card-body" style="padding-left: 5px;padding-top: 5px;">
+                            <div class="row rowContent">
+                                <div class="col-1" style="left: -14px;">
+                                    <img style="width: 25px;" src="./img/test-results-icon.png" alt="">
+
+                                </div>
+                                <div class="new-lab" style="font-size:11px">
+                                    <p style="color:#797A7C ;font-weight: 500;font-size: 12px;">
+                                        Alpha Laboratory Area Name <span class="date" style="margin-left: 75px;">
+                                            27:08:2021</span></p>
+                                    <h6 style="font-size: 14px; font-weight: 500; color:#21418C ;margin-top: -15px;">
+                                        Complete Blood Count (CBC)
+                                    </h6>
+                                    <p style="margin-top: -8px;">
+                                        Dr. Saima
+                                    </p>
+                                    <p style="margin-top: -16px;">
+                                        Pathologist
+                                    </p>
+
+                                    <div class="row" style="margin-top: -10px;">
+                                        <p>Status <span style="color: coral;">Done</span></p><i
+                                            class="right-bar fa fa-chevron-right"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <hr style="margin-top: -37px;;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card cardContent"
+                        style="height: 100px;top: 10px;margin-bottom: 10px;background-color: #FBFBFB;">
+                        <div class="card-body" style="padding-left: 5px;padding-top: 5px;">
+                            <div class="row rowContent">
+                                <div class="col-1" style="left: -14px;">
+                                    <img style="width: 25px;" src="./img/test-results-icon.png" alt="">
+
+                                </div>
+                                <div class="new-lab" style="font-size:11px">
+                                    <p style="color:#797A7C ;font-weight: 500;font-size: 12px;">
+                                        Alpha Laboratory Area Name <span class="date" style="margin-left: 75px;">
+                                            27:08:2021</span></p>
+                                    <h6 style="font-size: 14px; font-weight: 500; color:#21418C ;margin-top: -15px;">
+                                        Complete Blood Count (CBC)
+                                    </h6>
+                                    <p style="margin-top: -8px;">
+                                        Dr. Saima
+                                    </p>
+                                    <p style="margin-top: -16px;">
+                                        Pathologist
+                                    </p>
+
+                                    <div class="row" style="margin-top: -10px;">
+                                        <p>Status <span style="color: coral;">Done</span></p><i
+                                            class="right-bar fa fa-chevron-right"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <hr style="margin-top: -37px;;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card cardContent" style="height: 100px;top: 10px;background-color: #FBFBFB;">
+                        <div class="card-body" style="padding-left: 5px;padding-top: 5px;">
+                            <div class="row rowContent">
+                                <div class="col-1" style="left: -14px;">
+                                    <img style="width: 25px;" src="./img/test-results-icon.png" alt="">
+
+                                </div>
+                                <div class="new-lab" style="font-size:11px">
+                                    <p style="color:#797A7C ;font-weight: 500;font-size: 12px;">
+                                        Alpha Laboratory Area Name <span class="date" style="margin-left: 75px;">
+                                            27:08:2021</span></p>
+                                    <h6 style="font-size: 14px; font-weight: 500; color:#21418C ;margin-top: -15px;">
+                                        Complete Blood Count (CBC)
+                                    </h6>
+                                    <p style="margin-top: -8px;">
+                                        Dr. Saima
+                                    </p>
+                                    <p style="margin-top: -16px;">
+                                        Pathologist
+                                    </p>
+
+                                    <div class="row" style="margin-top: -10px;">
+                                        <p>Status <span style="color: coral;">Done</span></p><i
+                                            class="right-bar fa fa-chevron-right"></i>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <hr style="margin-top: -37px;;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Lab Result end -->
+
+    <!-- Appointment History start -->
+    <div id="AppointmentHistory" style="display: none;background-color: #F8F8F8;">
+        <!-- <div id="overlay">
+            <div class="lds-default" style="left: 40%;top: 40%;">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> -->
+        <div>
+
+        </div>
+        <div class="container-flex">
+            <div class="container-flex">
+                <div class="lmainheader" style="height:55px; border-bottom-left-radius: 0px;
+                    border-bottom-right-radius: 0px;">
+                    <div class="row">
+                        <div class="left" onclick="goToLandingPage()"
+                            style="margin-left: 20px;top: 15px;position: relative;">
+                            <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i>
+                        </div>
+                        <div class="" style="margin-top: -12px;;text-align:center;width: 100%;">
+                            <h5 style="font-size: 20px;"> Appointment History</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="container ContainerHeight" style="padding-top: 0px ;background-color: #F8F8F8;">
+                    <div class="row">
+                        <div>
+                            <i class="fa fa-search" style="position: relative;top: 25px;left: 12px;"></i>
+                        </div>
+
+                        <input class="form-control search-bar" type="text" id="" placeholder="Search Reports"
+                            style="border: solid 1px #F5F5F5 !important; ">
+                    </div>
+                    <div class="card cardContent" id="CardId"
+                        style="height: 90px;top: 10px;margin-bottom: 10px;background-color: #FBFBFB;">
+                        <div class="card-body" style="padding-left: 5px;padding-top: 5px;">
+                            <div class="row rowContent">
+                                <div class="col-1" style="left: -14px;">
+                                    <img style="width: 25px;" src="./img/calendar.png" alt="">
+
+                                </div>
+                                <div class="new-lab" style="font-size:11px; margin-left: 5px; position: relative;">
+                                    <p style="color:#797A7C ;font-weight: 500;font-size: 12px;">
+                                        Alpha Laboratory <span class="date" style="margin-left: 130px;">
+                                            27:08:2021</span></p>
+                                    <h6 style="font-size: 14px; font-weight: 500; color:#21418C ;margin-top: -15px;">
+                                        Booked For (Myself)
+                                    </h6>
+                                    <p style="margin-top: -8px;font-weight: 500;">
+                                        Dr. Saima
+                                    </p>
+                                    <p style="margin-top: -16px;font-weight: 500;">
+                                        Pathologist
+                                    </p>
+                                    <div>
+                                        <button class="ShowMOreBtn" id="txtShowMore" type="button"
+                                            onclick="ShowMoreDetails()">
+                                            Show More
+
+                                        </button>
+                                    </div>
+                                    <div style="display: none;" id="ShowMoreDiv">
+                                        <span style="font-size: 13px; font-weight: 700;">Test Summary </span>
+                                        <p style="font-weight: 500;"> CBC count lorem ipsum</p>
+                                        <p style="position: relative;top: -18px;font-weight: 500;"> CBC count lorem
+                                            ipsum</p>
+                                        <p style="position: relative;top: -36px;font-weight: 500;"> CBC count lorem
+                                            ipsum</p>
+                                        <span style="font-size: 13px; font-weight: 700;top: -50px;position: relative;">
+                                            Total <span style="color: #21418C;left: 205px;position: relative;">
+                                                Rs.2500</span> </span>
+                                        <div>
+                                            <button id="SeeLesstxt" class="See-Less">
+                                                See less
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <hr style="position: relative;top: -78px;">
+                                        </div>
+
+                                        <div class="row">
+                                            <div>
+                                                <p style="position: relative; top: -80px;">Status <span
+                                                        style="color: coral;">Done</span></p>
+
+                                            </div>
+                                            <div>
+                                                <button class="LabResult-buton py-1 px-3" type="button"> Lab result
+
+                                                </button>
+                                            </div>
+
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment History end -->
+
+
+    <script>
+        $(document).ready(function () {
+            goToSignInPage()
+            // goToLandingPage();
+            // getTodayDate();
+            // goToEnterAddressPage()
+            // goToLabResultDetailsPage()
+            // goToOffersAndDiscountPage()
+        });
+
+        function goToSignInPage() {
+            emptyDiv();
+            document.getElementById('signIn').style.display = "block";
+            document.getElementById('offersAndDiscount').style.display = "none";
+        }
+
+        function goToSignUpPage() {
+            emptyDiv();
+            document.getElementById('signUp').style.display = "block";
+            document.getElementById('offersAndDiscount').style.display = "none";
+        }
+
+        function goToVerificationNumberPage() {
+            emptyDiv();
+            document.getElementById('verifyNumber').style.display = "block";
+
+        }
+
+        function goToLandingPage() {
+            emptyDiv();
+            mainFooter();
+            document.getElementById('landingPage').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+            document.getElementById('footerBackgroundHome').style.backgroundColor = "lightgray";
+        }
+
+        function goToBookAppointmentPage() {
+            emptyDiv();
+            mainFooter();
+
+            document.getElementById('bookAppointmentPage').style.display = "block";
+            document.getElementById('testOffersDiv').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+            document.getElementById('appointmentPageTestDivButton').style.background = "#090986";
+            document.getElementById('appointmentPageTestDivButton').style.color = "white";
+            document.getElementById('appointmentPageOfferDivButton').style.background = "white";
+            document.getElementById('appointmentPageOfferDivButton').style.color = "black";
+            fillTestList();
+            fillOfferList();
+        }
+
+        function goToTestBookAppointmentDiv() {
+            emptyDiv();
+            mainFooter();
+            document.getElementById('bookAppointmentPage').style.display = "block";
+            document.getElementById('testOffersDiv').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+            document.getElementById('appointmentPageTestDivButton').style.background = "#090986";
+            document.getElementById('appointmentPageTestDivButton').style.color = "white";
+            document.getElementById('appointmentPageOfferDivButton').style.background = "white";
+            document.getElementById('appointmentPageOfferDivButton').style.color = "black";
+
+        }
+
+        function goToOffersBookAppointmentDiv() {
+            emptyDiv();
+            mainFooter();
+            document.getElementById('bookAppointmentPage').style.display = "block";
+            document.getElementById('dicountOffersDiv').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+            document.getElementById('appointmentPageOfferDivButton').style.background = "#090986";
+            document.getElementById('appointmentPageOfferDivButton').style.color = "white";
+            document.getElementById('appointmentPageTestDivButton').style.background = "white";
+            document.getElementById('appointmentPageTestDivButton').style.color = "black";
+        }
+
+        function goToSelectTimeSlotPage() {
+            emptyDiv();
+            mainFooter();
+            document.getElementById('selectTimeSlot').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+            getTodayDate();
+            fillTimeSlotList();
+        }
+
+        function goTopatientDetailsPage() {
+            emptyDiv();
+            mainFooter();
+            document.getElementById('patientDetails').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+        }
+
+        function goToOffersAndDiscountPage() {
+            emptyDiv();
+            mainFooter();
+            document.getElementById('offersAndDiscount').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+            fillDiscountAndOfferList();
+        }
+
+
+        function goToProfilePage() {
+            emptyDiv();
+            mainFooter();
+            document.getElementById('mainProfile').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+            document.getElementById('footerBackgroundProfile').style.backgroundColor = "lightgray";
+            fillProfileList();
+        }
+
+        function goToReportPage() {
+            emptyDiv();
+            mainFooter();
+            document.getElementById('mainReportDiv').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+            document.getElementById('footerBackgroundHome').style.backgroundColor = "lightgray";
+
+            var inputNumber = document.getElementById("txtPhoneNumberSignIn").value;
+            var inputPassword = document.getElementById("txtPasswordSignIn").value;
+
+            URL = nashApi + '/api/Appointment/Appointmentby?PatientPhoneNumber=' + inputNumber + '&Password=' + inputPassword;
+            $.ajax({
+                url: URL,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    var value = data;
+                    var htm = "";
+
+                    for (var i = 0; i < value.length; i++) {
+                        var stu = value[i].appointmentStatus == 'true' ? 'Confirm' : (value[i].appointmentStatus == 'false' ? 'Cancel' : value[i].appointmentStatus);
+                        htm += ' <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">';
+                        htm += ' <div class="col-8" style="font-weight: bolder;">' + value[i].title + '</div>';
+                        htm += ' <div class="col-4"><button style="width: 100%;height: 100%;background: #b4c8db;border: lightgray;border-radius: 5px;font-size: 11px;">' + stu + '</button> </div>';
+                        htm += ' <div class="row" style="width: 100%;"><div class="col-4" style="padding-right: 0px;font-size: 15px;color: lightgray;"> ' + value[i].createdOn + ' </div>';
+                        htm += ' <div class="col-4" style="padding-right: 0px;color: lightgray;font-weight: bold;font-size: 15px;"> ' + value[i].price + '</div></div>  </div>';
+
+                    }
+                    $('#reportsection').html(htm);
+
+                },
+                error: function (request, message, error) {
+                }
+            })
+
+        }
+
+        function emptyDiv() {
+            document.getElementById('signIn').style.display = "none";
+            document.getElementById('signUp').style.display = "none";
+            document.getElementById('verifyNumber').style.display = "none";
+            document.getElementById('landingPage').style.display = "none";
+            document.getElementById('bookAppointmentPage').style.display = "none";
+            document.getElementById('testOffersDiv').style.display = "none";
+            document.getElementById('dicountOffersDiv').style.display = "none";
+            document.getElementById('offersAndDiscount').style.display = "none";
+            document.getElementById('mainFooterDiv').style.display = "none";
+            document.getElementById('selectTimeSlot').style.display = "none";
+            document.getElementById('patientDetails').style.display = "none";
+            document.getElementById('mainProfile').style.display = "none";
+            document.getElementById('mainReportDiv').style.display = "none";
+            document.getElementById('EnterAddress').style.display = "none";
+            document.getElementById('NeedHelp').style.display = "none";
+            document.getElementById('Historyid').style.display = "none";
+            document.getElementById('HistoryDetail').style.display = "none";
+            document.getElementById('LabResult').style.display = "none";
+            document.getElementById('LabResultDetail').style.display = "none";
+            document.getElementById('AppointmentHistory').style.display = "none";
+            document.getElementById('thankyoupage').style.display = "none";
+
+        }
+        function goToEnterAddressPage() {
+            emptyDiv();
+            mainFooter();
+            document.getElementById('EnterAddress').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+        }
+        function goToNeedHelpPage() {
+            emptyDiv();
+            mainFooter();
+            document.getElementById('NeedHelp').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+        }
+        function goToHistoryPage() {
+            emptyDiv();
+            mainFooter();
+            document.getElementById('Historyid').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+            var inputNumber = document.getElementById("txtPhoneNumberSignIn").value;
+            var inputPassword = document.getElementById("txtPasswordSignIn").value;
+
+            URL = nashApi + '/api/Appointment/Appointmentby?PatientPhoneNumber=' + inputNumber + '&Password=' + inputPassword;
+            $.ajax({
+                url: URL,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    var value = data;
+                    var htm = "";
+
+                    for (var i = 0; i < value.length; i++) {
+                        var stu = value[i].appointmentStatus == 'true' ? 'Confirm' : (value[i].appointmentStatus == 'false' ? 'Cancel' : value[i].appointmentStatus);
+                        htm += ' <div class="row" style="border-bottom: 1px solid #80808047;padding-bottom: 25px;padding-top: 20px;">';
+                        htm += ' <div class="col-8" style="font-weight: bolder;">' + value[i].title + '</div>';
+                        htm += ' <div class="col-4"><button onclick="goToHistoryDetailPage(' + value[i].appointmentId + ')" style="width: 100%;height: 100%;background: #b4c8db;border: lightgray;border-radius: 5px;font-size: 11px;">View Details</button></div>';
+
+                        htm += ' <div class="row" style="width: 100%;"><div class="col-4" style="padding-right: 0px;font-size: 15px;color: lightgray;"> ' + value[i].createdOn + ' </div>';
+                        htm += ' <div class="col-4" style="padding-right: 0px;color: lightgray;font-weight: bold;font-size: 15px;"> ' + value[i].price + '</div></div>  </div>';
+
+                        htm += ' <div class="row"><div style="margin-left: 15px ;margin-top: 10px;"><p style="font-size: 15px;">Status <span ';
+                        htm += ' style="background-color:lightgray ; border-radius: 5px; padding-left: 15px; padding-right: 15px;margin-left: 15px;">';
+                        htm += ' ' + stu + '</span></p></div></div></div>';
+
+                    }
+                    $('#loadHistory').html(htm);
+                }
+            })
+
+
+        }
+        function goToHistoryDetailPage(x) {
+            emptyDiv();
+            mainFooter();
+            document.getElementById('HistoryDetail').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+            URL = nashApi + '/api/Appointment/Appointmentdetails?id=' + x;
+            $.ajax({
+                url: URL,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data);
+                    var value = data;
+                    var htm = ""; var stu = value.appointmentStatus;
+                    htm += ' <div class="container-flex"><div class="container-flex"><div class="lmainheader" style="height:110px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">';
+                    htm += ' <div class="row"><div class="left" onclick="goToLandingPage()" style="margin-left: 20px;top: 15px;position: relative;">';
+                    htm += ' <i class="fa fa-chevron-left" style="font-size:26px;color:gray"></i></div> <div class="center" style="padding-top: 20px;text-align:center;width: 100%;margin-left: 60px;">';
+                    htm += ' <h5 class=" History-title"> History Detail Page </h5> <div style="font-size: 14px;">';
+                    htm += '</div></div></div> </div></div>';
+
+                    htm += '<div><div class="container test-summary" style="padding-top: 5px;"><h4>Test Summary</h4><p style="color:#797A7C ;font-weight: 400;">' + value.test.title + ' <span style="margin-left: 140px;"> ' + value.test.price + '</span></p>';
+
+                    htm += '<p style="color:#797A7C ;font-weight: 400;margin-top: -14px"> Discount & Offers <span style="margin-left: 140px;"> -0</span></p>';
+                    htm += '<div class="Total-Paid" style="margin-top: -15px;font-size: 20px;font-weight: 500;"><p>Total Paid <span style="margin-left: 170px;"> ' + value.appointment.totalAmount + '</span></p>';
+                    htm += '</div><hr style="border: solid 1px;"></div>';
+                    htm += '<div class="container HDP-Details " style="padding-top: 0px;height: 45px; font-size: 10px;font-size: 12px;font-weight: 500;line-height: 15px;">';
+                    htm += '<h4>Other Details</h4><div class="container-flex other-Details" style="margin-left: -15px;margin-top: 15px;"><div class="row" style="width: 101%;">';
+                    htm += '<div class=" col sm-3"><h6 class="details">Booked for</h6></div><div class=" col sm-3"><h6 class="details">Gender</h6></div><div class=" col sm-3"> <h6 class="details">Age</h6></div></div>';
+                    htm += '<div class="row" style="color:#797A7C ;margin-top: -8px;"><div class=" col sm-3"><p>' + value.appointment.appointmentPatientName + ' </p></div><div class=" col sm-3"><p> ' + value.appointment.patientGender + '</p></div>';
+                    htm += '<div class=" col sm-3"><p></p></div></div></div>';
+                    htm += '<h6 class="details" style="margin-top: -4px;">Address</h6><p style="color:#797A7C;margin-top: -8px;">' + value.appointment.addres + '</p>';
+                    htm += ' <h6 class="details" style="margin-top: -10px;">Appoint Date</h6> <p style="color:#797A7C;margin-top: -8px;">' + value.createdOn + '</p></div></div></div>';
+
+                    $('#HistoryDetail').html(htm);
+                }
+            })
+        }
+        function goToLabResultPage() {
+            emptyDiv();
+            mainFooter();
+            document.getElementById('LabResult').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+        }
+        function goToLabResultDetailsPage() {
+            emptyDiv();
+            mainFooter();
+            document.getElementById('LabResultDetail').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+        }
+        function goToAppointmentHistoryPage() {
+            emptyDiv();
+            mainFooter();
+            document.getElementById('AppointmentHistory').style.display = "block";
+            document.getElementById('mainFooterDiv').style.display = "block";
+        }
+
+
+
+
+        // function for Appointment History Page
+        function ShowMoreDetails() {
+
+            var MoreDiv = document.getElementById("ShowMoreDiv");
+            var ShowMoreButton = document.getElementById("txtShowMore");
+            var SeeLessButton = document.getElementById("SeeLesstxt")
+
+            if (MoreDiv.style.display === "none") {
+                ShowMoreButton.style.display = "none";
+                MoreDiv.style.display = "block";
+                SeeLessButton.style.display = "block";
+                document.getElementById("CardId").style.height = "230px";
+            }
+        };
+        // $("form").submit(function () {
+        //     alert("Submitted");
+        // });
+
+        const splash = document.querySelector('.splash')
+        document.addEventListener('DOMContentLoaded', (e) => {
+            setTimeout(() => {
+                splash.classList.add('display-none');
+            }, 3000);
+        })
+
+        var spinner = $('#spinner-wrapper');
+        $(function () {
+            $('#tumor-form').submit(function (e) {
+                // e.preventDefault();
+                spinner.show();
+            });
+        });
+
+    </script>
+
+    <!-- <script type="text/javascript" src="cordova.js"></script> -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/signUp.js"></script>
+    <script src="js/verificationNumber.js"></script>
+    <script src="js/bookAppointment.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/discountAndOffer.js"></script>
+    <script src="js/selectTimeSlot.js"></script>
+
+</body>
+
+</html>
